@@ -46,15 +46,27 @@ class TruthPublisher(Publisher):
             "Referer": BASE,
             "Content-Type": "application/json",
         }
+        # Cloudflare fronts truthsocial.com and blocks generic HTTP clients
+        # (especially from datacenter IPs). curl_cffi impersonates a real
+        # Chrome TLS fingerprint and is what current TS tooling uses.
         try:
-            import cloudscraper  # type: ignore
+            from curl_cffi import requests as curl_requests  # type: ignore
 
-            self.http = cloudscraper.create_scraper()
+            self.http = curl_requests.Session(impersonate="chrome")
+            # let curl_cffi present its own impersonated User-Agent
+            self.headers.pop("User-Agent", None)
+            log.info("truth publisher using curl_cffi (chrome impersonation)")
         except ImportError:
-            import requests
+            try:
+                import cloudscraper  # type: ignore
 
-            log.warning("cloudscraper not installed; using plain requests (may be blocked by Cloudflare)")
-            self.http = requests.Session()
+                self.http = cloudscraper.create_scraper()
+                log.warning("curl_cffi not installed; falling back to cloudscraper")
+            except ImportError:
+                import requests
+
+                log.warning("no curl_cffi/cloudscraper; plain requests will likely be blocked by Cloudflare")
+                self.http = requests.Session()
 
     def post(self, text: str, in_reply_to: Optional[str] = None) -> Optional[str]:
         payload = {
