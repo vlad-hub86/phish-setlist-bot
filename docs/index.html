@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikeside — Live Phish Setlist</title>
+<meta name="description" content="Live Phish setlist updates, song by song.">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --ink: #e6edf3; --dim: #8b949e;
+    --accent: #ff5252; --live: #3fb950; --line: #21262d;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--ink); min-height: 100vh;
+    font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+    display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem 4rem;
+  }
+  header { text-align: center; margin-bottom: 1.75rem; }
+  h1 { font-size: 2rem; letter-spacing: .12em; text-transform: uppercase; }
+  h1 .side { color: var(--accent); }
+  .tag { color: var(--dim); font-size: .85rem; margin-top: .35rem; letter-spacing: .05em; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    width: 100%; max-width: 560px; padding: 1.5rem 1.75rem; box-shadow: 0 8px 30px rgb(0 0 0 / .35);
+  }
+  .showhead { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: .25rem; }
+  .venue { font-size: 1.15rem; font-weight: 600; }
+  .date { color: var(--dim); }
+  .loc { color: var(--dim); font-size: .9rem; margin-bottom: 1rem; }
+  .badge {
+    display: inline-flex; align-items: center; gap: .4rem; font-size: .75rem;
+    letter-spacing: .12em; padding: .25rem .6rem; border-radius: 999px; border: 1px solid var(--line);
+  }
+  .badge.live { color: var(--live); border-color: var(--live); }
+  .badge.live::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: var(--live); animation: pulse 1.4s infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  .set { margin-top: 1.25rem; }
+  .setname { color: var(--accent); font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; border-bottom: 1px solid var(--line); padding-bottom: .35rem; margin-bottom: .6rem; }
+  ol { list-style: none; }
+  li { display: flex; justify-content: space-between; gap: .75rem; padding: .32rem 0; font-size: 1.02rem; }
+  li .t { color: var(--dim); }
+  li .len { color: var(--dim); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  li:last-child .now { color: var(--live); }
+  .foot { margin-top: 2rem; color: var(--dim); font-size: .78rem; text-align: center; line-height: 1.6; }
+  .empty { text-align: center; color: var(--dim); padding: 2.5rem 0 1.5rem; font-size: 1.05rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>MIKE<span class="side">SIDE</span></h1>
+  <div class="tag">live phish setlist · song by song</div>
+</header>
+
+<div class="card" id="card"><div class="empty">Loading…</div></div>
+
+<div class="foot">
+  Setlist data: Phish.net · Song lengths are live estimates until the recording posts.<br>
+  Updates automatically during shows.
+</div>
+
+<script>
+const card = document.getElementById("card");
+const fmtLen = s => s == null ? "" : `~${Math.round(s / 60)}m`;
+const fmtDate = iso => { if (!iso) return ""; const [y, m, d] = iso.split("-"); return `${+m}/${+d}/${y.slice(2)}`; };
+
+function render(data) {
+  if (!data || !data.sets || !data.sets.length) {
+    card.innerHTML = `<div class="empty">No show tonight — check back on a show day.</div>`;
+    return;
+  }
+  const fresh = (Date.now() - Date.parse(data.updated_at)) < 30 * 60 * 1000;
+  const live = fresh && !data.complete;
+  let h = `<div class="showhead">
+      <span class="venue">${data.venue ?? ""}</span>
+      <span class="badge ${live ? "live" : ""}">${live ? "LIVE" : data.complete ? "FINAL" : fmtDate(data.showdate)}</span>
+    </div>
+    <div class="loc">${fmtDate(data.showdate)} · ${[data.city, data.state].filter(Boolean).join(", ")}</div>`;
+  for (const s of data.sets) {
+    h += `<div class="set"><div class="setname">${s.display}</div><ol>`;
+    s.songs.forEach((song, i) => {
+      const isCurrent = live && s === data.sets[data.sets.length - 1] && i === s.songs.length - 1;
+      h += `<li><span class="${isCurrent ? "now" : ""}">${song.title}<span class="t">${song.transition === "," ? "" : " " + song.transition}</span></span>
+            <span class="len">${isCurrent ? "playing…" : fmtLen(song.length_secs)}</span></li>`;
+    });
+    h += `</ol></div>`;
+  }
+  card.innerHTML = h;
+}
+
+async function load() {
+  try {
+    const r = await fetch(`./setlist.json?t=${Date.now()}`, { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    render(await r.json());
+  } catch (e) {
+    card.innerHTML = `<div class="empty">No show data yet.</div>`;
+  }
+}
+load();
+setInterval(load, 60 * 1000);
+</script>
+</body>
+</html>
