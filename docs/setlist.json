@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-21T23:44:06+00:00",
+ "updated_at": "2026-07-21T23:54:07+00:00",
  "showdate": "2026-07-21",
  "venue": "Empower Federal Credit Union Amphitheater at Lakeview",
  "city": "Syracuse",
@@ -18,6 +18,12 @@
     },
     {
      "title": "Bug",
+     "transition": "->",
+     "length_secs": 601,
+     "footnote": null
+    },
+    {
+     "title": "Seven Below",
      "transition": ",",
      "length_secs": null,
      "footnote": null
