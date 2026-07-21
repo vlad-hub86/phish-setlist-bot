@@ -1,0 +1,16 @@
+[Unit]
+Description=Phish setlist bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bot
+WorkingDirectory=/opt/phish-setlist-bot
+ExecStart=/opt/phish-setlist-bot/venv/bin/python main.py run
+Restart=always
+RestartSec=30
+EnvironmentFile=/opt/phish-setlist-bot/.env
+
+[Install]
+WantedBy=multi-user.target
