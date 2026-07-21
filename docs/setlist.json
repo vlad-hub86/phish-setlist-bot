@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-21T23:29:10+00:00",
+ "updated_at": "2026-07-21T23:44:06+00:00",
  "showdate": "2026-07-21",
  "venue": "Empower Federal Credit Union Amphitheater at Lakeview",
  "city": "Syracuse",
@@ -12,6 +12,12 @@
    "songs": [
     {
      "title": "Turtle in the Clouds",
+     "transition": ">",
+     "length_secs": 896,
+     "footnote": null
+    },
+    {
+     "title": "Bug",
      "transition": ",",
      "length_secs": null,
      "footnote": null
