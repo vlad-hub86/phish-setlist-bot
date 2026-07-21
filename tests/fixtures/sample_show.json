@@ -1,0 +1,170 @@
+{
+  "_comment": "Hand-built sample in Phish.net API v5 setlists response shape, for pipeline replay tests. Not real show data. Replace with a captured real response (see README) once you have an API key.",
+  "error": false,
+  "error_message": "",
+  "song_stats": [
+    {
+      "songid": 627,
+      "song": "Tweezer",
+      "slug": "tweezer",
+      "times_played": 411,
+      "debut": "1990-02-03",
+      "last_played": "2026-07-15"
+    },
+    {
+      "songid": 200,
+      "song": "Free",
+      "slug": "free",
+      "times_played": 305,
+      "debut": "1995-06-07",
+      "last_played": "2026-07-12"
+    },
+    {
+      "songid": 219,
+      "song": "Ghost",
+      "slug": "ghost",
+      "times_played": 297,
+      "debut": "1997-06-13",
+      "last_played": "2026-07-18"
+    },
+    {
+      "songid": 233,
+      "song": "Harry Hood",
+      "slug": "harry-hood",
+      "times_played": 402,
+      "debut": "1985-10-30",
+      "last_played": "2026-07-13"
+    },
+    {
+      "songid": 449,
+      "song": "Sample in a Jar",
+      "slug": "sample-in-a-jar",
+      "times_played": 388,
+      "debut": "1992-03-06",
+      "last_played": "2026-07-16"
+    },
+    {
+      "songid": 261,
+      "song": "Icculus",
+      "slug": "icculus",
+      "times_played": 74,
+      "debut": "1984-12-01",
+      "last_played": "2021-08-08"
+    },
+    {
+      "songid": 546,
+      "song": "Slave to the Traffic Light",
+      "slug": "slave-to-the-traffic-light",
+      "times_played": 289,
+      "debut": "1984-11-03",
+      "last_played": "2026-07-10"
+    }
+  ],
+  "data": [
+    {
+      "showdate": "2026-07-21",
+      "set": "1",
+      "position": 1,
+      "song": "Free",
+      "songid": 200,
+      "gap": 4,
+      "transition": 1,
+      "footnote": "",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 9
+    },
+    {
+      "showdate": "2026-07-21",
+      "set": "1",
+      "position": 2,
+      "song": "Sample in a Jar",
+      "songid": 449,
+      "gap": 2,
+      "transition": 1,
+      "footnote": "",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 5
+    },
+    {
+      "showdate": "2026-07-21",
+      "set": "1",
+      "position": 3,
+      "song": "Slave to the Traffic Light",
+      "songid": 546,
+      "gap": 6,
+      "transition": 1,
+      "footnote": "",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 11
+    },
+    {
+      "showdate": "2026-07-21",
+      "set": "2",
+      "position": 4,
+      "song": "Tweezer",
+      "songid": 627,
+      "gap": 3,
+      "transition": 2,
+      "footnote": "",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 23
+    },
+    {
+      "showdate": "2026-07-21",
+      "set": "2",
+      "position": 5,
+      "song": "Ghost",
+      "songid": 219,
+      "gap": 1,
+      "transition": 3,
+      "footnote": "Sanford and Son tease",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 12
+    },
+    {
+      "showdate": "2026-07-21",
+      "set": "2",
+      "position": 6,
+      "song": "Harry Hood",
+      "songid": 233,
+      "gap": 5,
+      "transition": 1,
+      "footnote": "",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 14
+    },
+    {
+      "showdate": "2026-07-21",
+      "set": "e",
+      "position": 7,
+      "song": "Icculus",
+      "songid": 261,
+      "gap": 214,
+      "transition": 1,
+      "footnote": "First since 8/8/21",
+      "venue": "Madison Square Garden",
+      "city": "New York",
+      "state": "NY",
+      "artist_slug": "phish",
+      "sim_minutes": 6
+    }
+  ]
+}
