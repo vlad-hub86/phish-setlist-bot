@@ -1,0 +1,53 @@
+name: verified-recap
+# The morning after a show, posts exact song lengths from phish.in's recording.
+# Exits quietly if there was no show or the recording isn't up yet.
+
+on:
+  schedule:
+    - cron: '0 15 * * *'   # 11am ET
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Show date (YYYY-MM-DD); default = yesterday"
+        required: false
+
+concurrency:
+  group: show-night   # share the state cache safely with the night job
+  cancel-in-progress: false
+
+jobs:
+  recap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Restore bot state
+        uses: actions/cache/restore@v4
+        with:
+          path: botstate.db
+          key: botstate-${{ github.run_id }}
+          restore-keys: botstate-
+
+      - name: Post verified lengths
+        env:
+          TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
+          PLATFORMS: truthsocial
+          STATE_DB: botstate.db
+        run: |
+          SHOWDATE="${{ github.event.inputs.date }}"
+          if [ -z "$SHOWDATE" ]; then SHOWDATE=$(date -u -d yesterday +%F); fi
+          python main.py verified-recap --date "$SHOWDATE"
+
+      - name: Save bot state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: botstate.db
+          key: botstate-${{ github.run_id }}

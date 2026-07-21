@@ -1,0 +1,71 @@
+name: show-night
+# Starts every evening at 6:30pm ET; exits immediately on non-show days.
+# On show nights, polls Phish.net every ~75s and posts songs/recaps live,
+# then posts the show recap + lengths thread when the window closes.
+# NOTE: cron is UTC. 22:30 UTC = 6:30pm EDT. During EST (winter tours,
+# e.g. NYE run) change to '30 23 * * *'. West-coast tour legs: see README.
+
+on:
+  schedule:
+    - cron: '30 22 * * *'
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "How long to poll (minutes)"
+        default: "340"
+      dry_run:
+        description: "Dry run (log posts instead of sending)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: show-night
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # the job commits docs/setlist.json for the mikeside.com page
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure git for site updates
+        run: |
+          git config user.name "setlist-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Restore bot state
+        uses: actions/cache/restore@v4
+        with:
+          path: botstate.db
+          key: botstate-${{ github.run_id }}
+          restore-keys: botstate-
+
+      - name: Run show window
+        env:
+          PHISHNET_API_KEY: ${{ secrets.PHISHNET_API_KEY }}
+          TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
+          PLATFORMS: truthsocial
+          STATE_DB: botstate.db
+          SITE_DIR: docs
+          SITE_PUSH: "1"
+        run: |
+          python main.py show-window \
+            --minutes "${{ github.event.inputs.minutes || '340' }}" \
+            ${{ (github.event.inputs.dry_run == 'true') && '--dry-run' || '' }}
+
+      - name: Save bot state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: botstate.db
+          key: botstate-${{ github.run_id }}
