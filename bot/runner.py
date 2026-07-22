@@ -78,9 +78,24 @@ class Runner:
             1 for e in all_entries
             if e.set_label == entry.set_label and e.position <= entry.position
         )
-        # FTR/@PhishSet style: 'SET TWO: Oblivion [8:39 PM ET]', bare titles after
-        text = composer.ftr_song_post(
+        # headline + stats block (gap / debut / original artist)
+        stats = self.state.song_stats(songid=entry.songid, song=entry.song)
+        if (
+            stats
+            and stats.get("debut")
+            and not stats.get("debut_venue")
+            and getattr(self.client, "api_key", None)
+        ):
+            try:  # one-time lookup per song, cached in the state DB
+                venue = self.client.venue_for_date(stats["debut"])
+                if venue:
+                    self.state.set_debut_venue(stats["songid"], venue)
+                    stats["debut_venue"] = venue
+            except Exception:
+                log.exception("debut-venue lookup failed for %s", entry.song)
+        text = composer.song_post_stats(
             entry,
+            stats,
             first_in_set=(num_in_set == 1),
             started_at=self.state.first_seen(entry.key),
         )

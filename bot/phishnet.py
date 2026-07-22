@@ -100,6 +100,17 @@ class PhishNetClient:
         data = self._get("songs.json")
         return data.get("data", [])
 
+    def venue_for_date(self, showdate: str, artist: str = "phish") -> Optional[str]:
+        """'Venue, City, ST' for a show date — used for debut-venue lookups."""
+        data = self._get(f"shows/showdate/{showdate}.json")
+        for s in data.get("data", []):
+            if not artist or s.get("artist_name", "").lower() == artist:
+                parts = [s.get("venue", ""), s.get("city", ""), s.get("state", "") or s.get("country", "")]
+                joined = ", ".join(p for p in parts if p)
+                if joined:
+                    return joined
+        return None
+
     # -- shows ---------------------------------------------------------------
 
     def shows_for_year(self, year: int, artist: str = "phish") -> list[dict]:

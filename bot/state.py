@@ -24,6 +24,8 @@ CREATE TABLE IF NOT EXISTS song_stats (
     times_played INTEGER,
     debut TEXT,
     last_played TEXT,
+    artist TEXT,
+    debut_venue TEXT,
     updated_at INTEGER NOT NULL
 );
 CREATE TABLE IF NOT EXISTS sightings (
@@ -58,6 +60,12 @@ class State:
         self.db = sqlite3.connect(str(path))
         self.db.row_factory = sqlite3.Row
         self.db.executescript(SCHEMA)
+        # migrate older state DBs (restored from cache) in place
+        for col in ("artist", "debut_venue"):
+            try:
+                self.db.execute(f"ALTER TABLE song_stats ADD COLUMN {col} TEXT")
+            except sqlite3.OperationalError:
+                pass  # column already exists
 
     # -- posted songs (idempotency) -----------------------------------------
 
@@ -134,10 +142,16 @@ class State:
     # -- song stats cache ----------------------------------------------------
 
     def upsert_song_stats(self, rows: list[dict]):
+        """Refresh song data without wiping the lazily-fetched debut_venue."""
         now = int(time.time())
         for r in rows:
             self.db.execute(
-                "INSERT OR REPLACE INTO song_stats VALUES (?,?,?,?,?,?,?)",
+                """INSERT INTO song_stats (songid, song, slug, times_played, debut, last_played, artist, updated_at)
+                   VALUES (?,?,?,?,?,?,?,?)
+                   ON CONFLICT(songid) DO UPDATE SET
+                     song=excluded.song, slug=excluded.slug, times_played=excluded.times_played,
+                     debut=excluded.debut, last_played=excluded.last_played,
+                     artist=excluded.artist, updated_at=excluded.updated_at""",
                 (
                     r.get("songid"),
                     r.get("song"),
@@ -145,9 +159,14 @@ class State:
                     _i(r.get("times_played")),
                     r.get("debut"),
                     r.get("last_played"),
+                    r.get("artist"),
                     now,
                 ),
             )
+        self.db.commit()
+
+    def set_debut_venue(self, songid: int, venue: str):
+        self.db.execute("UPDATE song_stats SET debut_venue=? WHERE songid=?", (venue, songid))
         self.db.commit()
 
     def song_stats(self, songid: Optional[int] = None, song: Optional[str] = None) -> Optional[dict]:

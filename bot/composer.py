@@ -62,6 +62,35 @@ def ftr_song_post(
     return text
 
 
+def song_post_stats(
+    entry: SetlistEntry,
+    stats: Optional[dict],
+    first_in_set: bool,
+    started_at: Optional[float] = None,
+) -> str:
+    """Per-song post with a stats block:
+
+    SET TWO: Rock and Roll [9:47 PM ET]
+
+    Gap: 23 shows
+    Debut: 1998 · Thomas & Mack Center, Las Vegas, NV
+    Originally performed by: The Velvet Underground
+    """
+    lines = [ftr_song_post(entry, first_in_set, started_at), ""]
+    if entry.gap is not None and entry.gap >= 1:
+        lines.append(f"Gap: {entry.gap} show" + ("s" if entry.gap != 1 else ""))
+    if stats and stats.get("debut"):
+        year = str(stats["debut"])[:4]
+        venue = stats.get("debut_venue")
+        lines.append(f"Debut: {year} · {venue}" if venue else f"Debut: {year}")
+    artist = (stats or {}).get("artist")
+    if artist and artist.strip().lower() != "phish":
+        lines.append(f"Originally performed by: {artist}")
+    if len(lines) == 2:  # no stats available — post just the headline
+        lines = lines[:1]
+    return _clamp("\n".join(lines))
+
+
 def song_post(entry: SetlistEntry, stats: Optional[dict], song_number_in_set: int) -> str:
     lines = []
 
