@@ -9,12 +9,18 @@ name: push-inbox
 # Also hosts the show-night WATCHDOG (added after GitHub's cron silently
 # skipped the 6:30pm scheduled run on 7/22 MSG N1): on show dates, if no
 # show-night run exists by 23:05 UTC (7:05pm EDT), it dispatches one.
-# Piggybacks on this workflow's every-5-min cron, which fires ~288x/day
-# and has proven reliable. Update SHOW_DATES for future tour legs.
+# NOTE: GitHub throttles the */5 cron to ~hourly in practice, so the
+# watchdog gets its own dedicated 23:0x-23:50 UTC schedule entries below
+# to guarantee coverage of the dispatch window. Update SHOW_DATES (and
+# the 23:xx entries, if the tour leaves EDT) for future tour legs.
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # inbox polling (throttled to ~hourly by GitHub)
+    - cron: "10 23 * * *"   # watchdog window: four dedicated shots nightly
+    - cron: "20 23 * * *"
+    - cron: "35 23 * * *"
+    - cron: "50 23 * * *"
   workflow_dispatch: {}
 
 permissions:
