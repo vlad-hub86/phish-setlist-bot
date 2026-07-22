@@ -6,6 +6,13 @@
       "time": "2026-07-22T05:52:43Z",
       "ok": true,
       "message": "docs: add INBOX.md (committed via the push inbox itself)"
+    },
+    {
+      "file_id": "1SAWw4dXpjs8UlPfX7GbELdyD7tdnNxAx",
+      "name": "push-20260722-setlist-footer-link.json",
+      "time": "2026-07-22T06:08:01Z",
+      "ok": true,
+      "message": "setlist page: link the integration diagram in the footer"
     }
   ]
 }
