@@ -2,6 +2,7 @@ name: show-night
 # Starts every evening at 6:30pm ET; exits immediately on non-show days.
 # On show nights, polls Phish.net every ~75s and posts songs/recaps live,
 # then posts the show recap + lengths thread when the window closes.
+# Runs on the self-hosted WINDOWS runner (always-on PC) — steps are PowerShell.
 # NOTE: cron is UTC. 22:30 UTC = 6:30pm EDT. During EST (winter tours,
 # e.g. NYE run) change to '30 23 * * *'. West-coast tour legs: see README.
 
@@ -37,8 +38,10 @@ jobs:
           git config user.name "setlist-bot"
           git config user.email "actions@users.noreply.github.com"
 
-
-      - run: python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv\Scripts\pip install -r requirements.txt
 
       - name: Restore bot state
         uses: actions/cache/restore@v4
@@ -56,9 +59,14 @@ jobs:
           SITE_DIR: docs
           SITE_PUSH: "1"
         run: |
-          ./.venv/bin/python main.py show-window \
-            --minutes "${{ github.event.inputs.minutes || '340' }}" \
-            ${{ (github.event.inputs.dry_run == 'true') && '--dry-run' || '' }}
+          $dry = "${{ github.event.inputs.dry_run }}"
+          $mins = "${{ github.event.inputs.minutes }}"
+          if (-not $mins) { $mins = "340" }
+          if ($dry -eq "true") {
+            .venv\Scripts\python main.py show-window --minutes $mins --dry-run
+          } else {
+            .venv\Scripts\python main.py show-window --minutes $mins
+          }
 
       - name: Save bot state
         if: always()

@@ -1,6 +1,7 @@
 name: verified-recap
 # The morning after a show, posts exact song lengths from phish.in's recording.
 # Exits quietly if there was no show or the recording isn't up yet.
+# Runs on the self-hosted WINDOWS runner — steps are PowerShell.
 
 on:
   schedule:
@@ -22,8 +23,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-
-      - run: python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv\Scripts\pip install -r requirements.txt
 
       - name: Restore bot state
         uses: actions/cache/restore@v4
@@ -38,9 +41,9 @@ jobs:
           PLATFORMS: truthsocial
           STATE_DB: botstate.db
         run: |
-          SHOWDATE="${{ github.event.inputs.date }}"
-          if [ -z "$SHOWDATE" ]; then SHOWDATE=$(./.venv/bin/python -c "from datetime import date,timedelta; print(date.today()-timedelta(days=1))"); fi
-          ./.venv/bin/python main.py verified-recap --date "$SHOWDATE"
+          $d = "${{ github.event.inputs.date }}"
+          if (-not $d) { $d = (Get-Date).AddDays(-1).ToString("yyyy-MM-dd") }
+          .venv\Scripts\python main.py verified-recap --date $d
 
       - name: Save bot state
         if: always()

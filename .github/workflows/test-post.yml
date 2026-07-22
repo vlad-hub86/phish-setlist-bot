@@ -1,5 +1,6 @@
 name: test-post
-# Manual credentials check: sends ONE real post to Truth Social.
+# Manual credentials check / one-off post: sends ONE real post to Truth Social.
+# Runs on the self-hosted WINDOWS runner — steps are PowerShell.
 
 on:
   workflow_dispatch:
@@ -14,7 +15,10 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - run: python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv\Scripts\pip install -r requirements.txt
       - env:
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
-        run: ./.venv/bin/python main.py test-post "${{ github.event.inputs.text }}"
+        run: .venv\Scripts\python main.py test-post "${{ github.event.inputs.text }}"
