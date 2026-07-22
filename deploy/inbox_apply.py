@@ -16,7 +16,8 @@ Changeset format (one JSON file per push, named push-<anything>.json):
 {
   "message": "commit message here",
   "files": [
-    {"path": "docs/projects/setlist/foo.html", "content_b64": "<base64>"},
+    {"path": "docs/projects/setlist/foo.html", "content": "<plain text>"},
+    {"path": "docs/img/logo.png", "content_b64": "<base64, for binary>"},
     {"path": "docs/old-thing.html", "delete": true}
   ]
 }
@@ -133,12 +134,18 @@ def apply_changeset(name, raw):
             staged.append(("delete", norm, None))
         else:
             b64 = entry.get("content_b64")
-            if b64 is None:
-                return False, message, f"no content_b64 for {norm}"
-            try:
-                blob = base64.b64decode(b64, validate=True)
-            except Exception as exc:
-                return False, message, f"bad base64 for {norm}: {exc}"
+            text = entry.get("content")
+            if b64 is not None:
+                try:
+                    blob = base64.b64decode(b64, validate=True)
+                except Exception as exc:
+                    return False, message, f"bad base64 for {norm}: {exc}"
+            elif text is not None:
+                if not isinstance(text, str):
+                    return False, message, f"content must be a string for {norm}"
+                blob = text.encode("utf-8")
+            else:
+                return False, message, f"no content or content_b64 for {norm}"
             staged.append(("write", norm, blob))
 
     # All entries validated - now touch the working tree.
