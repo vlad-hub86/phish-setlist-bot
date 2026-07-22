@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phish Setlist Bot — Integration Diagram</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js"></script>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 24px;
+    background: #0d1117; color: #e6edf3;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p.sub { color: #8b949e; margin: 0 0 20px; font-size: 13px; }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  .mermaid { background: #0d1117; }
+  .legend { margin-top: 18px; font-size: 12px; color: #8b949e; line-height: 1.7; }
+  .legend b { color: #e6edf3; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Phish Setlist Bot — how it all connects</h1>
+  <p class="sub">Live song posts to Truth Social + live setlist page at mikeside.com · runs on the always-on Windows PC</p>
+
+  <pre class="mermaid">
+flowchart TB
+
+  subgraph SRC["🎵 Data sources"]
+    PN["Phish.net API v5\nlive setlist feed · song stats\ngaps · debuts · venues"]
+    PI["phish.in API v2\nverified track durations\n(recording, next morning)"]
+  end
+
+  subgraph GH["☁️ GitHub (free)"]
+    SCHED["Actions scheduler\n• show-night — 6:30pm ET daily\n• verified-recap — 11am ET daily\n• test-post — manual"]
+    CACHE[("actions/cache\nbotstate.db\ncarries state between runs")]
+    REPO["repo: phish-setlist-bot\ncode + docs/setlist.json"]
+    PAGES["GitHub Pages"]
+  end
+
+  subgraph PC["🖥️ Windows PC (always on, home IP)"]
+    RUNNER["self-hosted runner\n(Windows service)"]
+    subgraph BOT["Python bot"]
+      TICK["runner.py\npoll every ~75s during show"]
+      STATE[("SQLite state\nposted songs · sightings\nmilestones · recaps\n= zero duplicate posts")]
+      COMP["composer.py\nsong post + stats block\n20/30/40-min jam milestones\nset recaps · show recap\nlengths thread"]
+      PUB["publishers/truth.py\ncurl_cffi chrome impersonation"]
+      SITE["site.py\nwrites setlist.json + git push"]
+    end
+  end
+
+  TS["📣 Truth Social\nPOST /api/v1/statuses"]
+  WEB["🌐 mikeside.com\n/projects/setlist\nlive setlist page"]
+  X["𝕏 (phase 2)\npay-per-use API"]
+
+  SCHED -->|"dispatch job"| RUNNER
+  RUNNER --> TICK
+  PN <-->|"poll setlist + stats"| TICK
+  TICK --> STATE
+  STATE -->|"new songs & milestones only"| COMP
+  COMP --> PUB
+  PUB -->|"posts (passes Cloudflare\nfrom residential IP)"| TS
+  TICK --> SITE
+  SITE -->|"commit setlist.json"| REPO
+  REPO --> PAGES
+  PAGES -->|"CNAME"| WEB
+  CACHE <-->|"restore / save each run"| RUNNER
+  PI -->|"exact lengths"| SCHED
+  COMP -.->|"later"| X
+
+  style SRC fill:#161b22,stroke:#30363d,color:#e6edf3
+  style GH fill:#161b22,stroke:#30363d,color:#e6edf3
+  style PC fill:#10171f,stroke:#2f81f7,color:#e6edf3
+  style BOT fill:#0d1421,stroke:#30363d,color:#e6edf3
+  style TS fill:#1f2a1f,stroke:#3fb950,color:#e6edf3
+  style WEB fill:#1f2a1f,stroke:#3fb950,color:#e6edf3
+  style X fill:#161b22,stroke:#6e7681,stroke-dasharray: 5 5,color:#8b949e
+  </pre>
+
+  <div class="legend">
+    <b>Night of a show:</b> GitHub kicks off <b>show-night</b> at 6:30pm ET → the job runs on this PC → polls Phish.net every ~75 seconds → each new song goes through the SQLite dedupe, gets formatted with its stats block, and posts to Truth Social — while <b>site.py</b> pushes the same setlist to mikeside.com. Jam milestones fire at 20/30/40 minutes; set recaps post between sets; the show recap + estimated lengths thread post when the window closes.<br>
+    <b>Next morning:</b> <b>verified-recap</b> pulls exact track times from phish.in's recording and posts the verified lengths thread.<br>
+    <b>State:</b> botstate.db rides in the Actions cache between runs, so restarts and swaps never double-post. <b>Dashed = phase 2.</b>
+  </div>
+</div>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: "dark", flowchart: { curve: "basis" } });
+</script>
+</body>
+</html>
