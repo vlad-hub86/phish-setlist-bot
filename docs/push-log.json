@@ -1,3 +1,11 @@
 {
-  "applied": []
+  "applied": [
+    {
+      "file_id": "1cgyY4sZRu7c7h7t7bjOLmsf7lchn2Sa1",
+      "name": "push-20260722-inbox-doc.json",
+      "time": "2026-07-22T05:52:43Z",
+      "ok": true,
+      "message": "docs: add INBOX.md (committed via the push inbox itself)"
+    }
+  ]
 }
