@@ -24,6 +24,7 @@ STATS_REFRESH_SECS = 7 * 24 * 3600
 # threshold is posted (lower ones are marked done silently).
 MILESTONES = (40, 30, 20)
 MILESTONES_IN_ENCORE = False  # encore end == show end, no "next song" ever
+MILESTONE_STALE_MIN = 50      # first-time crossing past this = stalled feed, not a jam
                               # arrives, so false positives are guaranteed
 
 
@@ -143,10 +144,27 @@ class Runner:
         current = entries[-1]
         if current.set_label.lower().startswith("e") and not MILESTONES_IN_ENCORE:
             return
+        # Show's over: the recap has posted, so the "current" song ended long
+        # ago — its clock is meaningless (7/21 storm cutoff: the show closer
+        # accrued fake jam time all night).
+        if any(
+            self.state.recap_posted(current.showdate, "SHOW", pub.name)
+            for pub in self.publishers
+        ):
+            return
         first_seen = self.state.first_seen(current.key)
         if first_seen is None:
             return
         elapsed_min = (now - first_seen) / 60
+        # Staleness cap: no real jam runs this long without earlier milestones
+        # having posted. Crossing a threshold for the FIRST time this deep in
+        # means the feed stalled (setbreak / show end / outage), not a jam.
+        if elapsed_min >= MILESTONE_STALE_MIN and not any(
+            self.state.milestone_posted(current.key, t, pub.name)
+            for t in MILESTONES
+            for pub in self.publishers
+        ):
+            return
         crossed = [t for t in MILESTONES if elapsed_min >= t]
         if not crossed:
             return
@@ -168,12 +186,19 @@ class Runner:
 
     # -------------------------------------------------------------- recaps
 
+    # Gaps shorter than this between consecutive first-seen timestamps mean
+    # the songs were discovered in a catch-up burst (bot started mid-show),
+    # not observed live — the "duration" is meaningless. Report unknown.
+    MIN_CREDIBLE_GAP_SECS = 90
+
     def estimated_durations(self, showdate: str) -> dict[tuple, Optional[int]]:
         """Seconds per song, from consecutive first-seen timestamps.
 
         Duration is only computable when the NEXT song is in the same set
         (crossing a set boundary would include the setbreak). Last song of
-        each set: None.
+        each set: None. Catch-up artifacts (gap < MIN_CREDIBLE_GAP_SECS,
+        i.e. songs that appeared together in one burst): None — showing a
+        bogus "0 min" is worse than showing unknown.
         """
         rows = self.state.sightings_for_show(showdate)
         durations: dict[tuple, Optional[int]] = {}
@@ -181,7 +206,8 @@ class Runner:
             key = (row["showdate"], row["set_label"], row["position"])
             nxt = rows[i + 1] if i + 1 < len(rows) else None
             if nxt and nxt["set_label"] == row["set_label"]:
-                durations[key] = int(nxt["first_seen"] - row["first_seen"])
+                gap = int(nxt["first_seen"] - row["first_seen"])
+                durations[key] = gap if gap >= self.MIN_CREDIBLE_GAP_SECS else None
             else:
                 durations[key] = None
         return durations
