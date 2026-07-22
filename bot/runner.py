@@ -78,8 +78,12 @@ class Runner:
             1 for e in all_entries
             if e.set_label == entry.set_label and e.position <= entry.position
         )
-        # FTR/@PhishSet style: 'SET TWO: Oblivion' for set openers, bare titles after
-        text = composer.ftr_song_post(entry, first_in_set=(num_in_set == 1))
+        # FTR/@PhishSet style: 'SET TWO: Oblivion [8:39 PM ET]', bare titles after
+        text = composer.ftr_song_post(
+            entry,
+            first_in_set=(num_in_set == 1),
+            started_at=self.state.first_seen(entry.key),
+        )
 
         for pub in self.publishers:
             if self.state.already_posted(entry.key, pub.name):

@@ -22,17 +22,44 @@ def _fmt_date(iso: Optional[str]) -> str:
 
 SET_WORDS = {"1": "ONE", "2": "TWO", "3": "THREE", "4": "FOUR"}
 
+TZ_LABELS = {
+    "America/New_York": "ET",
+    "America/Chicago": "CT",
+    "America/Denver": "MT",
+    "America/Los_Angeles": "PT",
+}
 
-def ftr_song_post(entry: SetlistEntry, first_in_set: bool) -> str:
-    """Phish From The Road / @PhishSet style: 'SET TWO: Oblivion', then bare titles."""
-    if not first_in_set:
-        return entry.song
-    s = entry.set_label.lower()
-    if s.startswith("e"):
-        label = "ENCORE" if s == "e" else f"ENCORE {s[1:]}"
+
+def _fmt_clock(ts: float, tz_name: Optional[str] = None) -> str:
+    """Unix timestamp -> '8:39 PM ET' in the show's timezone (SHOW_TZ env)."""
+    import os
+    from zoneinfo import ZoneInfo
+
+    tz_name = tz_name or os.environ.get("SHOW_TZ", "America/New_York")
+    d = datetime.fromtimestamp(ts, ZoneInfo(tz_name))
+    label = TZ_LABELS.get(tz_name, d.strftime("%Z"))
+    hour = str(int(d.strftime("%I")))  # no leading zero, portable
+    return f"{hour}:{d.strftime('%M %p')} {label}"
+
+
+def ftr_song_post(
+    entry: SetlistEntry,
+    first_in_set: bool,
+    started_at: Optional[float] = None,
+) -> str:
+    """FTR/@PhishSet style plus a start-time stamp: 'SET TWO: Sand [8:39 PM ET]'."""
+    if first_in_set:
+        s = entry.set_label.lower()
+        if s.startswith("e"):
+            label = "ENCORE" if s == "e" else f"ENCORE {s[1:]}"
+        else:
+            label = f"SET {SET_WORDS.get(entry.set_label, entry.set_label)}"
+        text = f"{label}: {entry.song}"
     else:
-        label = f"SET {SET_WORDS.get(entry.set_label, entry.set_label)}"
-    return f"{label}: {entry.song}"
+        text = entry.song
+    if started_at:
+        text += f" [{_fmt_clock(started_at)}]"
+    return text
 
 
 def song_post(entry: SetlistEntry, stats: Optional[dict], song_number_in_set: int) -> str:
