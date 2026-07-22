@@ -27,7 +27,7 @@ permissions:
 
 jobs:
   poll:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
