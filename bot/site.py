@@ -71,6 +71,13 @@ def git_push(site_dir: str | Path, message: str) -> bool:
         if diff.returncode == 0:
             return False  # nothing staged
         subprocess.run(["git", "commit", "-m", message], cwd=root, check=True, capture_output=True)
+        # the branch may have moved (e.g. edits committed mid-show) — rebase first
+        pull = subprocess.run(["git", "pull", "--rebase"], cwd=root, capture_output=True)
+        if pull.returncode != 0:
+            subprocess.run(["git", "rebase", "--abort"], cwd=root, capture_output=True)
+            log.warning("site pull --rebase failed; will retry on next update: %s",
+                        (pull.stderr or b"").decode(errors="replace")[:200])
+            return False
         subprocess.run(["git", "push"], cwd=root, check=True, capture_output=True)
         return True
     except (subprocess.CalledProcessError, FileNotFoundError) as e:
