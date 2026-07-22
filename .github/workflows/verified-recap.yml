@@ -40,6 +40,7 @@ jobs:
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
           PLATFORMS: truthsocial
           STATE_DB: botstate.db
+          PYTHONUTF8: "1"   # unicode song titles/emoji safe on Windows console
         run: |
           $d = "${{ github.event.inputs.date }}"
           if (-not $d) { $d = (Get-Date).AddDays(-1).ToString("yyyy-MM-dd") }

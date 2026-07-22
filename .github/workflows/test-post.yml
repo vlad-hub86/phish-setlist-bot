@@ -19,6 +19,14 @@ jobs:
         run: |
           python -m venv .venv
           .venv\Scripts\pip install -r requirements.txt
-      - env:
+      # Text is passed via env var, NOT interpolated into the script:
+      # PowerShell 5.1 reads run-scripts as ANSI, so unicode (em dashes,
+      # emoji) gets mangled and can even break parsing (a mojibake'd em dash
+      # ends in a curly quote that terminates the string). $env: expansion
+      # happens at runtime — no parsing, any characters are safe.
+      - name: Send post
+        env:
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
-        run: .venv\Scripts\python main.py test-post "${{ github.event.inputs.text }}"
+          POST_TEXT: ${{ github.event.inputs.text }}
+          PYTHONUTF8: "1"
+        run: .venv\Scripts\python main.py test-post "$env:POST_TEXT"

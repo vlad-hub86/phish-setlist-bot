@@ -58,6 +58,7 @@ jobs:
           STATE_DB: botstate.db
           SITE_DIR: docs
           SITE_PUSH: "1"
+          PYTHONUTF8: "1"   # unicode song titles/emoji safe on Windows console
         run: |
           $dry = "${{ github.event.inputs.dry_run }}"
           $mins = "${{ github.event.inputs.minutes }}"
