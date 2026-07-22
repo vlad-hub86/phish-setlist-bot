@@ -1,8 +1,8 @@
 {
- "updated_at": "2026-07-22T02:55:33+00:00",
- "showdate": "2026-07-21",
- "venue": "Empower Federal Credit Union Amphitheater at Lakeview",
- "city": "Syracuse",
+ "updated_at": "2026-07-22T23:59:41+00:00",
+ "showdate": "2026-07-22",
+ "venue": "Madison Square Garden",
+ "city": "New York",
  "state": "NY",
  "complete": false,
  "sets": [
@@ -11,103 +11,7 @@
    "display": "Set 1",
    "songs": [
     {
-     "title": "Turtle in the Clouds",
-     "transition": ">",
-     "length_secs": 0,
-     "footnote": null
-    },
-    {
-     "title": "Bug",
-     "transition": "->",
-     "length_secs": 0,
-     "footnote": null
-    },
-    {
-     "title": "Seven Below",
-     "transition": ">",
-     "length_secs": 0,
-     "footnote": null
-    },
-    {
-     "title": "Ocelot",
-     "transition": ">",
-     "length_secs": 0,
-     "footnote": null
-    },
-    {
-     "title": "Mull",
-     "transition": ",",
-     "length_secs": 0,
-     "footnote": null
-    },
-    {
-     "title": "Sigma Oasis",
-     "transition": "->",
-     "length_secs": 0,
-     "footnote": null
-    },
-    {
-     "title": "Ghost",
-     "transition": ",",
-     "length_secs": null,
-     "footnote": null
-    }
-   ]
-  },
-  {
-   "label": "2",
-   "display": "Set 2",
-   "songs": [
-    {
-     "title": "Sand",
-     "transition": ">",
-     "length_secs": 1228,
-     "footnote": null
-    },
-    {
-     "title": "Everything's Right",
-     "transition": ">",
-     "length_secs": 577,
-     "footnote": null
-    },
-    {
-     "title": "What's the Use?",
-     "transition": ">",
-     "length_secs": 550,
-     "footnote": null
-    },
-    {
-     "title": "Light",
-     "transition": ">",
-     "length_secs": 982,
-     "footnote": null
-    },
-    {
-     "title": "Also Sprach Zarathustra",
-     "transition": ">",
-     "length_secs": 234,
-     "footnote": null
-    },
-    {
-     "title": "Blaze On",
-     "transition": ">",
-     "length_secs": 666,
-     "footnote": null
-    },
-    {
-     "title": "Prince Caspian",
-     "transition": ">",
-     "length_secs": 224,
-     "footnote": null
-    },
-    {
-     "title": "More",
-     "transition": ">",
-     "length_secs": 372,
-     "footnote": null
-    },
-    {
-     "title": "Say It To Me S.A.N.T.O.S.",
+     "title": "Glide",
      "transition": ",",
      "length_secs": null,
      "footnote": null
