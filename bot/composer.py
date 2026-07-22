@@ -67,16 +67,19 @@ def song_post_stats(
     stats: Optional[dict],
     first_in_set: bool,
     started_at: Optional[float] = None,
+    prev_song: Optional[str] = None,
+    prev_minutes: Optional[int] = None,
 ) -> str:
     """Per-song post with a stats block:
 
     SET TWO: Rock and Roll [9:47 PM ET]
-
     Gap: 23 shows
     Debut: 1998 · Thomas & Mack Center, Las Vegas, NV
     Originally performed by: The Velvet Underground
+
+    Previous Song: Everything's Right [12 min]
     """
-    lines = [ftr_song_post(entry, first_in_set, started_at), ""]
+    lines = [ftr_song_post(entry, first_in_set, started_at)]
     if entry.gap is not None and entry.gap >= 1:
         lines.append(f"Gap: {entry.gap} show" + ("s" if entry.gap != 1 else ""))
     if stats and stats.get("debut"):
@@ -86,8 +89,10 @@ def song_post_stats(
     artist = (stats or {}).get("artist")
     if artist and artist.strip().lower() != "phish":
         lines.append(f"Originally performed by: {artist}")
-    if len(lines) == 2:  # no stats available — post just the headline
-        lines = lines[:1]
+    if prev_song:
+        lines.append("")
+        tail = f" [{prev_minutes} min]" if prev_minutes else ""
+        lines.append(f"Previous Song: {prev_song}{tail}")
     return _clamp("\n".join(lines))
 
 
@@ -120,16 +125,42 @@ def song_post(entry: SetlistEntry, stats: Optional[dict], song_number_in_set: in
     return _clamp("\n".join(lines))
 
 
-def set_recap_post(entries: list[SetlistEntry], set_label: str) -> str:
+def set_recap_post(
+    entries: list[SetlistEntry],
+    set_label: str,
+    durations: Optional[dict] = None,
+) -> str:
+    """End-of-set recap with per-song lengths and footnotes:
+
+    SET TWO RECAP (8 songs)
+    Sand [20 min] †
+    Everything's Right [12 min]
+    ...
+
+    † Sand: Sanford and Son tease
+    """
     in_set = [e for e in entries if e.set_label == set_label]
     if not in_set:
         return ""
-    parts = []
+    s = set_label.lower()
+    if s.startswith("e"):
+        name = "ENCORE" if s == "e" else f"ENCORE {s[1:]}"
+    else:
+        name = f"SET {SET_WORDS.get(set_label, set_label)}"
+    lines = [f"{name} RECAP ({len(in_set)} songs)"]
+    notes = []
     for e in in_set:
-        parts.append(e.song + (e.transition if e is not in_set[-1] else ""))
-    body = " ".join(parts).replace(" ,", ",")
-    head = f"{in_set[0].set_display} ({len(in_set)} songs):"
-    return _clamp(f"{head}\n{body}")
+        secs = (durations or {}).get(e.key)
+        mins = f" [{round(secs / 60)} min]" if secs and secs >= 60 else ""
+        mark = ""
+        if e.footnote:
+            notes.append(f"† {e.song}: {e.footnote}")
+            mark = " †"
+        lines.append(f"{e.song}{mins}{mark}")
+    if notes:
+        lines.append("")
+        lines.extend(notes)
+    return _clamp("\n".join(lines))
 
 
 def show_recap_post(entries: list[SetlistEntry], stats_by_key: dict) -> str:

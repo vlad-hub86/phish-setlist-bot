@@ -33,7 +33,7 @@ class Runner:
         client: PhishNetClient,
         state: State,
         publishers: Iterable[Publisher],
-        post_set_recaps: bool = False,
+        post_set_recaps: bool = True,
     ):
         self.client = client
         self.state = state
@@ -93,11 +93,28 @@ class Runner:
                     stats["debut_venue"] = venue
             except Exception:
                 log.exception("debut-venue lookup failed for %s", entry.song)
+        # previous song + its estimated length (only measurable within a set,
+        # and only when the sightings are real — catch-up bursts read as <1 min)
+        prev = None
+        for e in all_entries:
+            if e.position < entry.position and (prev is None or e.position > prev.position):
+                prev = e
+        prev_minutes = None
+        if prev:
+            fs_prev = self.state.first_seen(prev.key)
+            fs_cur = self.state.first_seen(entry.key)
+            if fs_prev and fs_cur and prev.set_label == entry.set_label:
+                secs = fs_cur - fs_prev
+                if secs >= 60:
+                    prev_minutes = round(secs / 60)
+
         text = composer.song_post_stats(
             entry,
             stats,
             first_in_set=(num_in_set == 1),
             started_at=self.state.first_seen(entry.key),
+            prev_song=prev.song if prev else None,
+            prev_minutes=prev_minutes,
         )
 
         for pub in self.publishers:
@@ -216,8 +233,9 @@ class Runner:
             complete = sets_seen
 
         showdate = entries[0].showdate
+        durations = self.estimated_durations(showdate)
         for set_label in complete:
-            text = composer.set_recap_post(entries, set_label)
+            text = composer.set_recap_post(entries, set_label, durations)
             if not text:
                 continue
             for pub in self.publishers:
