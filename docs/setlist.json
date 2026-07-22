@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-22T02:35:32+00:00",
+ "updated_at": "2026-07-22T02:55:33+00:00",
  "showdate": "2026-07-21",
  "venue": "Empower Federal Credit Union Amphitheater at Lakeview",
  "city": "Syracuse",
@@ -68,7 +68,7 @@
      "title": "Everything's Right",
      "transition": ">",
      "length_secs": 577,
-     "footnote": "Unfinished"
+     "footnote": null
     },
     {
      "title": "What's the Use?",
@@ -98,7 +98,7 @@
      "title": "Prince Caspian",
      "transition": ">",
      "length_secs": 224,
-     "footnote": "Unfinished"
+     "footnote": null
     },
     {
      "title": "More",
