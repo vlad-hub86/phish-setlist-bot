@@ -53,7 +53,7 @@ def build_runner(dry_run: bool) -> Runner:
         client,
         state,
         build_publishers(dry_run),
-        post_set_recaps=os.environ.get("POST_SET_RECAPS", "") in ("1", "true", "yes"),
+        post_set_recaps=os.environ.get("POST_SET_RECAPS", "1") in ("1", "true", "yes"),
     )
 
 
