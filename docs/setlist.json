@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-22T02:14:30+00:00",
+ "updated_at": "2026-07-22T02:25:35+00:00",
  "showdate": "2026-07-21",
  "venue": "Empower Federal Credit Union Amphitheater at Lakeview",
  "city": "Syracuse",
@@ -90,6 +90,12 @@
     },
     {
      "title": "Blaze On",
+     "transition": ">",
+     "length_secs": 666,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
      "transition": ",",
      "length_secs": null,
      "footnote": null
