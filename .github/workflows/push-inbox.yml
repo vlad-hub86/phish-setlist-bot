@@ -1,0 +1,41 @@
+name: push-inbox
+
+# Applies changesets dropped into the shared Google Drive folder
+# "setlist-bot-push-inbox" by Claude sessions (from phone, PC, or Mac).
+# Runs on GitHub-hosted runners so it never queues behind show-night
+# jobs on the self-hosted runner. See deploy/inbox_apply.py for the
+# changeset format and safety rules.
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: push-inbox
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure git identity
+        run: |
+          git config user.name "setlist-bot inbox"
+          git config user.email "inbox@mikeside.com"
+
+      - name: Apply pending changesets
+        env:
+          INBOX_FOLDER_ID: 1c_Kg5A_LMxVI55u6H2U1Z5mAg8NjwDaQ
+          # Optional hardening: add a DRIVE_API_KEY repo secret and
+          # uncomment to use the official Drive API for listing.
+          # DRIVE_API_KEY: ${{ secrets.DRIVE_API_KEY }}
+        run: python3 deploy/inbox_apply.py
