@@ -37,11 +37,8 @@ jobs:
           git config user.name "setlist-bot"
           git config user.email "actions@users.noreply.github.com"
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
 
-      - run: pip install -r requirements.txt
+      - run: python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
 
       - name: Restore bot state
         uses: actions/cache/restore@v4
@@ -59,7 +56,7 @@ jobs:
           SITE_DIR: docs
           SITE_PUSH: "1"
         run: |
-          python main.py show-window \
+          ./.venv/bin/python main.py show-window \
             --minutes "${{ github.event.inputs.minutes || '340' }}" \
             ${{ (github.event.inputs.dry_run == 'true') && '--dry-run' || '' }}
 

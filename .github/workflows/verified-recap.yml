@@ -22,11 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
 
-      - run: pip install -r requirements.txt
+      - run: python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
 
       - name: Restore bot state
         uses: actions/cache/restore@v4
@@ -42,8 +39,8 @@ jobs:
           STATE_DB: botstate.db
         run: |
           SHOWDATE="${{ github.event.inputs.date }}"
-          if [ -z "$SHOWDATE" ]; then SHOWDATE=$(date -u -d yesterday +%F); fi
-          python main.py verified-recap --date "$SHOWDATE"
+          if [ -z "$SHOWDATE" ]; then SHOWDATE=$(./.venv/bin/python -c "from datetime import date,timedelta; print(date.today()-timedelta(days=1))"); fi
+          ./.venv/bin/python main.py verified-recap --date "$SHOWDATE"
 
       - name: Save bot state
         if: always()
