@@ -1,7 +1,14 @@
-"""Live setlist page for mikeside.com (GitHub Pages).
+"""Live setlist page for mikeside.com.
 
-During a show the bot rewrites docs/setlist.json and commits it; GitHub Pages
-redeploys, and the static docs/index.html renders it (auto-refreshing).
+During a show the bot rewrites docs/setlist.json (the live feed) and commits
+it. It also maintains a per-show archive the mikeside.com setlists page reads:
+
+    docs/setlists/index.json        — list of every tracked show
+    docs/setlists/<showdate>.json   — full payload per show
+
+Curated extras added by hand to an archive file (``note``, ``shownotes``,
+``phishnet_url``, a ``tag`` on the index entry) are preserved across bot
+rewrites — the bot only overwrites the fields it owns.
 """
 from __future__ import annotations
 
@@ -62,6 +69,61 @@ def write_if_changed(payload: dict, site_dir: str | Path) -> bool:
     return True
 
 
+def upsert_archive(payload: dict, site_dir: str | Path) -> None:
+    """Mirror the payload into setlists/<date>.json and the setlists index.
+
+    Never raises — the live feed must keep flowing even if the archive write
+    hits something odd.
+    """
+    showdate = payload.get("showdate")
+    if not showdate:
+        return
+    try:
+        d = Path(site_dir) / "setlists"
+        d.mkdir(parents=True, exist_ok=True)
+
+        # per-show file: bot-owned fields overwrite, curated extras survive
+        show_path = d / f"{showdate}.json"
+        merged = dict(payload)
+        if show_path.exists():
+            try:
+                old = json.loads(show_path.read_text())
+                for k, v in old.items():
+                    if k not in merged or merged.get(k) is None:
+                        merged[k] = v
+            except (json.JSONDecodeError, OSError):
+                pass
+        show_path.write_text(json.dumps(merged, indent=1))
+
+        # index: upsert by showdate, newest first, keep curated fields (tag)
+        idx_path = d / "index.json"
+        idx: dict = {"shows": []}
+        if idx_path.exists():
+            try:
+                loaded = json.loads(idx_path.read_text())
+                if isinstance(loaded, dict):
+                    idx = loaded
+            except (json.JSONDecodeError, OSError):
+                pass
+        shows = idx.setdefault("shows", [])
+        core = {
+            "showdate": showdate,
+            "venue": payload.get("venue"),
+            "city": payload.get("city"),
+            "state": payload.get("state"),
+            "complete": payload.get("complete", False),
+        }
+        entry = next((s for s in shows if s.get("showdate") == showdate), None)
+        if entry:
+            entry.update(core)
+        else:
+            shows.append(core)
+        shows.sort(key=lambda s: s.get("showdate") or "", reverse=True)
+        idx_path.write_text(json.dumps(idx, indent=1))
+    except Exception:
+        log.exception("archive upsert failed for %s (live feed unaffected)", showdate)
+
+
 def git_push(site_dir: str | Path, message: str) -> bool:
     """Commit and push the site dir. Quietly no-ops outside a git checkout."""
     root = Path(site_dir).resolve().parent
@@ -98,6 +160,7 @@ def update_site(
     payload = build_payload(entries, durations, complete=complete)
     if not write_if_changed(payload, site_dir):
         return False
+    upsert_archive(payload, site_dir)
     log.info("site: setlist.json updated (%d songs)", sum(len(s["songs"]) for s in payload["sets"]))
     if push:
         git_push(site_dir, f"setlist update {payload['showdate']}")

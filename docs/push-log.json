@@ -13,6 +13,13 @@
       "time": "2026-07-22T06:08:01Z",
       "ok": true,
       "message": "setlist page: link the integration diagram in the footer"
+    },
+    {
+      "file_id": "1PSmHsCuVHV-gf91DsUVo4okD8kEPOSJ7",
+      "name": "push-20260722-setlist-archive.json",
+      "time": "2026-07-23T00:39:27Z",
+      "ok": true,
+      "message": "site: add per-show setlist archive (docs/setlists/*.json) consumed by mikeside.com/projects/setlist/; seed 2026-07-21; drop CNAME (mikeside.com is served by Porkbun \u2014 pages read data via raw.githubusercontent, and without CNAME the docs site is reachable at github.io)"
     }
   ]
 }
