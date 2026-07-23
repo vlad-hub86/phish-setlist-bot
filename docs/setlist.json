@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T03:20:47+00:00",
+ "updated_at": "2026-07-23T03:30:35+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -153,6 +153,24 @@
      "transition": ",",
      "length_secs": null,
      "footnote": "Aborted and restarted"
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "The Horse",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Silent in the Morning",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
