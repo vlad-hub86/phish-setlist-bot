@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T01:54:45+00:00",
+ "updated_at": "2026-07-23T01:59:48+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -110,7 +110,7 @@
      "title": "Mike's Song",
      "transition": ",",
      "length_secs": null,
-     "footnote": null
+     "footnote": "Mike and Trey on trampoline"
     }
    ]
   }
