@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T02:35:01+00:00",
+ "updated_at": "2026-07-23T02:41:08+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -126,6 +126,12 @@
     },
     {
      "title": "Bouncing Around the Room",
+     "transition": ">",
+     "length_secs": 975,
+     "footnote": null
+    },
+    {
+     "title": "My Friend, My Friend",
      "transition": ",",
      "length_secs": null,
      "footnote": null
