@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T03:05:17+00:00",
+ "updated_at": "2026-07-23T03:15:27+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -145,8 +145,14 @@
     {
      "title": "The Lizards",
      "transition": ",",
-     "length_secs": null,
+     "length_secs": 610,
      "footnote": null
+    },
+    {
+     "title": "Harry Hood",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Restarted"
     }
    ]
   }
