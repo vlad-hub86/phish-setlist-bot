@@ -28,27 +28,16 @@ jobs:
           python -m venv .venv
           .venv\Scripts\pip install -r requirements.txt
 
-      - name: Restore bot state
-        uses: actions/cache/restore@v4
-        with:
-          path: botstate.db
-          key: botstate-${{ github.run_id }}
-          restore-keys: botstate-
+      - name: Ensure persistent state dir
+        run: New-Item -ItemType Directory -Force -Path C:\bot-state | Out-Null
 
       - name: Post verified lengths
         env:
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
           PLATFORMS: truthsocial
-          STATE_DB: botstate.db
+          STATE_DB: C:\bot-state\botstate.db
           PYTHONUTF8: "1"   # unicode song titles/emoji safe on Windows console
         run: |
           $d = "${{ github.event.inputs.date }}"
           if (-not $d) { $d = (Get-Date).AddDays(-1).ToString("yyyy-MM-dd") }
           .venv\Scripts\python main.py verified-recap --date $d
-
-      - name: Save bot state
-        if: always()
-        uses: actions/cache/save@v4
-        with:
-          path: botstate.db
-          key: botstate-${{ github.run_id }}
