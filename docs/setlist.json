@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T01:09:38+00:00",
+ "updated_at": "2026-07-23T01:19:55+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -78,6 +78,12 @@
     },
     {
      "title": "Possum",
+     "transition": ">",
+     "length_secs": 617,
+     "footnote": null
+    },
+    {
+     "title": "The Vibration of Life",
      "transition": ",",
      "length_secs": null,
      "footnote": null
