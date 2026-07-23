@@ -5,6 +5,17 @@ name: show-night
 # Runs on the self-hosted WINDOWS runner (always-on PC) — steps are PowerShell.
 # NOTE: cron is UTC. 22:30 UTC = 6:30pm EDT. During EST (winter tours,
 # e.g. NYE run) change to '30 23 * * *'. West-coast tour legs: see README.
+#
+# 7/23 changes (after the 1am repost incident on MSG N1):
+# - guard job: a late-delivered duplicate cron event (GitHub delivered the
+#   "skipped" 22:30 event ~65 min late on 7/22) can no longer re-run a night
+#   that already had a run. Manual dispatches always proceed.
+# - bot state now lives on the runner's own disk (C:\bot-state\botstate.db)
+#   instead of actions/cache, whose save step silently failed on Windows
+#   ("C:\Program Files\Git\usr\bin\tar.exe failed with exit code 2" — space
+#   in path breaks the cache action's tar invocation). Broken saves meant
+#   every run restored PRE-SHOW state, so the 1am duplicate run saw the
+#   whole setlist as unposted and reposted it.
 
 on:
   schedule:
@@ -27,7 +38,42 @@ permissions:
   contents: write   # the job commits docs/setlist.json for the mikeside.com page
 
 jobs:
+  guard:
+    # Skip a SCHEDULED run if any other show-night run was created in the
+    # last 6 hours (same night). Rollover-safe: a duplicate that starts
+    # after midnight still sees the earlier run inside the 6h window.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+    outputs:
+      proceed: ${{ steps.check.outputs.proceed }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Manual dispatch - always proceeds"
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          cutoff=$(date -u -d '-6 hours' +%FT%TZ)
+          count=$(gh api \
+            "repos/${GITHUB_REPOSITORY}/actions/workflows/show-night.yml/runs?per_page=20" \
+            --jq "[.workflow_runs[] | select(.created_at >= \"$cutoff\" and (.id != ${GITHUB_RUN_ID}))] | length")
+          if [ "$count" -gt 0 ]; then
+            echo "Another show-night run was created in the last 6h ($count) - skipping duplicate scheduled run"
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "No other run tonight - proceeding"
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          fi
+
   poll:
+    needs: guard
+    if: needs.guard.outputs.proceed == 'true'
     runs-on: self-hosted
     timeout-minutes: 355
     steps:
@@ -43,19 +89,15 @@ jobs:
           python -m venv .venv
           .venv\Scripts\pip install -r requirements.txt
 
-      - name: Restore bot state
-        uses: actions/cache/restore@v4
-        with:
-          path: botstate.db
-          key: botstate-${{ github.run_id }}
-          restore-keys: botstate-
+      - name: Ensure persistent state dir
+        run: New-Item -ItemType Directory -Force -Path C:\bot-state | Out-Null
 
       - name: Run show window
         env:
           PHISHNET_API_KEY: ${{ secrets.PHISHNET_API_KEY }}
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
           PLATFORMS: truthsocial
-          STATE_DB: botstate.db
+          STATE_DB: C:\bot-state\botstate.db
           SITE_DIR: docs
           SITE_PUSH: "1"
           PYTHONUTF8: "1"   # unicode song titles/emoji safe on Windows console
@@ -68,10 +110,3 @@ jobs:
           } else {
             .venv\Scripts\python main.py show-window --minutes $mins
           }
-
-      - name: Save bot state
-        if: always()
-        uses: actions/cache/save@v4
-        with:
-          path: botstate.db
-          key: botstate-${{ github.run_id }}
