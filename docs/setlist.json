@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T03:40:44+00:00",
+ "updated_at": "2026-07-23T04:50:46+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -110,13 +110,13 @@
      "title": "Mike's Song",
      "transition": ">",
      "length_secs": 1212,
-     "footnote": "Mike and Trey on trampoline"
+     "footnote": null
     },
     {
      "title": "I Am Hydrogen",
      "transition": ">",
      "length_secs": null,
-     "footnote": "Mike and Trey foot ballet"
+     "footnote": null
     },
     {
      "title": "Weekapaug Groove",
