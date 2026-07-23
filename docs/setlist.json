@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T00:20:18+00:00",
+ "updated_at": "2026-07-23T00:24:34+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -30,6 +30,12 @@
     },
     {
      "title": "Axilla",
+     "transition": ",",
+     "length_secs": 256,
+     "footnote": null
+    },
+    {
+     "title": "Stash",
      "transition": ",",
      "length_secs": null,
      "footnote": null
