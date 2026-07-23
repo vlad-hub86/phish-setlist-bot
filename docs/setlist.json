@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-22T23:59:41+00:00",
+ "updated_at": "2026-07-23T00:04:47+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -12,6 +12,12 @@
    "songs": [
     {
      "title": "Glide",
+     "transition": ",",
+     "length_secs": 306,
+     "footnote": null
+    },
+    {
+     "title": "Runaway Jim",
      "transition": ",",
      "length_secs": null,
      "footnote": null
