@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T03:30:35+00:00",
+ "updated_at": "2026-07-23T03:35:29+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -168,6 +168,12 @@
     },
     {
      "title": "Silent in the Morning",
+     "transition": ",",
+     "length_secs": 294,
+     "footnote": null
+    },
+    {
+     "title": "Big Black Furry Creature from Mars",
      "transition": ",",
      "length_secs": null,
      "footnote": null
