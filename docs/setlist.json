@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-23T00:24:34+00:00",
+ "updated_at": "2026-07-23T00:40:01+00:00",
  "showdate": "2026-07-22",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -36,6 +36,24 @@
     },
     {
      "title": "Stash",
+     "transition": ",",
+     "length_secs": 927,
+     "footnote": null
+    },
+    {
+     "title": "Cold as Ice",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Love You",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Hold Your Head Up",
      "transition": ",",
      "length_secs": null,
      "footnote": null
