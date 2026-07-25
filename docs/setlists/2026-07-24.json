@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T02:37:26+00:00",
+ "updated_at": "2026-07-25T02:51:58+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -120,6 +120,12 @@
     },
     {
      "title": "The Wedge",
+     "transition": ">",
+     "length_secs": 872,
+     "footnote": null
+    },
+    {
+     "title": "Makisupa Policeman",
      "transition": ",",
      "length_secs": null,
      "footnote": null
