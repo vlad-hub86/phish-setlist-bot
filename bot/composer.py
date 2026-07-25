@@ -184,21 +184,47 @@ def set_recap_post(
         name = "ENCORE" if s == "e" else f"ENCORE {s[1:]}"
     else:
         name = f"SET {SET_WORDS.get(set_label, set_label)}"
-    lines = [f"{name} RECAP ({len(in_set)} songs)"]
-    notes = []
+    header = f"{name} RECAP ({len(in_set)} songs)"
+
+    # Footnote markers are assigned once, in set order, so numbering is stable
+    # no matter which rendering we end up emitting.
+    notes: list[str] = []
+    marked: list[tuple] = []
     for e in in_set:
-        secs = (durations or {}).get(e.key)
-        mins = f" [{round(secs / 60)} min]" if secs and secs >= 60 else ""
         mark = ""
         if e.footnote:
             marker = _sup(len(notes) + 1)
             notes.append(f"{marker} {e.song}: {e.footnote}")
-            mark = f" {marker}"
-        lines.append(f"{e.song}{mins}{mark}")
-    if notes:
-        lines.append("")
-        lines.extend(notes)
-    return _clamp("\n".join(lines))
+            mark = marker
+        marked.append((e, mark))
+
+    def render(with_lengths: bool) -> str:
+        parts = []
+        for i, (e, mark) in enumerate(marked):
+            secs = (durations or {}).get(e.key)
+            length = f" [{round(secs / 60)} min]" if with_lengths and secs and secs >= 60 else ""
+            piece = f"{e.song}{length}{mark}"
+            if i < len(marked) - 1:
+                tr = (getattr(e, "transition", "") or "").strip()
+                # ">" / "->" are segues and get spaces so they read as arrows;
+                # anything else (a comma, or no mark recorded yet) is a plain
+                # separator.
+                piece += f" {tr} " if tr in (">", "->") else ", "
+            parts.append(piece)
+        body = "".join(parts)
+        out = [header, body]
+        if notes:
+            out.append("")
+            out.extend(notes)
+        return "\n".join(out)
+
+    # Prefer lengths, but a long set with them can blow past MAX_LEN and get
+    # truncated mid-setlist — losing the encore is worse than losing estimated
+    # durations, which the phish.in thread reports accurately anyway.
+    text = render(True)
+    if len(text) > MAX_LEN:
+        text = render(False)
+    return _clamp(text)
 
 
 def show_recap_post(entries: list[SetlistEntry], stats_by_key: dict) -> str:

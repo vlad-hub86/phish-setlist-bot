@@ -16,7 +16,14 @@ log = logging.getLogger(__name__)
 BASE = "https://api.phish.net/v5"
 USER_AGENT = "phish-setlist-bot/0.1 (setlist poster; contact: vlad@miajunefacialbar.com)"
 
-# Phish.net transition codes -> printable marks
+# Phish.net transition codes -> printable marks. The mark describes how a song
+# connects to the NEXT one, so the last song of a set — and, mid-show, a song
+# whose successor has not been entered yet — carries no code.
+#
+# Unknown/absent deliberately maps to "" rather than ",". The old default
+# invented a comma, which made "no transition recorded yet" indistinguishable
+# from "explicitly a comma" and destroyed the only end-of-song signal the feed
+# offers. Renderers treat "" as a plain separator, so output is unchanged.
 TRANSITIONS = {1: ",", 2: " >", 3: " ->"}
 
 
@@ -28,7 +35,7 @@ class SetlistEntry:
     song: str
     songid: Optional[int]
     gap: Optional[int]     # shows since last played (phish.net computes this)
-    transition: str        # ",", " >", " ->"
+    transition: str        # "", ",", " >", " ->"  (mark to the NEXT song)
     venue: str
     city: str
     state: str
@@ -83,7 +90,7 @@ class PhishNetClient:
                     song=row.get("song", "").strip(),
                     songid=row.get("songid"),
                     gap=_int_or_none(row.get("gap")),
-                    transition=TRANSITIONS.get(row.get("transition"), ","),
+                    transition=TRANSITIONS.get(row.get("transition"), ""),
                     venue=row.get("venue", ""),
                     city=row.get("city", ""),
                     state=row.get("state", "") or row.get("country", ""),
