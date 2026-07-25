@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T00:31:15+00:00",
+ "updated_at": "2026-07-25T00:40:44+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -30,6 +30,12 @@
     },
     {
      "title": "Maze",
+     "transition": ",",
+     "length_secs": 569,
+     "footnote": null
+    },
+    {
+     "title": "Gumbo",
      "transition": ",",
      "length_secs": null,
      "footnote": null
