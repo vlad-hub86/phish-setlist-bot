@@ -2,10 +2,11 @@
 """phish-setlist-bot entry point.
 
 Commands:
-  python main.py run                  # live mode: poll during tonight's show window
-  python main.py once --date DATE     # single tick for a date (testing)
-  python main.py replay FIXTURE       # replay a fixture file through the pipeline (dry-run)
-  python main.py test-post "text"     # send one real post to Truth Social (credentials check)
+  python main.py run                              # live mode: poll during tonight's show window
+  python main.py once --date DATE                 # single tick for a date (testing)
+  python main.py replay FIXTURE                   # replay a fixture file through the pipeline (dry-run)
+  python main.py test-post "text"                 # send one real post to Truth Social (credentials check)
+  python main.py test-post "text" --platform x    # send one real post to X (credentials check)
 """
 from __future__ import annotations
 
@@ -34,15 +35,25 @@ WINDOW_START = (18, 30) # 6:30pm venue-agnostic local time (bot host runs in ET 
 WINDOW_END = (1, 0)     # 1:00am
 
 
+def _x_from_env() -> XPublisher:
+    """Build an X publisher from the four X_* OAuth env vars."""
+    return XPublisher(
+        api_key=os.environ.get("X_API_KEY", ""),
+        api_secret=os.environ.get("X_API_SECRET", ""),
+        access_token=os.environ.get("X_ACCESS_TOKEN", ""),
+        access_token_secret=os.environ.get("X_ACCESS_TOKEN_SECRET", ""),
+    )
+
+
 def build_publishers(dry_run: bool):
     if dry_run:
         return [DryRunPublisher("truthsocial-dry")]
     pubs = []
-    platforms = os.environ.get("PLATFORMS", "truthsocial").split(",")
+    platforms = [p.strip() for p in os.environ.get("PLATFORMS", "truthsocial").split(",") if p.strip()]
     if "truthsocial" in platforms:
         pubs.append(TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", "")))
     if "x" in platforms:
-        pubs.append(XPublisher())  # phase 2
+        pubs.append(_x_from_env())
     return pubs
 
 
@@ -188,9 +199,12 @@ def cmd_verified_recap(args):
 
 
 def cmd_test_post(args):
-    pub = TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", ""))
+    if args.platform == "x":
+        pub = _x_from_env()
+    else:
+        pub = TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", ""))
     remote_id = pub.post(args.text)
-    print(f"posted to Truth Social, id={remote_id}")
+    print(f"posted to {pub.name}, id={remote_id}")
 
 
 def main():
@@ -202,7 +216,7 @@ def main():
     sw = sub.add_parser("show-window"); sw.add_argument("--minutes", type=int, default=340); sw.add_argument("--dry-run", action="store_true"); sw.set_defaults(fn=cmd_show_window)
     o = sub.add_parser("once"); o.add_argument("--date", default=date.today().isoformat()); o.add_argument("--dry-run", action="store_true"); o.set_defaults(fn=cmd_once)
     rp = sub.add_parser("replay"); rp.add_argument("fixture"); rp.set_defaults(fn=cmd_replay)
-    tp = sub.add_parser("test-post"); tp.add_argument("text"); tp.set_defaults(fn=cmd_test_post)
+    tp = sub.add_parser("test-post"); tp.add_argument("text"); tp.add_argument("--platform", default="truthsocial", choices=["truthsocial", "x"]); tp.set_defaults(fn=cmd_test_post)
     vr = sub.add_parser("verified-recap"); vr.add_argument("--date", default=date.today().isoformat()); vr.add_argument("--dry-run", action="store_true"); vr.set_defaults(fn=cmd_verified_recap)
 
     args = p.parse_args()
