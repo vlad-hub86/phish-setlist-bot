@@ -2,6 +2,22 @@
 
 Designed so a single `tick()` is fully testable — main.py just calls it on a
 schedule during show windows.
+
+Every publish site is tagged with a POST KIND. Publishers decide whether they
+accept a kind (see publishers/base.py): Truth Social takes everything and acts
+as the sandbox, X takes only the kinds on its allowlist. A new post kind is
+therefore Truth-only by default and is promoted to X by adding it to
+X_POST_KINDS — no code change.
+
+Kinds emitted here:
+    show_start      once, when the opener reaches the feed
+    song            per-song post (the core product)
+    set_recap_<n>   end-of-set recap, one kind per set ("set_recap_1",
+                    "set_recap_2", "set_recap_e") so sets can be promoted
+                    individually
+    milestone       jam-length threshold crossed (known false positives)
+    show_recap      end-of-show summary
+    lengths         estimated song-length thread
 """
 from __future__ import annotations
 
@@ -27,6 +43,12 @@ MILESTONES_IN_ENCORE = False  # encore end == show end, no "next song" ever
 MILESTONE_STALE_MIN = 50      # first-time crossing past this = stalled feed, not a jam
                               # arrives, so false positives are guaranteed
 
+# Only announce the show start if we caught it at the top. If the first poll
+# already returns a pile of songs, the bot joined mid-show (or is replaying a
+# catch-up burst) and the opener's first_seen is meaningless as a start time —
+# announcing "lights down" at 10pm with a bogus clock is worse than silence.
+SHOW_START_MAX_ENTRIES = 2
+
 
 class Runner:
     def __init__(
@@ -43,6 +65,23 @@ class Runner:
         self._last_new_song_at: Optional[float] = None
         self._entries: list[SetlistEntry] = []
 
+    # ------------------------------------------------------------ fan-out
+
+    def _pubs(self, kind: str) -> list[Publisher]:
+        """Publishers that accept this post kind.
+
+        Defensive: a publisher predating accepts() (or any object duck-typed in
+        by a test) is treated as accepting everything, which is the old
+        behaviour. This keeps the runner working even if it lands before the
+        publisher base class does.
+        """
+        out = []
+        for p in self.publishers:
+            accepts = getattr(p, "accepts", None)
+            if accepts is None or accepts(kind):
+                out.append(p)
+        return out
+
     # ------------------------------------------------------------------ ticks
 
     def tick(self, showdate: str, now: Optional[float] = None) -> int:
@@ -55,11 +94,18 @@ class Runner:
             log.exception("setlist fetch failed; will retry next tick")
             return 0
 
+        # Record sightings before announcing the start so the opener's
+        # first_seen timestamp exists when we compose the show-start post.
+        for entry in entries:
+            if entry.song:
+                self.state.record_sighting(entry.key, entry.song, int(now))
+
+        self._maybe_post_show_start(entries, now)
+
         posted = 0
         for entry in entries:
             if not entry.song:
                 continue
-            self.state.record_sighting(entry.key, entry.song, int(now))
             if self._post_song(entry, entries):
                 posted += 1
 
@@ -72,6 +118,33 @@ class Runner:
         return posted
 
     # ------------------------------------------------------------- posting
+
+    def _maybe_post_show_start(self, entries: list[SetlistEntry], now: float):
+        """Announce the show once, when the opener shows up."""
+        if not entries or len(entries) > SHOW_START_MAX_ENTRIES:
+            return
+        first = entries[0]
+        if not first.song:
+            return
+        started = self.state.first_seen(first.key) or now
+        # Guarded so this can never abort a tick: if composer.show_start_post
+        # is absent (e.g. runner deployed ahead of composer) or raises, we skip
+        # the announcement and the show still gets covered song by song.
+        try:
+            text = composer.show_start_post(first, started)
+        except Exception:
+            log.exception("could not compose show-start post; skipping it")
+            return
+        for pub in self._pubs("show_start"):
+            if self.state.recap_posted(first.showdate, "SHOW_START", pub.name):
+                continue
+            try:
+                pub.post(text)
+            except Exception:
+                log.exception("show-start post to %s failed; will retry next tick", pub.name)
+                continue
+            self.state.mark_recap(first.showdate, "SHOW_START", pub.name)
+            log.info("posted show start to %s", pub.name)
 
     def _post_song(self, entry: SetlistEntry, all_entries: list[SetlistEntry]) -> bool:
         new_anywhere = False
@@ -118,7 +191,7 @@ class Runner:
             prev_minutes=prev_minutes,
         )
 
-        for pub in self.publishers:
+        for pub in self._pubs("song"):
             if self.state.already_posted(entry.key, pub.name):
                 continue
             try:
@@ -141,6 +214,9 @@ class Runner:
         """
         if not entries:
             return
+        targets = self._pubs("milestone")
+        if not targets:
+            return
         current = entries[-1]
         if current.set_label.lower().startswith("e") and not MILESTONES_IN_ENCORE:
             return
@@ -162,7 +238,7 @@ class Runner:
         if elapsed_min >= MILESTONE_STALE_MIN and not any(
             self.state.milestone_posted(current.key, t, pub.name)
             for t in MILESTONES
-            for pub in self.publishers
+            for pub in targets
         ):
             return
         crossed = [t for t in MILESTONES if elapsed_min >= t]
@@ -171,7 +247,7 @@ class Runner:
 
         highest = crossed[0]
         text = composer.milestone_post(current, highest, int(elapsed_min))
-        for pub in self.publishers:
+        for pub in targets:
             if self.state.milestone_posted(current.key, highest, pub.name):
                 continue
             try:
@@ -227,7 +303,7 @@ class Runner:
                 per_set.append((e.set_display, [(e.song, secs)]))
 
         posts = composer.lengths_recap_posts(showdate, per_set, estimated=True)
-        for pub in self.publishers:
+        for pub in self._pubs("lengths"):
             if self.state.recap_posted(showdate, "LENGTHS", pub.name):
                 continue
             try:
@@ -241,8 +317,8 @@ class Runner:
     def _maybe_post_set_recaps(self, entries: list[SetlistEntry], now: float):
         """Post a recap for set N once set N+1 has started, or after long idle.
 
-        Off by default (FTR style doesn't do set recaps); enable with
-        POST_SET_RECAPS=1.
+        Each set is its own post kind ("set_recap_1", "set_recap_2",
+        "set_recap_e") so a platform can take Set I only.
         """
         if not self.post_set_recaps or not entries:
             return
@@ -261,10 +337,14 @@ class Runner:
         showdate = entries[0].showdate
         durations = self.estimated_durations(showdate)
         for set_label in complete:
+            kind = f"set_recap_{str(set_label).lower()}"
+            targets = self._pubs(kind)
+            if not targets:
+                continue
             text = composer.set_recap_post(entries, set_label, durations)
             if not text:
                 continue
-            for pub in self.publishers:
+            for pub in targets:
                 if self.state.recap_posted(showdate, set_label, pub.name):
                     continue
                 try:
@@ -285,7 +365,7 @@ class Runner:
             for e in entries
         }
         text = composer.show_recap_post(entries, stats_by_key)
-        for pub in self.publishers:
+        for pub in self._pubs("show_recap"):
             if self.state.recap_posted(showdate, "SHOW", pub.name):
                 continue
             try:

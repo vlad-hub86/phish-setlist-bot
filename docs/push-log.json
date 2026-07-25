@@ -55,6 +55,13 @@
       "time": "2026-07-25T06:44:47Z",
       "ok": true,
       "message": "staging pipeline (2a/3): composer.show_start_post \u2014 lights-down announcement fired when the opener reaches the feed"
+    },
+    {
+      "file_id": "14BD_kgfMXQxGe9ksiAvi1euxaGnNB2ac",
+      "name": "push-20260725-b2-runner-kinds.json",
+      "time": "2026-07-25T06:44:48Z",
+      "ok": true,
+      "message": "staging pipeline (2b/3): kind-tagged fan-out in runner (show_start/song/set_recap_<n>/milestone/show_recap/lengths); show-start guarded + catch-up-burst guard"
     }
   ]
 }
