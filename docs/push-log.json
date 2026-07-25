@@ -27,6 +27,13 @@
       "time": "2026-07-25T03:37:50Z",
       "ok": true,
       "message": "X publisher: implement tweepy XPublisher (OAuth1 user context), wire into build_publishers + test-post --platform x, add tweepy dep + X_* env vars. Inert until PLATFORMS includes x."
+    },
+    {
+      "file_id": "1j_w6D4rcF-K098fTr6656ZjC_X_6qmYQ",
+      "name": "push-20260725-harden-publishers.json",
+      "time": "2026-07-25T05:55:59Z",
+      "ok": true,
+      "message": "main.py: build_publishers constructs each publisher defensively \u2014 a platform with missing/revoked creds (or a failed client import) no longer aborts the whole run and take down the other platform. Raises only if NO publisher can be built."
     }
   ]
 }

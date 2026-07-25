@@ -50,10 +50,23 @@ def build_publishers(dry_run: bool):
         return [DryRunPublisher("truthsocial-dry")]
     pubs = []
     platforms = [p.strip() for p in os.environ.get("PLATFORMS", "truthsocial").split(",") if p.strip()]
-    if "truthsocial" in platforms:
-        pubs.append(TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", "")))
-    if "x" in platforms:
-        pubs.append(_x_from_env())
+    # Each publisher is constructed defensively: a platform whose credentials
+    # are missing/revoked (or whose client library failed to install) must NOT
+    # take down the other platform's live show coverage. Construction failures
+    # were the one place the publisher isolation guarantee leaked — build_runner
+    # runs before the first poll, so an exception here killed the whole night.
+    for name, factory in (
+        ("truthsocial", lambda: TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", ""))),
+        ("x", _x_from_env),
+    ):
+        if name not in platforms:
+            continue
+        try:
+            pubs.append(factory())
+        except Exception:
+            log.exception("publisher %r unavailable — continuing without it", name)
+    if not pubs:
+        raise RuntimeError(f"no publishers could be built for PLATFORMS={platforms!r}")
     return pubs
 
 
