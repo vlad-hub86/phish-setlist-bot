@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T00:40:44+00:00",
+ "updated_at": "2026-07-25T00:51:16+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -36,6 +36,12 @@
     },
     {
      "title": "Gumbo",
+     "transition": ">",
+     "length_secs": 633,
+     "footnote": null
+    },
+    {
+     "title": "Daniel Saw the Stone",
      "transition": ",",
      "length_secs": null,
      "footnote": null
