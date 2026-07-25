@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T02:16:50+00:00",
+ "updated_at": "2026-07-25T02:27:05+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -102,6 +102,18 @@
     },
     {
      "title": "Chalk Dust Torture",
+     "transition": ">",
+     "length_secs": 950,
+     "footnote": null
+    },
+    {
+     "title": "Sparks",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Slave to the Traffic Light",
      "transition": ",",
      "length_secs": null,
      "footnote": null
