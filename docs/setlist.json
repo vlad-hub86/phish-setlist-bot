@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T02:51:58+00:00",
+ "updated_at": "2026-07-25T02:57:08+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -126,6 +126,12 @@
     },
     {
      "title": "Makisupa Policeman",
+     "transition": "->",
+     "length_secs": 309,
+     "footnote": null
+    },
+    {
+     "title": "Kung",
      "transition": ",",
      "length_secs": null,
      "footnote": null
