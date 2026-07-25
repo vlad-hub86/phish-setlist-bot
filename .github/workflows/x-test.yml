@@ -1,0 +1,39 @@
+name: x-test
+# One-shot X credential check. Manual dispatch ONLY — no schedule, and it
+# never touches show-night state. Posts a single tweet from @SetlistLizard
+# using the X_* repo secrets, on the same self-hosted Windows runner the show
+# job uses, so it proves the real end-to-end path (secrets -> tweepy ->
+# POST /2/tweets) rather than a local approximation.
+#
+# Cost: 1 post ~= $0.015. Safe to delete once X is proven live.
+
+on:
+  workflow_dispatch:
+    inputs:
+      text:
+        description: "Text to post to X"
+        required: true
+        default: "Setlist Lizard, online. Testing."
+
+jobs:
+  post:
+    runs-on: self-hosted
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv\Scripts\pip install -r requirements.txt
+
+      - name: Post one tweet
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          POST_TEXT: ${{ github.event.inputs.text }}
+          PYTHONUTF8: "1"   # unicode/emoji safe on the Windows console
+        run: |
+          .venv\Scripts\python main.py test-post "$env:POST_TEXT" --platform x
