@@ -34,6 +34,13 @@
       "time": "2026-07-25T05:55:59Z",
       "ok": true,
       "message": "main.py: build_publishers constructs each publisher defensively \u2014 a platform with missing/revoked creds (or a failed client import) no longer aborts the whole run and take down the other platform. Raises only if NO publisher can be built."
+    },
+    {
+      "file_id": "1V6JMGX49Gs3zbhR0YKLkrPz9E0m06l8n",
+      "name": "push-20260725-superscript-footnotes.json",
+      "time": "2026-07-25T05:56:00Z",
+      "ok": true,
+      "message": "composer: replace dagger footnote marker with numbered superscripts (each mark now maps to exactly one note; dagger read as a cross in-feed)"
     }
   ]
 }

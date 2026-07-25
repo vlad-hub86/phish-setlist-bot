@@ -9,6 +9,17 @@ from .phishnet import SetlistEntry
 BUSTOUT_GAP = 50  # gap threshold for bustout flair
 MAX_LEN = 280     # X limit; Truth Social allows more but we compose once
 
+# Footnote markers. Superscript digits, numbered per post so a recap with
+# several teases maps each mark to exactly one note. (Previously a dagger "†",
+# which reads as a cross in a social feed.) Past 9 notes we fall back to "(10)"
+# — no superscript glyph exists for multi-digit numbers that renders reliably.
+_SUPERSCRIPTS = "¹²³⁴⁵⁶⁷⁸⁹"
+
+
+def _sup(n: int) -> str:
+    """Superscript footnote marker for note n (1-based)."""
+    return _SUPERSCRIPTS[n - 1] if 1 <= n <= len(_SUPERSCRIPTS) else f"({n})"
+
 
 def _fmt_date(iso: Optional[str]) -> str:
     if not iso:
@@ -120,7 +131,7 @@ def song_post(entry: SetlistEntry, stats: Optional[dict], song_number_in_set: in
         lines.append(f"Play #{n} since debut {debut_s}")
 
     if entry.footnote:
-        lines.append(f"† {entry.footnote}")
+        lines.append(f"{_sup(1)} {entry.footnote}")
 
     return _clamp("\n".join(lines))
 
@@ -133,11 +144,11 @@ def set_recap_post(
     """End-of-set recap with per-song lengths and footnotes:
 
     SET TWO RECAP (8 songs)
-    Sand [20 min] †
+    Sand [20 min] ¹
     Everything's Right [12 min]
     ...
 
-    † Sand: Sanford and Son tease
+    ¹ Sand: Sanford and Son tease
     """
     in_set = [e for e in entries if e.set_label == set_label]
     if not in_set:
@@ -154,8 +165,9 @@ def set_recap_post(
         mins = f" [{round(secs / 60)} min]" if secs and secs >= 60 else ""
         mark = ""
         if e.footnote:
-            notes.append(f"† {e.song}: {e.footnote}")
-            mark = " †"
+            marker = _sup(len(notes) + 1)
+            notes.append(f"{marker} {e.song}: {e.footnote}")
+            mark = f" {marker}"
         lines.append(f"{e.song}{mins}{mark}")
     if notes:
         lines.append("")
