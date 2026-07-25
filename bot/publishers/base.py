@@ -11,6 +11,20 @@ log = logging.getLogger(__name__)
 class Publisher(ABC):
     name: str = "base"
 
+    # Post kinds this platform accepts. None = accept everything.
+    #
+    # Truth Social is the sandbox and leaves this None, so every post kind —
+    # including brand-new ones — lands there first. X carries an explicit
+    # allowlist (X_POST_KINDS); a kind is promoted to X only after it has been
+    # watched on Truth for a show. That is the whole staging pipeline.
+    kinds: Optional[set] = None
+
+    def accepts(self, kind: Optional[str]) -> bool:
+        """Whether this platform should receive a post of this kind."""
+        if self.kinds is None or kind is None:
+            return True
+        return kind in self.kinds
+
     @abstractmethod
     def post(self, text: str, in_reply_to: Optional[str] = None) -> Optional[str]:
         """Publish text. Returns the remote post ID, or None on accepted-but-unknown."""

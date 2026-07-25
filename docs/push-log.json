@@ -41,6 +41,13 @@
       "time": "2026-07-25T05:56:00Z",
       "ok": true,
       "message": "composer: replace dagger footnote marker with numbered superscripts (each mark now maps to exactly one note; dagger read as a cross in-feed)"
+    },
+    {
+      "file_id": "1b-eyH3KWhYpXaO3CQt_z6TZu6bY_DXi9",
+      "name": "push-20260725-a-staging-infra.json",
+      "time": "2026-07-25T06:44:46Z",
+      "ok": true,
+      "message": "staging pipeline (1/2): publisher accepts(kind) gate + X allowlist/lizard-prefix/weighted-clamp wiring"
     }
   ]
 }

@@ -35,13 +35,30 @@ WINDOW_START = (18, 30) # 6:30pm venue-agnostic local time (bot host runs in ET 
 WINDOW_END = (1, 0)     # 1:00am
 
 
+# Post kinds X is allowed to publish. Truth Social has no allowlist and takes
+# everything, so it acts as the sandbox: a new post kind runs there first and
+# is promoted to X by adding its name here (via the X_POST_KINDS env var).
+# Deliberately excluded by default: "milestone" (documented false positives —
+# a set closer looks like an endless jam once the feed goes quiet) and
+# "lengths" (live durations are inferred from poll timestamps; the verified
+# phish.in thread the next morning is the trustworthy one).
+DEFAULT_X_POST_KINDS = "show_start,song,set_recap_1,show_recap"
+DEFAULT_X_PREFIX = "\U0001f98e "  # lizard, prepended to every X post
+
+
 def _x_from_env() -> XPublisher:
     """Build an X publisher from the four X_* OAuth env vars."""
+    raw = os.environ.get("X_POST_KINDS", DEFAULT_X_POST_KINDS)
+    kinds = {k.strip() for k in raw.split(",") if k.strip()}
+    if "*" in kinds:  # escape hatch: accept every kind
+        kinds = None
     return XPublisher(
         api_key=os.environ.get("X_API_KEY", ""),
         api_secret=os.environ.get("X_API_SECRET", ""),
         access_token=os.environ.get("X_ACCESS_TOKEN", ""),
         access_token_secret=os.environ.get("X_ACCESS_TOKEN_SECRET", ""),
+        kinds=kinds,
+        prefix=os.environ.get("X_PREFIX", DEFAULT_X_PREFIX),
     )
 
 
