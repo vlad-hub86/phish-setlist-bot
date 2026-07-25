@@ -191,11 +191,21 @@ class Runner:
             prev_minutes=prev_minutes,
         )
 
+        # Structured context for publishers that ingest fields rather than the
+        # rendered text (e.g. phishpicks wants {song, set}). Text publishers
+        # (Truth Social, X) accept and ignore it.
+        meta = {
+            "song": entry.song,
+            "set": entry.set_label,
+            "showdate": entry.showdate,
+            "position": entry.position,
+        }
+
         for pub in self._pubs("song"):
             if self.state.already_posted(entry.key, pub.name):
                 continue
             try:
-                remote_id = pub.post(text)
+                remote_id = pub.post(text, meta=meta)
             except Exception:
                 log.exception("post to %s failed for %s; will retry next tick", pub.name, entry.song)
                 continue
