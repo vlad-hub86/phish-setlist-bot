@@ -22,7 +22,7 @@ from datetime import date, datetime
 from dotenv import load_dotenv
 
 from bot.phishnet import PhishNetClient
-from bot.publishers import DryRunPublisher, TruthPublisher, XPublisher
+from bot.publishers import DryRunPublisher, PhishPicksPublisher, TruthPublisher, XPublisher
 from bot.runner import Runner
 from bot.state import State
 
@@ -62,6 +62,20 @@ def _x_from_env() -> XPublisher:
     )
 
 
+def _phishpicks_from_env() -> PhishPicksPublisher:
+    """Build the phishpicks.net ingest publisher from its env vars.
+
+    Structured song ingest (POST {"song","set"} with a bearer token). Only the
+    ``song`` post kind is ever routed here (the endpoint is /ingest/song), so
+    there is no post-kind allowlist to configure — unlike X.
+    """
+    # An empty URL makes the publisher fall back to its own DEFAULT_URL.
+    return PhishPicksPublisher(
+        token=os.environ.get("PHISHPICKS_TOKEN", ""),
+        url=os.environ.get("PHISHPICKS_INGEST_URL", ""),
+    )
+
+
 def build_publishers(dry_run: bool):
     if dry_run:
         return [DryRunPublisher("truthsocial-dry")]
@@ -75,6 +89,7 @@ def build_publishers(dry_run: bool):
     for name, factory in (
         ("truthsocial", lambda: TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", ""))),
         ("x", _x_from_env),
+        ("phishpicks", _phishpicks_from_env),
     ):
         if name not in platforms:
             continue
@@ -231,9 +246,15 @@ def cmd_verified_recap(args):
 def cmd_test_post(args):
     if args.platform == "x":
         pub = _x_from_env()
+        remote_id = pub.post(args.text)
+    elif args.platform == "phishpicks":
+        # phishpicks ingests structured fields, not text: the positional arg is
+        # the SONG NAME and --set carries the set (default "1").
+        pub = _phishpicks_from_env()
+        remote_id = pub.post(args.text, meta={"song": args.text, "set": args.set})
     else:
         pub = TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", ""))
-    remote_id = pub.post(args.text)
+        remote_id = pub.post(args.text)
     print(f"posted to {pub.name}, id={remote_id}")
 
 
@@ -246,7 +267,7 @@ def main():
     sw = sub.add_parser("show-window"); sw.add_argument("--minutes", type=int, default=340); sw.add_argument("--dry-run", action="store_true"); sw.set_defaults(fn=cmd_show_window)
     o = sub.add_parser("once"); o.add_argument("--date", default=date.today().isoformat()); o.add_argument("--dry-run", action="store_true"); o.set_defaults(fn=cmd_once)
     rp = sub.add_parser("replay"); rp.add_argument("fixture"); rp.set_defaults(fn=cmd_replay)
-    tp = sub.add_parser("test-post"); tp.add_argument("text"); tp.add_argument("--platform", default="truthsocial", choices=["truthsocial", "x"]); tp.set_defaults(fn=cmd_test_post)
+    tp = sub.add_parser("test-post"); tp.add_argument("text"); tp.add_argument("--platform", default="truthsocial", choices=["truthsocial", "x", "phishpicks"]); tp.add_argument("--set", default="1", help="set label for --platform phishpicks (the 'text' arg is the song name)"); tp.set_defaults(fn=cmd_test_post)
     vr = sub.add_parser("verified-recap"); vr.add_argument("--date", default=date.today().isoformat()); vr.add_argument("--dry-run", action="store_true"); vr.set_defaults(fn=cmd_verified_recap)
 
     args = p.parse_args()
