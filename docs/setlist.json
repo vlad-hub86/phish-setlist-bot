@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T00:56:17+00:00",
+ "updated_at": "2026-07-25T01:01:02+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -48,6 +48,12 @@
     },
     {
      "title": "Weigh",
+     "transition": ",",
+     "length_secs": 285,
+     "footnote": "Lyrics changed to \"on a summer day.\""
+    },
+    {
+     "title": "Guelah Papyrus",
      "transition": ",",
      "length_secs": null,
      "footnote": null
