@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T00:05:54+00:00",
+ "updated_at": "2026-07-25T00:10:31+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -12,6 +12,12 @@
    "songs": [
     {
      "title": "Llama",
+     "transition": ",",
+     "length_secs": 276,
+     "footnote": null
+    },
+    {
+     "title": "Bathtub Gin",
      "transition": ",",
      "length_secs": null,
      "footnote": null
