@@ -26,8 +26,21 @@ class Publisher(ABC):
         return kind in self.kinds
 
     @abstractmethod
-    def post(self, text: str, in_reply_to: Optional[str] = None) -> Optional[str]:
-        """Publish text. Returns the remote post ID, or None on accepted-but-unknown."""
+    def post(
+        self,
+        text: str,
+        in_reply_to: Optional[str] = None,
+        meta: Optional[dict] = None,
+    ) -> Optional[str]:
+        """Publish a post. Returns the remote post ID, or None on accepted-but-unknown.
+
+        ``meta`` carries structured context for publishers that need more than
+        the rendered ``text`` — currently the per-song fields ``{"song", "set",
+        "showdate", "position"}`` supplied by the runner's song fan-out. Text
+        publishers (Truth Social, X) ignore it; structured sinks (phishpicks)
+        read it. It is optional and defaults to None, so recap/thread call
+        sites that only have text keep working unchanged.
+        """
 
 
 class DryRunPublisher(Publisher):
@@ -37,7 +50,12 @@ class DryRunPublisher(Publisher):
         self.name = name
         self.sent: list[str] = []
 
-    def post(self, text: str, in_reply_to: Optional[str] = None) -> Optional[str]:
+    def post(
+        self,
+        text: str,
+        in_reply_to: Optional[str] = None,
+        meta: Optional[dict] = None,
+    ) -> Optional[str]:
         self.sent.append(text)
         banner = f"--- [{self.name}] would post ({len(text)} chars) ---"
         log.info("%s\n%s\n%s", banner, text, "-" * len(banner))

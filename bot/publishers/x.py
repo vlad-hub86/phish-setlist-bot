@@ -111,7 +111,12 @@ class XPublisher(Publisher):
             body = f"{self.prefix}{body}"
         return clamp_weighted(body)
 
-    def post(self, text: str, in_reply_to: Optional[str] = None) -> Optional[str]:
+    def post(
+        self,
+        text: str,
+        in_reply_to: Optional[str] = None,
+        meta: Optional[dict] = None,  # unused: X posts rendered text
+    ) -> Optional[str]:
         kwargs = {"text": self._render(text)}
         if in_reply_to:
             kwargs["in_reply_to_tweet_id"] = in_reply_to

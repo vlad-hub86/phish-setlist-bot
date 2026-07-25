@@ -68,7 +68,12 @@ class TruthPublisher(Publisher):
                 log.warning("no curl_cffi/cloudscraper; plain requests will likely be blocked by Cloudflare")
                 self.http = requests.Session()
 
-    def post(self, text: str, in_reply_to: Optional[str] = None) -> Optional[str]:
+    def post(
+        self,
+        text: str,
+        in_reply_to: Optional[str] = None,
+        meta: Optional[dict] = None,  # unused: Truth Social posts rendered text
+    ) -> Optional[str]:
         payload = {
             "status": text,
             "media_ids": [],
