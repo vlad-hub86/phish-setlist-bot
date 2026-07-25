@@ -96,7 +96,16 @@ jobs:
         env:
           PHISHNET_API_KEY: ${{ secrets.PHISHNET_API_KEY }}
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
-          PLATFORMS: truthsocial
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          PLATFORMS: truthsocial,x
+          # Truth is the sandbox and takes every post kind. X takes only these.
+          # Promote a kind to X by adding it here after watching it on Truth.
+          # Excluded on purpose: milestone (false positives), lengths (estimates),
+          # set_recap_2 / set_recap_e.
+          X_POST_KINDS: show_start,song,set_recap_1,show_recap
           STATE_DB: C:\bot-state\botstate.db
           SITE_DIR: docs
           SITE_PUSH: "1"
