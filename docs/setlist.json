@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T02:57:08+00:00",
+ "updated_at": "2026-07-25T03:01:52+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -128,10 +128,16 @@
      "title": "Makisupa Policeman",
      "transition": "->",
      "length_secs": 309,
-     "footnote": null
+     "footnote": "Keyword: \"Ice cream matcha tea.\""
     },
     {
      "title": "Kung",
+     "transition": ">",
+     "length_secs": 285,
+     "footnote": "Over Makisupa groove."
+    },
+    {
+     "title": "Suzy Greenberg",
      "transition": ",",
      "length_secs": null,
      "footnote": null
