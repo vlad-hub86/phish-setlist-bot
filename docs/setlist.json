@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T03:12:04+00:00",
+ "updated_at": "2026-07-25T03:21:46+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -150,6 +150,18 @@
     },
     {
      "title": "Good Times Bad Times",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Sweet Adeline",
      "transition": ",",
      "length_secs": null,
      "footnote": null
