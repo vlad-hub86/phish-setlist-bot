@@ -100,11 +100,14 @@ jobs:
           X_API_SECRET: ${{ secrets.X_API_SECRET }}
           X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-          PLATFORMS: truthsocial,x
+          PHISHPICKS_TOKEN: ${{ secrets.PHISHPICKS_TOKEN }}
+          PLATFORMS: truthsocial,x,phishpicks
           # Truth is the sandbox and takes every post kind. X takes only these.
           # Promote a kind to X by adding it here after watching it on Truth.
           # Excluded on purpose: milestone (false positives), lengths (estimates),
           # set_recap_2 / set_recap_e.
+          # NOTE: phishpicks is NOT gated by X_POST_KINDS - that list is
+          # X-only. The phishpicks publisher accepts the "song" kind alone.
           X_POST_KINDS: show_start,song,set_recap_1,show_recap
           STATE_DB: C:\bot-state\botstate.db
           SITE_DIR: docs
