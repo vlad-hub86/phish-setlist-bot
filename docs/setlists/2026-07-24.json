@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T01:01:02+00:00",
+ "updated_at": "2026-07-25T01:06:57+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -54,6 +54,12 @@
     },
     {
      "title": "Guelah Papyrus",
+     "transition": ",",
+     "length_secs": 356,
+     "footnote": null
+    },
+    {
+     "title": "Divided Sky",
      "transition": ",",
      "length_secs": null,
      "footnote": null
