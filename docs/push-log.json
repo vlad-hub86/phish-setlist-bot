@@ -48,6 +48,13 @@
       "time": "2026-07-25T06:44:46Z",
       "ok": true,
       "message": "staging pipeline (1/2): publisher accepts(kind) gate + X allowlist/lizard-prefix/weighted-clamp wiring"
+    },
+    {
+      "file_id": "1oAkV0ymlQs8CG-HZObNqNtgflpInDnkR",
+      "name": "push-20260725-b1-show-start-composer.json",
+      "time": "2026-07-25T06:44:47Z",
+      "ok": true,
+      "message": "staging pipeline (2a/3): composer.show_start_post \u2014 lights-down announcement fired when the opener reaches the feed"
     }
   ]
 }

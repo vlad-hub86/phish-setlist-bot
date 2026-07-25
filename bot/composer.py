@@ -73,6 +73,32 @@ def ftr_song_post(
     return text
 
 
+def show_start_post(entry: SetlistEntry, started_at: Optional[float] = None) -> str:
+    """Fired once, when the opener first appears in the feed.
+
+    🦎 Lights down at Madison Square Garden.
+    Phish, New York, NY — 8:07 PM ET.
+    Your trip is short 🚀
+
+    The timestamp is when the OPENER reached the feed, not when the band
+    physically walked on — phish.net editors enter songs by hand and we poll
+    every ~75s, so the true walk-on is somewhat earlier. The copy deliberately
+    states a time without claiming it is the walk-on.
+    """
+    venue = (entry.venue or "").strip()
+    loc = ", ".join(x for x in (entry.city, entry.state) if x)
+    lines = [f"\U0001f98e Lights down at {venue}." if venue else "\U0001f98e Lights down."]
+    when = _fmt_clock(started_at) if started_at else ""
+    if loc and when:
+        lines.append(f"Phish, {loc} — {when}.")
+    elif loc:
+        lines.append(f"Phish, {loc}.")
+    elif when:
+        lines.append(f"Phish — {when}.")
+    lines.append("Your trip is short \U0001f680")
+    return _clamp("\n".join(lines))
+
+
 def song_post_stats(
     entry: SetlistEntry,
     stats: Optional[dict],
