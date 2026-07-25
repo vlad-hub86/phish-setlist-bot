@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T01:41:14+00:00",
+ "updated_at": "2026-07-25T01:56:40+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -84,6 +84,18 @@
     },
     {
      "title": "La Grange",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Also Sprach Zarathustra",
      "transition": ",",
      "length_secs": null,
      "footnote": null
