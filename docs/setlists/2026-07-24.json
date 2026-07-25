@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-25T03:01:52+00:00",
+ "updated_at": "2026-07-25T03:07:01+00:00",
  "showdate": "2026-07-24",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -138,6 +138,12 @@
     },
     {
      "title": "Suzy Greenberg",
+     "transition": ">",
+     "length_secs": 309,
+     "footnote": null
+    },
+    {
+     "title": "Golgi Apparatus",
      "transition": ",",
      "length_secs": null,
      "footnote": null
