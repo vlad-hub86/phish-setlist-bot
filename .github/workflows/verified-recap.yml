@@ -34,7 +34,15 @@ jobs:
       - name: Post verified lengths
         env:
           TRUTH_BEARER_TOKEN: ${{ secrets.TRUTH_BEARER_TOKEN }}
-          PLATFORMS: truthsocial
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          # The verified phish.in thread is the trustworthy one (live lengths
+          # are estimates), so it goes to X unlike the "lengths" kind.
+          # phishpicks is deliberately NOT here: this path posts thread text
+          # with no song/set meta, which that publisher would only no-op on.
+          PLATFORMS: truthsocial,x
           STATE_DB: C:\bot-state\botstate.db
           PYTHONUTF8: "1"   # unicode song titles/emoji safe on Windows console
         run: |
