@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T03:16:22+00:00",
+ "updated_at": "2026-07-26T03:20:26+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -145,8 +145,14 @@
     {
      "title": "Purple Rain",
      "transition": ",",
-     "length_secs": null,
+     "length_secs": 615,
      "footnote": "Fish on vacuum, Trey in a sequined guitar strap."
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
