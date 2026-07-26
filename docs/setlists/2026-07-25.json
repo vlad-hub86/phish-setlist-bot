@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T01:40:10+00:00",
+ "updated_at": "2026-07-26T01:45:22+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -38,7 +38,7 @@
      "title": "Wolfman's Brother",
      "transition": "",
      "length_secs": null,
-     "footnote": "Ended mid-song due to P.A. outage."
+     "footnote": "Ended mid-song due to FOH outage."
     }
    ]
   },
