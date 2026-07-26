@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T00:25:03+00:00",
+ "updated_at": "2026-07-26T00:35:24+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -24,6 +24,12 @@
     },
     {
      "title": "Rift",
+     "transition": ",",
+     "length_secs": 621,
+     "footnote": null
+    },
+    {
+     "title": "Punch You in the Eye",
      "transition": ",",
      "length_secs": null,
      "footnote": null
