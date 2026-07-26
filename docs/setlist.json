@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T01:09:49+00:00",
+ "updated_at": "2026-07-26T01:25:11+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -39,6 +39,24 @@
      "transition": "",
      "length_secs": null,
      "footnote": "Ended mid-song due to P.A. outage."
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Highway to Hell",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
