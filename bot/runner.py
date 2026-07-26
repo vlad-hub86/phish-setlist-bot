@@ -192,13 +192,26 @@ class Runner:
         )
 
         # Structured context for publishers that ingest fields rather than the
-        # rendered text (e.g. phishpicks wants {song, set}). Text publishers
-        # (Truth Social, X) accept and ignore it.
+        # rendered text (e.g. phishpicks). Text publishers (Truth Social, X)
+        # accept and ignore it.
+        #
+        # transition_in is the mark connecting the PREVIOUS song to this one.
+        # phish.net records a transition as "how this song joins the NEXT one",
+        # so a song's OUTGOING mark does not exist yet when it first appears
+        # live — but its incoming one does. Null when not yet recorded, and
+        # null across a set boundary (nothing segues through a setbreak).
+        prev_same_set = prev if (prev is not None and prev.set_label == entry.set_label) else None
+        transition_in = None
+        if prev_same_set is not None:
+            transition_in = (prev_same_set.transition or "").strip() or None
+
         meta = {
             "song": entry.song,
             "set": entry.set_label,
             "showdate": entry.showdate,
             "position": entry.position,
+            "songid": entry.songid,
+            "transition_in": transition_in,
         }
 
         for pub in self._pubs("song"):
