@@ -2,12 +2,26 @@
 
 Unlike Truth Social and X, this destination is NOT a social feed — it is a
 structured data ingest for phishpicks.net. It does not want the composed post
-text; it wants the raw song name and set number, one HTTP POST per song:
+text; it wants the structured song record, one HTTP POST per song:
 
     POST https://phishpicks.net/api/ingest/song
     Authorization: Bearer <PHISHPICKS_TOKEN>
     Content-Type: application/json
-    {"song": "Tweezer", "set": "2"}
+    {"song": "Tweezer", "set": "2", "position": 12,
+     "showdate": "2026-07-25", "transition_in": "->", "songid": 627}
+
+``position`` is the song's GLOBAL 1-based order within the whole show (not
+within its set) and is the field that disambiguates repeats: the 7/25/26 MSG
+show played Tweezer six times in Set 2, which without a position is six
+byte-identical records.
+
+``transition_in`` is the mark connecting the PREVIOUS song to this one —
+",", ">", "->", or null. It is deliberately the INCOMING mark, not the
+outgoing one: phish.net stores a transition as "how this song connects to the
+NEXT one", so a song's outgoing mark does not exist yet at the moment it is
+first posted live (its successor has not been entered). The incoming mark, by
+contrast, is already known. Null means "not recorded yet" — never guessed.
+It is also null at a set boundary, since nothing segues across a setbreak.
 
 Because it consumes structured fields rather than rendered text, the runner
 hands each publisher an optional ``meta`` dict alongside the text (see
@@ -46,6 +60,15 @@ log = logging.getLogger(__name__)
 
 DEFAULT_URL = "https://phishpicks.net/api/ingest/song"
 UA = "phish-setlist-bot/0.1 (setlist ingest; contact: vlad@miajunefacialbar.com)"
+
+
+class _Refused(RuntimeError):
+    """A 409 from the receiver: an intentional refusal, not a transient fault.
+
+    Raised (rather than returned) so the song stays unmarked and is offered
+    again on the next poll — which is what heals the "show not featured yet"
+    case. Distinct from RuntimeError so the reason is greppable in the log.
+    """
 
 
 class PhishPicksPublisher(Publisher):
@@ -105,7 +128,16 @@ class PhishPicksPublisher(Publisher):
             )
             return None
 
-        payload = {"song": song, "set": self._set_value(raw_set)}
+        # Full record. Optional fields are always present, using null when
+        # unknown, so the receiving schema is predictable rather than sparse.
+        payload = {
+            "song": song,
+            "set": self._set_value(raw_set),
+            "position": (meta or {}).get("position"),
+            "showdate": (meta or {}).get("showdate"),
+            "transition_in": (meta or {}).get("transition_in"),
+            "songid": (meta or {}).get("songid"),
+        }
         delay = 5
         for attempt in range(1, self.max_retries + 1):
             try:
@@ -126,9 +158,11 @@ class PhishPicksPublisher(Publisher):
                 raise RuntimeError(f"phishpicks ingest failed (network): {e}") from e
 
             if 200 <= resp.status_code < 300:
-                remote_id = self._extract_id(resp)
-                log.info("ingested %s (set %s) to phishpicks: id=%s", song, payload["set"], remote_id)
-                return remote_id
+                log.info(
+                    "ingested %s (set %s, pos %s) to phishpicks%s",
+                    song, payload["set"], payload["position"], self._describe(resp),
+                )
+                return self._extract_id(resp)
             if resp.status_code in (429, 500, 502, 503, 504) and attempt < self.max_retries:
                 log.warning(
                     "phishpicks %s (attempt %d), retrying in %ds",
@@ -137,12 +171,56 @@ class PhishPicksPublisher(Publisher):
                 time.sleep(delay)
                 delay *= 3
                 continue
-            # 4xx (bad token, bad payload) — propagate so the runner logs it and
-            # retries next tick; a persistent 401/403 means the bearer is wrong.
+            if resp.status_code == 400:
+                # Malformed record (e.g. title over the receiver's length cap).
+                # This can never succeed on a retry, so mark it handled rather
+                # than re-sending the same bad payload every ~75s tick.
+                log.error(
+                    "phishpicks rejected %s (pos %s) as malformed — not retrying: %s",
+                    song, payload["position"], resp.text[:200],
+                )
+                return None
+            if resp.status_code == 409:
+                # Deliberate refusal: either the show isn't featured yet, or the
+                # setlist has been finalized (frozen ~30-60 min after the last
+                # song). Logged plainly rather than as an error — but we do NOT
+                # mark it handled, so the pre-featured case still heals on a
+                # later tick. Post-finalize retries stop when the window closes.
+                log.warning(
+                    "phishpicks refused %s (pos %s): %s — will re-offer next tick",
+                    song, payload["position"], resp.text[:200],
+                )
+                raise _Refused(f"phishpicks refused {song}: {resp.text[:200]}")
+            # Other 4xx (401/403) — propagate loudly. A persistent 401 means the
+            # bearer is wrong, and the repetition in the log is the signal.
             raise RuntimeError(
                 f"phishpicks ingest failed: {resp.status_code} {resp.text[:300]}"
             )
         return None
+
+    @staticmethod
+    def _describe(resp) -> str:
+        """Short tail for the success log, from the receiver's ack body.
+
+        The receiver answers with {ok, song, set, position} plus optional
+        duplicate / replaced / transitionWrittenTo flags. `replaced` in
+        particular is worth surfacing: it means our record overwrote a
+        different song at that position, i.e. real position drift.
+        """
+        try:
+            body = resp.json()
+        except ValueError:
+            return ""
+        if not isinstance(body, dict):
+            return ""
+        bits = []
+        if body.get("duplicate"):
+            bits.append("duplicate")
+        if body.get("replaced"):
+            bits.append(f"replaced {body['replaced']!r}")
+        if body.get("transitionWrittenTo") is not None:
+            bits.append(f"transition->pos {body['transitionWrittenTo']}")
+        return (" [" + ", ".join(bits) + "]") if bits else ""
 
     @staticmethod
     def _extract_id(resp) -> Optional[str]:
