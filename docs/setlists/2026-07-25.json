@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T02:55:14+00:00",
+ "updated_at": "2026-07-26T03:05:30+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -110,7 +110,7 @@
      "title": "Catapult",
      "transition": "->",
      "length_secs": null,
-     "footnote": "\"None compare\" vocal breakdown"
+     "footnote": "\"None compare\" vocal breakdown."
     },
     {
      "title": "Tweezer",
@@ -132,7 +132,7 @@
     },
     {
      "title": "The Squirming Coil",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
