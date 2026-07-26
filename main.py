@@ -31,6 +31,10 @@ log = logging.getLogger("main")
 
 POLL_SECS = 75          # base poll interval during a show
 POLL_JITTER = 15        # +/- jitter so we're not metronomic
+# Tighter cadence once songs are actually on the feed: first_seen timestamps
+# are the wall-clock dataset (set lengths, setbreaks, pacing) and 75s
+# granularity blurs them. Env-tunable without a code change.
+POLL_SECS_LIVE = int(os.environ.get("POLL_SECS_LIVE", "30"))
 WINDOW_START = (18, 30) # 6:30pm venue-agnostic local time (bot host runs in ET for US tours)
 WINDOW_END = (1, 0)     # 1:00am
 
@@ -161,13 +165,27 @@ def cmd_show_window(args):
     site_dir = os.environ.get("SITE_DIR", "")
     site_push = os.environ.get("SITE_PUSH", "") in ("1", "true", "yes")
 
+    # Live-only signal capture (wall-clock timestamps, setlist edit diffs,
+    # r/phish counters, rating snapshots, weather). Fully fail-safe: if it
+    # cannot be built or a tick fails, coverage continues without it.
+    capture = None
+    if site_dir:
+        try:
+            from bot.capture import Capture
+            capture = Capture(showdate, site_dir, runner.state, runner.client)
+        except Exception:
+            log.exception("capture unavailable — continuing without it")
+
     deadline = time.time() + args.minutes * 60
     while time.time() < deadline:
         runner.tick(showdate)
+        if capture:
+            capture.tick(runner._entries)
         if site_dir:
             from bot.site import update_site
             update_site(runner._entries, runner.estimated_durations(showdate), site_dir, push=site_push)
-        time.sleep(POLL_SECS + random.uniform(-POLL_JITTER, POLL_JITTER))
+        base = POLL_SECS_LIVE if runner._entries else POLL_SECS
+        time.sleep(base + random.uniform(-base * 0.2, base * 0.2))
 
     log.info("window closed — posting show recap + lengths thread")
     runner.post_show_recap(showdate)
