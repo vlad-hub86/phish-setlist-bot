@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T00:54:31+00:00",
+ "updated_at": "2026-07-26T00:59:40+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -38,7 +38,7 @@
      "title": "Wolfman's Brother",
      "transition": "",
      "length_secs": null,
-     "footnote": "Audio dropped"
+     "footnote": "Audio dropped."
     }
    ]
   }
