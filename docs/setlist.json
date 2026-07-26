@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T02:46:10+00:00",
+ "updated_at": "2026-07-26T02:55:14+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -126,6 +126,12 @@
     },
     {
      "title": "Tweezer",
+     "transition": ">",
+     "length_secs": 546,
+     "footnote": null
+    },
+    {
+     "title": "The Squirming Coil",
      "transition": ",",
      "length_secs": null,
      "footnote": null
