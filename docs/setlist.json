@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-26T02:10:19+00:00",
+ "updated_at": "2026-07-26T02:19:59+00:00",
  "showdate": "2026-07-25",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -90,6 +90,12 @@
     },
     {
      "title": "Lifeboy",
+     "transition": ",",
+     "length_secs": 581,
+     "footnote": null
+    },
+    {
+     "title": "Julius",
      "transition": ",",
      "length_secs": null,
      "footnote": null
