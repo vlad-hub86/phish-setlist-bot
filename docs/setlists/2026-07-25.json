@@ -5,6 +5,12 @@
  "city": "New York",
  "state": "NY",
  "complete": true,
+ "note": "🕰️ The '94 night — a Madison Square Garden Tweezerfest nodding to 5/7/94 at the Bomb Factory: Tweezer surfacing six times before the Reprise encore.",
+ "phishnet_url": "https://phish.net/setlists/phish-july-25-2026-madison-square-garden-new-york-ny-usa",
+ "shownotes": [
+  "Set 2 wove Tweezer in and out of Down with Disease, Sample in a Jar, Catapult and Cavern, Bomb Factory-style; the Purple Rain encore completed the '94 homage. Wolfman's Brother ended mid-song in Set 1 after a front-of-house power outage.",
+  "Part of the five-night '92–'96 retrospective: one night per year, played in period."
+ ],
  "sets": [
   {
    "label": "1",

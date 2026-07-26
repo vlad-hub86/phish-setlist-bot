@@ -5,6 +5,12 @@
  "city": "New York",
  "state": "NY",
  "complete": true,
+ "note": "🕰️ The '93 night of the retrospective — Phish's 93rd MSG show, played like 1993 (Trey in the Marvin the Martian shirt).",
+ "phishnet_url": "https://phish.net/setlists/phish-july-24-2026-madison-square-garden-new-york-ny-usa",
+ "shownotes": [
+  "Big Ball Jam returned after 1,170 shows (last 12/9/94), beach balls in the crowd and a hoop onstage; La Grange after 531 shows — only its second appearance since 1999. Also back: Sparks (357 shows), Sweet Adeline (358), Kung (258 — played over the Makisupa groove), Makisupa itself (149) with an \"iced green matcha tea\" keyword winking at '93.",
+  "Community pulse — \"the electricity at set break could have powered Kuroda's rig.\""
+ ],
  "sets": [
   {
    "label": "1",
