@@ -6,8 +6,22 @@
       "date": "2026-07-27",
       "project": "setlist-bot",
       "type": "content",
+      "title": "The Tweezerfest gets its audio",
+      "notes": "phish.in posted the 7/25 recording: 22 tracks aligned 1:1 — six Tweezers, two Down with Diseases — real durations replacing the live estimates, and four bustout tags with gap counts."
+    },
+    {
+      "date": "2026-07-26",
+      "project": "setlist-bot",
+      "type": "content",
       "title": "Feeds backfilled with phish.in track maps + official photos",
-      "notes": "7/21 through 7/25 get audio links, real recorded durations and bustout tags — the Tweezerfest's six Tweezers each map to their own track."
+      "notes": "7/21, 7/22 and 7/24 get audio links, real recorded durations, tags and banter."
+    },
+    {
+      "date": "2026-07-26",
+      "project": "setlist-bot",
+      "type": "content",
+      "title": "Retroactive show notes for the MSG retrospective nights",
+      "notes": "Curated notes and Phish.net links for the '92, '93 and '94 nights — preserved across bot rewrites."
     },
     {
       "date": "2026-07-26",
@@ -20,8 +34,15 @@
       "date": "2026-07-26",
       "project": "setlist-bot",
       "type": "feature",
+      "title": "Verified recap thread promoted to X",
+      "notes": "The next-morning phish.in lengths thread now posts to X as well."
+    },
+    {
+      "date": "2026-07-26",
+      "project": "setlist-bot",
+      "type": "feature",
       "title": "Phishpicks v2 payloads + 46 tests",
-      "notes": "Positions, incoming segue marks and receiver-aware retries; blind appends made impossible."
+      "notes": "Positions, incoming segue marks and receiver-aware retries; blind appends made impossible, and the test-post command guarded so a credentials check can never inject a phantom song."
     },
     {
       "date": "2026-07-22",
