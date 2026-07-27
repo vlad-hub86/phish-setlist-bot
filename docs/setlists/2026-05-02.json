@@ -1,0 +1,314 @@
+{
+ "updated_at": "2026-07-27T07:58:56+00:00",
+ "showdate": "2026-05-02",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-may-02-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Farmhouse",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on acoustic guitar."
+    },
+    {
+     "title": "Undermind",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ocelot",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ether Edge",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Llama",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Horse",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Silent in the Morning",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Taste",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Julius",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Frankenstein",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Page on keytar."
+    },
+    {
+     "title": "Kill Devil Falls",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ruby Waves",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Meatstick",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "My Friend, My Friend",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "No \"myfe\" ending."
+    },
+    {
+     "title": "A Life Beyond The Dream",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Wading in the Velvet Sea",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fluffhead",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "farmhouse": 31,
+  "undermind": 17,
+  "ocelot": 21,
+  "back-on-the-train": 11,
+  "ether-edge": 17,
+  "llama": 19,
+  "the-horse": 31,
+  "silent-in-the-morning": 31,
+  "taste": 15,
+  "julius": 8,
+  "frankenstein": 77,
+  "kill-devil-falls": 12,
+  "ruby-waves": 10,
+  "meatstick": 8,
+  "my-friend-my-friend": 8,
+  "a-life-beyond-the-dream": 9,
+  "character-zero": 11,
+  "wading-in-the-velvet-sea": 25,
+  "fluffhead": 14
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-05-02",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-05-02/farmhouse",
+    "d": 409,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The scene was of the outside of the Barn at night, with aurorae overhead."
+     },
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on acoustic guitar."
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-05-02/undermind",
+    "d": 650
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-05-02/ocelot",
+    "d": 490
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-05-02/back-on-the-train",
+    "d": 508
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-05-02/ether-edge",
+    "d": 870,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Unidirectional and cohesive, the jam here is focused and the band is locked in from the start with little deviation to deliver a grin inducing and arm raising ride that accelerates to a very satisfying peak before crashing > into Llama."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-05-02/llama",
+    "d": 323
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-05-02/the-horse",
+    "d": 80,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Trey announced it was his favorite part of the night, and that Mike would now \"invert,\" while Mike turned his coat inside out to a Fish drumroll."
+     }
+    ]
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-05-02/silent-in-the-morning",
+    "d": 315
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-05-02/taste",
+    "d": 449
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-05-02/julius",
+    "d": 550,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Among the visuals was a large, dragon-like creature rendered in neon lines, which swam behind the band at the song's peak."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-05-02/frankenstein",
+    "d": 314,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Page on keytar."
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-05-02/kill-devil-falls",
+    "d": 905,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Thematic jamming that bounces along at an even pace with little deviation and only slight modulation but stays focused without wasting time searching and delivers a steady stream of memorable moments that accumulate rather than peak."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-05-02/ruby-waves",
+    "d": 1282,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "One last 20-minute jam before the run ends. The jam starts out energetic, as most \"RW\" jams do, and keeps its pace for a while until it turns into time to try and see if the aliens can be summoned. Fish seems not ready to stop rocking, so he finds a way to get the rest of the band back on that path. There's a peak because it's \"Ruby Waves\" and it almost always gets a peak."
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-05-02/meatstick",
+    "d": 599
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-05-02/my-friend-my-friend",
+    "d": 1019,
+    "tags": [
+     {
+      "name": "Unfinished",
+      "notes": "Did not feature the \"myfe\" ending."
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "Rocking outro gives way to a fairly propulsive, beguiling groove textured with thick bass and then winds down over the course of several minutes in a decidedly off-kilter manner."
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-05-02/a-life-beyond-the-dream",
+    "d": 567
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-05-02/character-zero",
+    "d": 441,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you. This was so fun. Be safe, we'll see you soon, thank you. Thanks everybody."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-05-02/wading-in-the-velvet-sea",
+    "d": 393,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The scene at the end was a giant wall of concert photos."
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-05-02/fluffhead",
+    "d": 1047
+   }
+  }
+ }
+}

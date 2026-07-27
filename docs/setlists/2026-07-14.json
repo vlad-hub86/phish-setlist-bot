@@ -1,0 +1,136 @@
+{
+ "updated_at": "2026-07-27T07:59:00+00:00",
+ "showdate": "2026-07-14",
+ "venue": "Enmarket Arena",
+ "city": "Savannah",
+ "state": "GA",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-14-2026-enmarket-arena-savannah-ga-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "David Bowie",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Gumbo",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Birds of a Feather",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Old Home Place",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Steam",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Curtain With",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Horn",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Split Open and Melt",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Sand",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "It's Ice",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "About to Run",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Piper",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Walls of the Cave",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "The Squirming Coil",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fire",
+     "transition": "",
+     "length_secs": null,
+     "footnote": "Lyrics changed to \"move over Rover, and let Johnny take over.\""
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "david-bowie": 6,
+  "gumbo": 10,
+  "birds-of-a-feather": 12,
+  "the-old-home-place": 28,
+  "steam": 13,
+  "the-curtain-with": 10,
+  "horn": 8,
+  "split-open-and-melt": 13,
+  "sand": 4,
+  "it-s-ice": 9,
+  "about-to-run": 8,
+  "piper": 9,
+  "walls-of-the-cave": 9,
+  "the-squirming-coil": 7,
+  "fire": 132
+ }
+}

@@ -1,0 +1,309 @@
+{
+ "updated_at": "2026-07-27T07:58:52+00:00",
+ "showdate": "2026-04-23",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-23-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "46 Days",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Guyute",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Maze",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Esther",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Gumbo",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Brian and Robert",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on acoustic guitar."
+    },
+    {
+     "title": "Stash",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Moonage Daydream",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "The Curtain With",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Dark Puddle",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Fish on Marimba Lumina."
+    },
+    {
+     "title": "Golden Age",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Cavern",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Possum",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Fee",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey sang verses through a megaphone."
+    },
+    {
+     "title": "Tube",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "More",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "46-days": 13,
+  "guyute": 34,
+  "maze": 15,
+  "esther": 12,
+  "gumbo": 5,
+  "brian-and-robert": 5,
+  "stash": 5,
+  "moonage-daydream": 12,
+  "the-curtain-with": 9,
+  "fuego": 7,
+  "golden-age": 3,
+  "backwards-down-the-number-line": 6,
+  "cavern": 8,
+  "possum": 9,
+  "fee": 16,
+  "tube": 4,
+  "more": 7
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-23",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-23/46-days",
+    "d": 468
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-23/guyute",
+    "d": 672
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-23/maze",
+    "d": 599,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Visuals began with a giant wall of framed poster art before focusing on a print showing a close-up of the sleeping man on the cover of Rift. During the jam, the perspective entered the picture and explored the room, before pulling back out of the frame to the view of the entire wall, which eventually added framed live video of each band member."
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-23/esther",
+    "d": 602
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-23/gumbo",
+    "d": 882,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Momentarily bordering on plinko to kick things off, the jam becomes echo laden and accented with a dark groove as Trey briefly plays on the low end and Mike's effects cast a shadow that serves as contrast to what follows. Trey's lead becomes more linear and Page responds in lockstep. The whole affair is held together by Fishman's stutter step consistency giving rise to a flash point and leading to satisfying consummation."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-23/brian-and-robert",
+    "d": 258,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on acoustic guitar"
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-23/stash",
+    "d": 751
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-23/moonage-daydream",
+    "d": 493
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-23/the-curtain-with",
+    "d": 817
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-23/fuego",
+    "d": 2240,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "\"Viking warriors...girl begins to levitate\" lyrics were skipped, then Mike chants them during the jam"
+     },
+     {
+      "name": "Alt Rig",
+      "notes": "Fish on Marimba Lumina"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "Opening with snarling leads from Trey, this shifts at 9:40 into a more open terrain before Fishman takes command of the jam's direction. Wall of sound Mike and Page moves into a late-nite ambient space highlighted by Trey and Page trading delicate riffs around 13min. Moving deeper into the ether, the jam fades into sirens before a fake song interrupts a stunning Fuego."
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-23/golden-age",
+    "d": 712,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Moving into a familiar hypnotic groove space we shift at 9:15 to a deeper groove which thus opens the space for the jam to blossom. Mike and Fish dominate here before Trey shifts the band into Fuego."
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-23/fuego-2",
+    "d": 303,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Shifts quickly back into open-ended jamming following the repeated Fuego riff; Fish and Mike push them into a rock space before Trey returns with sky high riffs. Hard-rock fusion with Frankie Says esque riffing concludes before the jam fades out."
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-23/backwards-down-the-number-line",
+    "d": 515
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-04-23/cavern",
+    "d": 285,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, thank you."
+     }
+    ]
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-04-23/possum",
+    "d": 518,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Visuals were from inside a network of neurons that pulsed and flashed with light."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-23/fee",
+    "d": 352,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on megaphone"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-04-23/tube",
+    "d": 572
+   },
+   "e:3": {
+    "u": "https://phish.in/2026-04-23/more",
+    "d": 382,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, we'll see you tomorrow night."
+     }
+    ]
+   }
+  }
+ }
+}

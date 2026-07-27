@@ -1,0 +1,223 @@
+{
+ "updated_at": "2026-07-27T07:59:02+00:00",
+ "showdate": "2026-07-19",
+ "venue": "Merriweather Post Pavilion",
+ "city": "Columbia",
+ "state": "MD",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-19-2026-merriweather-post-pavilion-columbia-md-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Undermind",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ass Handed",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Moma Dance",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fast Enough for You",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "NICU",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Oblivion",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Possum",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Carini",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "No Men In No Man's Land",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Beneath a Sea of Stars Part 1",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ruby Waves",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "I Am the Walrus",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "First Tube",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "undermind": 9,
+  "back-on-the-train": 8,
+  "ass-handed": 138,
+  "the-moma-dance": 7,
+  "fast-enough-for-you": 54,
+  "nicu": 11,
+  "oblivion": 6,
+  "possum": 7,
+  "carini": 5,
+  "no-men-in-no-man-s-land": 7,
+  "beneath-a-sea-of-stars-part-1": 16,
+  "ruby-waves": 8,
+  "backwards-down-the-number-line": 6,
+  "i-am-the-walrus": 15,
+  "first-tube": 7
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-19",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-19/undermind",
+    "d": 426
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-19/back-on-the-train",
+    "d": 639
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-19/ass-handed",
+    "d": 1026,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Ass Handed in 137 shows"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-19/the-moma-dance",
+    "d": 427
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-19/fast-enough-for-you",
+    "d": 400
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-19/nicu",
+    "d": 302
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-19/oblivion",
+    "d": 1089
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-19/possum",
+    "d": 582
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-19/carini",
+    "d": 2404,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Let It Grow by Grateful Dead"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-19/no-men-in-no-mans-land",
+    "d": 375
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-19/beneath-a-sea-of-stars-part-1",
+    "d": 384
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-19/ruby-waves",
+    "d": 883,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "A Love Supreme by John Coltrane"
+     },
+     {
+      "name": "Tease",
+      "notes": "Strawberry Letter 23 by Shuggie Otis"
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-19/backwards-down-the-number-line",
+    "d": 481
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-19/i-am-the-walrus",
+    "d": 362
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-19/first-tube",
+    "d": 436
+   }
+  }
+ }
+}

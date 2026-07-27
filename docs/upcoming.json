@@ -1,0 +1,47 @@
+{
+ "generated_at": "2026-07-27T07:58:47Z",
+ "shows": [
+  {
+   "showdate": "2026-07-27",
+   "venue": "Madison Square Garden",
+   "city": "New York",
+   "state": "NY"
+  },
+  {
+   "showdate": "2026-07-29",
+   "venue": "Madison Square Garden",
+   "city": "New York",
+   "state": "NY"
+  },
+  {
+   "showdate": "2026-07-31",
+   "venue": "Fenway Park",
+   "city": "Boston",
+   "state": "MA"
+  },
+  {
+   "showdate": "2026-08-01",
+   "venue": "Fenway Park",
+   "city": "Boston",
+   "state": "MA"
+  },
+  {
+   "showdate": "2026-09-04",
+   "venue": "Dick's Sporting Goods Park",
+   "city": "Commerce City",
+   "state": "CO"
+  },
+  {
+   "showdate": "2026-09-05",
+   "venue": "Dick's Sporting Goods Park",
+   "city": "Commerce City",
+   "state": "CO"
+  },
+  {
+   "showdate": "2026-09-06",
+   "venue": "Dick's Sporting Goods Park",
+   "city": "Commerce City",
+   "state": "CO"
+  }
+ ]
+}

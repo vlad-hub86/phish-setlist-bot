@@ -70,5 +70,12 @@
       "ok": true,
       "message": "transitions: render set recaps as a real setlist with , / > / -> marks; stop parser inventing a comma for absent transition codes; auto-drop lengths rather than truncate a long set"
     }
+  ],
+  "jobs": [
+    {
+      "job": "backfill-2026",
+      "time": "2026-07-27T08:01:06Z",
+      "ok": true
+    }
   ]
 }

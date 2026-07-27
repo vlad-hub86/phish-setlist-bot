@@ -1,0 +1,249 @@
+{
+ "updated_at": "2026-07-27T07:58:58+00:00",
+ "showdate": "2026-07-11",
+ "venue": "Ruoff Music Center",
+ "city": "Noblesville",
+ "state": "IN",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-11-2026-ruoff-music-center-noblesville-in-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "AC/DC Bag",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Punch You in the Eye",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Theme from the Bottom",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Timber (Jerry the Mule)",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "555",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Reba",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "No whistling."
+    },
+    {
+     "title": "Dirt",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Most Events Aren't Planned",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Everything's Right",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Golden Age",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "My Friend, My Friend",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": "No \"myfe\" ending."
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "No Quarter",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Carini",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "A Life Beyond The Dream",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "ac-dc-bag": 9,
+  "punch-you-in-the-eye": 5,
+  "theme-from-the-bottom": 11,
+  "timber-jerry-the-mule": 6,
+  "555": 5,
+  "reba": 9,
+  "dirt": 5,
+  "most-events-aren-t-planned": 10,
+  "everything-s-right": 11,
+  "tweezer": 9,
+  "golden-age": 8,
+  "my-friend-my-friend": 3,
+  "no-quarter": 43,
+  "carini": 10,
+  "a-life-beyond-the-dream": 3,
+  "tweezer-reprise": 9
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-11",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-11/ac-dc-bag",
+    "d": 542
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-11/punch-you-in-the-eye",
+    "d": 695
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-11/theme-from-the-bottom",
+    "d": 807,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-11/timber-jerry-the-mule",
+    "d": 634
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-11/555",
+    "d": 646,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-11/reba",
+    "d": 760,
+    "tags": [
+     {
+      "name": "Unfinished",
+      "notes": "Did not contain the whistling ending."
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-11/dirt",
+    "d": 261
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-11/most-events-arent-planned",
+    "d": 533
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-11/everythings-right",
+    "d": 720,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-11/tweezer",
+    "d": 1999
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-11/golden-age",
+    "d": 652
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-11/my-friend-my-friend",
+    "d": 451,
+    "tags": [
+     {
+      "name": "Unfinished",
+      "notes": "Did not feature the \"myfe\" ending."
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-11/tweezer-2",
+    "d": 163
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-11/no-quarter",
+    "d": 473
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-11/carini",
+    "d": 461
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-11/a-life-beyond-the-dream",
+    "d": 501
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-11/tweezer-reprise",
+    "d": 339
+   }
+  }
+ }
+}

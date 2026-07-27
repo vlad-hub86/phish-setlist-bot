@@ -1,0 +1,279 @@
+{
+ "updated_at": "2026-07-27T07:58:53+00:00",
+ "showdate": "2026-04-24",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-24-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "The Man Who Stepped Into Yesterday",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Lizards",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Set Your Soul Free",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Roggae",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ya Mar",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Dogs",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Billy Breathes",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "It's Ice",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Walls of the Cave",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Pebbles and Marbles",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "What's Going Through Your Mind",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Piper",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Monsters",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Life Saving Gun",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "What's the Use?",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Vultures",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Say It To Me S.A.N.T.O.S.",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Slave to the Traffic Light",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "the-man-who-stepped-into-yesterday": 97,
+  "the-lizards": 11,
+  "set-your-soul-free": 23,
+  "roggae": 7,
+  "ya-mar": 7,
+  "the-dogs": 29,
+  "billy-breathes": 42,
+  "it-s-ice": 9,
+  "walls-of-the-cave": 15,
+  "pebbles-and-marbles": 15,
+  "what-s-going-through-your-mind": 7,
+  "piper": 9,
+  "monsters": 8,
+  "life-saving-gun": 6,
+  "what-s-the-use": 18,
+  "vultures": 5,
+  "say-it-to-me-s-a-n-t-o-s": 7,
+  "slave-to-the-traffic-light": 5
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-24",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-24/tmwsiy",
+    "d": 225
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-24/the-lizards",
+    "d": 586,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Accompanied by Gamehendge-centric animation."
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-24/set-your-soul-free",
+    "d": 1213,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Bliss-rock at the front gives way for more assertive, rocking play before a series of modulations begins a push and pull between major and minor key tonalities. Settling towards a funky rock zone, the band finds stability and turns the jam into am ebullient, funk-rock rave-up with a smidge of space-y ooze along the edges. This then drives towards a verve-filled peak rock section before concluding with \"SYSF's\" closing chorus."
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-24/roggae",
+    "d": 532
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-24/ya-mar",
+    "d": 434
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-24/the-dogs",
+    "d": 365
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-24/billy-breathes",
+    "d": 339
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-24/its-ice",
+    "d": 465
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-04-24/walls-of-the-cave",
+    "d": 743,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, we'll be right back."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-24/pebbles-and-marbles",
+    "d": 614
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-24/whats-going-through-your-mind",
+    "d": 1671,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "The jam vehicle of the mid-2020s drives forward in a thick groove space right out of the gates. At 10:20 Trey moves into a rawk space before sliding into a Page/Trey duel that brings back memories of Fall 2021 Phish. Trey's chordal bursts at 16:15 push the jam into a new direction before building to a heroic peak. This then fades off into a sprawling guitar-led psych jam before resolving into rhythmic WOOs. Hinting at a return to the song's chorus, Trey instead pushes the band into a swirl of noise that resolves in Piper."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-04-24/piper",
+    "d": 972,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "A true slow build Piper, the jam builds like all Pipers do before locking in around a Trey and Fishman duel. A chordal peaking jam, this never strays too far from what Piper does best, but it's worth hearing all the same."
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-24/monsters",
+    "d": 587
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-24/life-saving-gun",
+    "d": 841
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-24/whats-the-use",
+    "d": 519
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-04-24/vultures",
+    "d": 474,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey and Fish banter",
+      "transcript": "TREY: I could listen to that guy do that all night. Jon Fishman, ladies and gentlemen. That was beautiful, man. FISH: I hate my job. TREY: Thanks everybody. Jon Fishman, percussion rinse."
+     }
+    ]
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-04-24/say-it-to-me-s-a-n-t-o-s",
+    "d": 400
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-24/slave-to-the-traffic-light",
+    "d": 634,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, thank you."
+     }
+    ]
+   }
+  }
+ }
+}

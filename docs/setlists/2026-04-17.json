@@ -1,0 +1,319 @@
+{
+ "updated_at": "2026-07-27T07:58:51+00:00",
+ "showdate": "2026-04-17",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-17-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Free",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Birds of a Feather",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Martian Monster",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Guelah Papyrus",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Divided Sky",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Hey Stranger",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mull",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Limb By Limb",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Suzy Greenberg",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "No Men In No Man's Land",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Light",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Joy",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mike's Song",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "I Am Hydrogen",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Weekapaug Groove",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Beneath a Sea of Stars Part 1",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Most Events Aren't Planned",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Brief Time",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Phish debut."
+    },
+    {
+     "title": "Carini",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "free": 2,
+  "birds-of-a-feather": 5,
+  "martian-monster": 12,
+  "guelah-papyrus": 25,
+  "divided-sky": 6,
+  "hey-stranger": 4,
+  "mull": 1,
+  "limb-by-limb": 24,
+  "suzy-greenberg": 11,
+  "no-men-in-no-man-s-land": 4,
+  "light": 2,
+  "joy": 28,
+  "mike-s-song": 1,
+  "i-am-hydrogen": 9,
+  "weekapaug-groove": 1,
+  "beneath-a-sea-of-stars-part-1": 1,
+  "most-events-aren-t-planned": 2,
+  "carini": 2
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-17",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-17/free",
+    "d": 634
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-17/birds-of-a-feather",
+    "d": 479
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-17/martian-monster",
+    "d": 390,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop imagery was a nod to October 31, 2014's Chilling, Thrilling Sounds of the Haunted House Halloween set, with the haunted house reappearing and opening up to reveal the band playing within its walls."
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-17/guelah-papyrus",
+    "d": 355
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-17/divided-sky",
+    "d": 913,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop became blue sky and fluffy clouds above a mountainous terrain; following the pause, the images became fractalized and began to move."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-17/hey-stranger",
+    "d": 620
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-17/mull",
+    "d": 497,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Your Pet Cat"
+     }
+    ]
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-17/limb-by-limb",
+    "d": 621
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-04-17/suzy-greenberg",
+    "d": 414,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop became an 80's-style video game called \"Tube Raider,\" appearing to be played in the night sky over Las Vegas. At the end of the song, the screen displayed \"Game Over\" along with video game avatars of the band."
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, we'll be right back. Thank you."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-17/no-men-in-no-mans-land",
+    "d": 659
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-17/light",
+    "d": 1403,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Plasma"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "A swift pivot from the standard towards upbeat, blissful play opens the portal before shifting towards introspective melodic minor key territory. Page's dominating presence via both electric piano and wobbly synths then coaxes the jam towards psychedelia, as Fishman's tribalistic rhythms grow a bit more complex, gradually coalescing into a thick psychedelic groove-fest. After the 13:00 mark, the music puddles into an almost hellishly dense/atonal soundscape, eventually forming up into a driving attack before once again oscillating back towards soundscape-y madness. One last push for a full band groove eventually fades back into \"Light's\" chorus to end."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-04-17/joy",
+    "d": 403
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-17/mikes-song",
+    "d": 554,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop showed a lakeshore in front of a mountain range, with lighted, moving sculptures reflecting off the water's surface."
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-17/i-am-hydrogen",
+    "d": 185,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop changed to a lush valley with a waterfall centered behind the band."
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-17/weekapaug-groove",
+    "d": 461,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop returned to focus on the lighted sculptures from Mike's Song."
+     }
+    ]
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-04-17/beneath-a-sea-of-stars-part-1",
+    "d": 577,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop was a dark forest at night, populated by animals with glowing eyes, as well as glowing fish swimming through the trees, and eventually glowing pink jellyfish which rose into the sky during the jam segment. Eventually the view returned to the forest, where peacocks displayed glowing tails amid numerous fish, until the entire perspective was swallowed by a whale."
+     }
+    ]
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-04-17/most-events-arent-planned",
+    "d": 630,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, we'll see you tomorrow night. Be safe. Thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-17/brief-time",
+    "d": 161,
+    "tags": [
+     {
+      "name": "Debut"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-04-17/carini",
+    "d": 721
+   }
+  }
+ }
+}

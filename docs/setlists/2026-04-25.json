@@ -1,0 +1,271 @@
+{
+ "updated_at": "2026-07-27T07:58:54+00:00",
+ "showdate": "2026-04-25",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-25-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Timber (Jerry the Mule)",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Moma Dance",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Final Hurrah",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Axilla (Part II)",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Alternate lyrics referencing Sphere visuals during the song."
+    },
+    {
+     "title": "Cities",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Horn",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Well",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "My Soul",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Halley's Comet",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Blaze On",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Chalk Dust Torture",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Mercury",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Waves",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "About to Run",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ghost",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Bug",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "First Tube",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "timber-jerry-the-mule": 20,
+  "the-moma-dance": 8,
+  "the-final-hurrah": 11,
+  "axilla-part-ii": 10,
+  "cities": 19,
+  "horn": 17,
+  "the-well": 23,
+  "my-soul": 17,
+  "halley-s-comet": 5,
+  "blaze-on": 6,
+  "chalk-dust-torture": 8,
+  "mercury": 8,
+  "waves": 8,
+  "about-to-run": 21,
+  "ghost": 8,
+  "bug": 15,
+  "first-tube": 6
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-25",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-25/timber-jerry-the-mule",
+    "d": 488,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The view became a tunnel made of forest, with the sky as the light at the end."
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-25/the-moma-dance",
+    "d": 579
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-25/the-final-hurrah",
+    "d": 570
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-25/axilla-part-ii",
+    "d": 1056,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Trey used alternate lyrics that referenced the visuals, saying, \"Don't shine that hot dog in my face...grind it, grind it...\""
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "After warning some hot dogs to get out of his face, Trey is primed and ready to take Axilla deep again. The band is comfortable hanging in the murk of the song and doesn't rush towards any of their \"comfort jamming zones.\" The jam feels gooey as it oozes along. Those who don't need their jams to peak should seek this out. > into \"Cities\"."
+     }
+    ]
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-25/cities",
+    "d": 1001,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Cosmopolitan jam that stays fairly close to home rhythmically but departs melodically under Trey's lead, brightening and decorating the neighborhood with a brisk and buoyant optimism and a gentle uplift before returning to the song to conclude."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-25/horn",
+    "d": 263
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-25/the-well",
+    "d": 552
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-25/my-soul",
+    "d": 408
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-25/halleys-comet",
+    "d": 616,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Steps out of the box with low-key minor jamming which then becomes more mellow and dreamy as it transitions to major with synths and then > \"Blaze On\"."
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-25/blaze-on",
+    "d": 880
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-04-25/chalk-dust-torture",
+    "d": 1572,
+    "tags": [
+     {
+      "name": "Unfinished"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "A dark, spooky, and contemplative affair that maintains forward momentum thanks to Fish's pushing before shifting efficiently to an upbeat melodic climb with familiar motifs and a crushing climax that decays into an ambient sample laden froth."
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-25/mercury",
+    "d": 1042
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-25/waves",
+    "d": 648
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-25/about-to-run",
+    "d": 397
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-04-25/ghost",
+    "d": 759
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-25/bug",
+    "d": 373
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-04-25/first-tube",
+    "d": 485,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The scene was a virtual fireworks display."
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you so much everybody, thank you. We'll see you soon. Be safe, we love you. Thank you very much for having us."
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "updated_at": "2026-07-27T07:59:00+00:00",
+ "showdate": "2026-07-15",
+ "venue": "Enmarket Arena",
+ "city": "Savannah",
+ "state": "GA",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-15-2026-enmarket-arena-savannah-ga-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Dinner and a Movie",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Vultures",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Taste",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Wedge",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Pebbles and Marbles",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Divided Sky",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Halley's Comet",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Drift While You're Sleeping",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Sightless Escape",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "A Song I Heard the Ocean Sing",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Crosseyed and Painless",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Farmhouse",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Scents and Subtle Sounds",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ghost",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Rock and Roll",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "dinner-and-a-movie": 82,
+  "vultures": 10,
+  "taste": 6,
+  "the-wedge": 8,
+  "pebbles-and-marbles": 10,
+  "divided-sky": 13,
+  "halley-s-comet": 9,
+  "drift-while-you-re-sleeping": 8,
+  "sightless-escape": 43,
+  "a-song-i-heard-the-ocean-sing": 8,
+  "crosseyed-and-painless": 7,
+  "farmhouse": 6,
+  "scents-and-subtle-sounds": 14,
+  "ghost": 5,
+  "rock-and-roll": 7
+ }
+}

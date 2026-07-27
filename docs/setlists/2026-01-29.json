@@ -1,0 +1,236 @@
+{
+ "updated_at": "2026-07-27T07:58:48+00:00",
+ "showdate": "2026-01-29",
+ "venue": "Moon Palace",
+ "city": "Cancun",
+ "state": "Quintana Roo",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-january-29-2026-moon-palace-cancun-quintana-roo-mexico.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Gumbo",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "NICU",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Oblivion",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Brian and Robert",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on acoustic guitar."
+    },
+    {
+     "title": "Stash",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ya Mar",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "McGrupp and the Watchful Hosemasters",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Say It To Me S.A.N.T.O.S.",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "A Wave of Hope",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ruby Waves",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Lonely Trip",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "What's Going Through Your Mind",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Dancing in Midair",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Debut."
+    },
+    {
+     "title": "Run Like an Antelope",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "gumbo": 8,
+  "nicu": 4,
+  "prince-caspian": 7,
+  "oblivion": 4,
+  "brian-and-robert": 76,
+  "stash": 2,
+  "ya-mar": 8,
+  "mcgrupp-and-the-watchful-hosemasters": 20,
+  "say-it-to-me-s-a-n-t-o-s": 2,
+  "a-wave-of-hope": 4,
+  "ruby-waves": 3,
+  "lonely-trip": 6,
+  "what-s-going-through-your-mind": 2,
+  "run-like-an-antelope": 5
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-01-29",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-01-29/gumbo",
+    "d": 707
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-01-29/nicu",
+    "d": 313
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-01-29/prince-caspian",
+    "d": 742,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "> from \"NICU\", \"Prince Caspian\" is afloat upon the waves in Mexico again. Trey puts the proverbial \"extra mustard\" on his outro solo and he leads the band into an extended first set jam. Trey's licks lead the way and Fish returns in kind with fun interplay. Page's synths appear, before > \"Oblivion\"."
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-01-29/oblivion",
+    "d": 947
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-01-29/brian-and-robert",
+    "d": 213,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on acoustic guitar."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-01-29/stash",
+    "d": 876
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-01-29/ya-mar",
+    "d": 512
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-01-29/mcgrupp",
+    "d": 352
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-01-29/say-it-to-me-s-a-n-t-o-s",
+    "d": 363
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-01-29/a-wave-of-hope",
+    "d": 1268,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "After a brief gesture towards major around 10:00, the rest of this version dwells in a haunting, melodically melancholic zone and subtly intensifies before -> \"Ruby Waves\" without a return home."
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-01-29/ruby-waves",
+    "d": 1714,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Every time you wonder what \"Ruby Waves\" has left to say you get a version like this. Building upon loops and a driving riff, Trey leads the band into an uplifting peaking jam that hits the summit at 1630 via aggressive chord swells, only to find another gear and peaking with swirling madness some two minutes later. Akin to the Mexico 2024 \"CDT\" there's a relentlessness to this jam that rewards repeat spins. Dig the 8/30/24 \"Ruby\" call back as Trey pushes through Fishman's return to the song, aligning with bizarre alien invasion tones from Page and Mike, and launching this jam into the ether. Spellbinding stuff, sometimes the band is just so locked in. Breaking down around 26min we fade out via drones into \"Lonely Trip.\""
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-01-29/lonely-trip",
+    "d": 412
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-01-29/whats-going-through-your-mind",
+    "d": 876,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, we'll see you tomorrow night."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-01-29/dancing-in-midair",
+    "d": 459,
+    "tags": [
+     {
+      "name": "Debut"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-01-29/run-like-an-antelope",
+    "d": 670
+   }
+  }
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "updated_at": "2026-07-27T07:58:48+00:00",
+ "showdate": "2026-01-28",
+ "venue": "Moon Palace",
+ "city": "Cancun",
+ "state": "Quintana Roo",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-january-28-2026-moon-palace-cancun-quintana-roo-mexico.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Hey Stranger",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Moma Dance",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Roggae",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sand",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Breath and Burning",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sigma Oasis",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fling Your Head",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Debut."
+    },
+    {
+     "title": "Chalk Dust Torture",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Waves",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "No Men In No Man's Land",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mercury",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Boogie On Reggae Woman",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Dog Faced Boy",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ghost",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "hey-stranger": 7,
+  "the-moma-dance": 2,
+  "back-on-the-train": 2,
+  "roggae": 3,
+  "sand": 1,
+  "breath-and-burning": 159,
+  "sigma-oasis": 4,
+  "chalk-dust-torture": 2,
+  "waves": 64,
+  "fuego": 1,
+  "mercury": 10,
+  "boogie-on-reggae-woman": 6,
+  "backwards-down-the-number-line": 8,
+  "character-zero": 3,
+  "dog-faced-boy": 185,
+  "ghost": 2
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-01-28",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-01-28/hey-stranger",
+    "d": 396
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-01-28/the-moma-dance",
+    "d": 540
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-01-28/back-on-the-train",
+    "d": 528,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey welcomes the crowd",
+      "transcript": "TREY: Welcome. So good to see you all here again."
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-01-28/roggae",
+    "d": 622
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-01-28/sand",
+    "d": 848
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-01-28/breath-and-burning",
+    "d": 330,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Breath and Burning in 160 shows"
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-01-28/sigma-oasis",
+    "d": 529
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-01-28/fling-your-head",
+    "d": 320,
+    "tags": [
+     {
+      "name": "Debut"
+     }
+    ]
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-01-28/chalk-dust-torture",
+    "d": 952,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Call to the Post"
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-01-28/waves",
+    "d": 464
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-01-28/fuego",
+    "d": 1492,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "A version that stays nimble, building on a bed of synth and loops until the band finds a space that recalls some of their finest play  and lingers briefly, without losing momentum, honing an aggressive edge that gains focus and intensity. A true rocker."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-01-28/no-men-in-no-mans-land",
+    "d": 547
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-01-28/mercury",
+    "d": 1416,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "After a string of post-Sigma Oasis versions that were mostly compact, it seems the band is ready to stretch \"Mercury\" out again, underscored by this being the longest version since 2019. Mellow and brooding at first, the tempo rises and by 12:00, it's a perfect beach jam. The band builds towards a peak, but never quite reaches the summit. There's a fun section at the end where Trey seems like he wants to wind things down and Fish barrels through the stop sign, leading to a another couple minutes of jamming, which eventually gives way to > \"Boogie On Reggae Woman\"."
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-01-28/boogie-on-reggae-woman",
+    "d": 282
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-01-28/backwards-down-the-number-line",
+    "d": 457
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-01-28/character-zero",
+    "d": 401,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Heartbreaker by Led Zeppelin"
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, we'll see you tomorrow."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-01-28/dog-faced-boy",
+    "d": 157,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Dog Faced Boy in 186 shows"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-01-28/ghost",
+    "d": 621
+   }
+  }
+ }
+}

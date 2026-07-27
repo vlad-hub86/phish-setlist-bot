@@ -1,0 +1,266 @@
+{
+ "updated_at": "2026-07-27T07:58:50+00:00",
+ "showdate": "2026-01-31",
+ "venue": "Moon Palace",
+ "city": "Cancun",
+ "state": "Quintana Roo",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-january-31-2026-moon-palace-cancun-quintana-roo-mexico.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Mike's Song",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Halley's Comet",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Weekapaug Groove",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Julius",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "My Friend, My Friend",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "No \"Myfe\" ending."
+    },
+    {
+     "title": "Mull",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Vultures",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Also Sprach Zarathustra",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Drift While You're Sleeping",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "A Song I Heard the Ocean Sing",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Beneath a Sea of Stars Part 1",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Meatstick",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Golden Age",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Slave to the Traffic Light",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Loving Cup",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Harry Hood",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "mike-s-song": 6,
+  "halley-s-comet": 13,
+  "weekapaug-groove": 6,
+  "julius": 9,
+  "my-friend-my-friend": 3,
+  "mull": 29,
+  "vultures": 29,
+  "also-sprach-zarathustra": 4,
+  "drift-while-you-re-sleeping": 5,
+  "a-song-i-heard-the-ocean-sing": 22,
+  "beneath-a-sea-of-stars-part-1": 9,
+  "meatstick": 11,
+  "golden-age": 5,
+  "slave-to-the-traffic-light": 7,
+  "loving-cup": 17,
+  "harry-hood": 3
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-01-31",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-01-31/mikes-song",
+    "d": 561
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-01-31/halleys-comet",
+    "d": 386
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-01-31/weekapaug-groove",
+    "d": 459,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Theme from Sanford and Son by Quincy Jones"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-01-31/julius",
+    "d": 512
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-01-31/my-friend-my-friend",
+    "d": 1488,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Walk This Way by Aerosmith"
+     },
+     {
+      "name": "Tease",
+      "notes": "Weekapaug Groove"
+     },
+     {
+      "name": "Unfinished"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "After a somewhat anemic and imperfect composed section, \"My Friend, My Friend\" launches into extended improvisation yet again. Grimy murk-rock takes center stage initially, before amorphously gliding into a more melodic, patient low key psychedelic rock passage. This then morphs into the final act: a patiently wound up, somewhat mellow bliss-rock segment with melodious, laser-tone Trey guitar peaks. Longest version to date."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-01-31/mull",
+    "d": 448
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-01-31/vultures",
+    "d": 366
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-01-31/also-sprach-zarathustra",
+    "d": 601
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-01-31/drift-while-youre-sleeping",
+    "d": 707
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-01-31/a-song-i-heard-the-ocean-sing",
+    "d": 2392,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "The Final Hurrah"
+     },
+     {
+      "name": "Tease",
+      "notes": "P. Funk (Wants to Get Funked Up) by Parliament"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "It may already be cliched to observe the band is relaxed on the beach, but this very \"soundchecky\" outing is truly not in a hurry to get anywhere at all in particular, loping along nonchalantly for more than twenty minutes before it, almost as an afterthought, takes a turn for the funky and intergalactic. Pedal play ensues, intensity increases, and an effect infused, rocket powered dance party breaks out that finally gives way to a big melodic launch and gnarly peak that grinds and dissolves to -> BASOS."
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-01-31/beneath-a-sea-of-stars-part-1",
+    "d": 1143,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "We're Off to See the Wizard by Harold Arlen"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "As if inspired by the massive reading of \"A Song I Heard the Ocean Sing\" that preceded it, this take spreads itself out at a luxuriating, gradual pace. Melodic and rhythmic elasticity mercurially envelop the music, as is custom for \"Sea of Stars\", particularly colored by Fishman's finesse-driven rhythmic flux as well as Trey's both clean and affected textural playing. Play then forms up behind a spaced-out minor key drive, sounding almost threateningly similar to \"ASIHTOS\", building up to smokey, hazy peak before > \"Meatstick\"."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-01-31/meatstick",
+    "d": 550
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-01-31/golden-age",
+    "d": 783
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-01-31/slave-to-the-traffic-light",
+    "d": 680,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you so much everybody. That was so much fun. Please travel safe. We can't wait to see you again. Thank you for having us. Be safe, we'll see you very soon. Thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-01-31/loving-cup",
+    "d": 351
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-01-31/harry-hood",
+    "d": 934
+   }
+  }
+ }
+}

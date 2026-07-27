@@ -1,0 +1,263 @@
+{
+ "updated_at": "2026-07-27T07:58:49+00:00",
+ "showdate": "2026-01-30",
+ "venue": "Moon Palace",
+ "city": "Cancun",
+ "state": "Quintana Roo",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-january-30-2026-moon-palace-cancun-quintana-roo-mexico.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Blaze On",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Lyrics changed to \"dancing on the beach.\""
+    },
+    {
+     "title": "Bouncing Around the Room",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Evolve",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tube",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Water in the Sky",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on acoustic guitar."
+    },
+    {
+     "title": "Free",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bathtub Gin",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Most Events Aren't Planned",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Carini",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Light",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Frankie Says",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Everything's Right",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Life Saving Gun",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "First Tube",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Simeon",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Phish debut."
+    },
+    {
+     "title": "A Life Beyond The Dream",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "blaze-on": 3,
+  "bouncing-around-the-room": 2,
+  "evolve": 5,
+  "wolfman-s-brother": 5,
+  "tube": 3,
+  "water-in-the-sky": 33,
+  "free": 3,
+  "bathtub-gin": 5,
+  "most-events-aren-t-planned": 6,
+  "carini": 4,
+  "light": 4,
+  "frankie-says": 112,
+  "everything-s-right": 5,
+  "life-saving-gun": 3,
+  "first-tube": 3,
+  "a-life-beyond-the-dream": 2
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-01-30",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-01-30/blaze-on",
+    "d": 479,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Lyrics were changed to \"dancing on the beach.\""
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-01-30/bouncing-around-the-room",
+    "d": 232
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-01-30/evolve",
+    "d": 397
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-01-30/wolfmans-brother",
+    "d": 798
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-01-30/tube",
+    "d": 637
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-01-30/water-in-the-sky",
+    "d": 258,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on acoustic guitar."
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-01-30/free",
+    "d": 514
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-01-30/bathtub-gin",
+    "d": 877,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Call to the Post"
+     }
+    ]
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-01-30/most-events-arent-planned",
+    "d": 502
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-01-30/carini",
+    "d": 1607,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Like a great beach read that was...played on the beach. While none of the themes were novel, they may keep you guessing where they show up. There's a surprise in the middle. The end leaves you wanting more, and then, it's gone. > \"Light\"."
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-01-30/light",
+    "d": 801
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-01-30/frankie-says",
+    "d": 251,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Frankie Says in 113 shows"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-01-30/everythings-right",
+    "d": 782
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-01-30/life-saving-gun",
+    "d": 1194,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Easy-breezy major jamming bounds along until a pronounced change in demeanor around 11:00 when the jam turns minor and becomes a heavy-duty, lumbering rock-out a la the 6/27/25 \"Golden Age\" but not quite as punishing. After building to a weighty peak, the \"LSG\" riff returns and leads to a final chorus to bring it to a close."
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-01-30/first-tube",
+    "d": 418
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-01-30/simeon",
+    "d": 280,
+    "tags": [
+     {
+      "name": "Debut"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-01-30/a-life-beyond-the-dream",
+    "d": 502
+   }
+  }
+ }
+}

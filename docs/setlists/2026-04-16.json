@@ -1,0 +1,307 @@
+{
+ "updated_at": "2026-07-27T07:58:50+00:00",
+ "showdate": "2026-04-16",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-16-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Evolve",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Foam",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Theme from the Bottom",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Rift",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Scents and Subtle Sounds",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Steam",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Split Open and Melt",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Everything's Right",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Twenty Years Later",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Gotta Jibboo",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Lifeboy",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "You Enjoy Myself",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Also Sprach Zarathustra",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Space Oddity",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Harry Hood",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "evolve": 2,
+  "wolfman-s-brother": 1,
+  "foam": 9,
+  "theme-from-the-bottom": 7,
+  "rift": 8,
+  "scents-and-subtle-sounds": 9,
+  "steam": 12,
+  "split-open-and-melt": 6,
+  "everything-s-right": 1,
+  "down-with-disease": 7,
+  "twenty-years-later": 7,
+  "gotta-jibboo": 8,
+  "lifeboy": 40,
+  "you-enjoy-myself": 4,
+  "also-sprach-zarathustra": 1,
+  "space-oddity": 168
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-16",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-16/evolve",
+    "d": 347,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The backdrop was a truck driving across America animated as a giant, elaborate diorama presented by hands animated in the same style."
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-16/wolfmans-brother",
+    "d": 895,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Tweezer Reprise"
+     },
+     {
+      "name": "Lore",
+      "notes": "Visuals depicted a journey through an MC Escher-esque landscape of surreal \"rooms\" that ranged from a cozy fireplace to a giant cat peering in through the window, ultimately emerging in Las Vegas."
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-16/foam",
+    "d": 483,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Theme from Speed Racer by Nobuyoshi Koshibe"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-16/theme-from-the-bottom",
+    "d": 774,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey welcomes the crowd",
+      "transcript": "TREY: Welcome back, everybody, so happy to be back here. Thank you for being here."
+     },
+     {
+      "name": "Lore",
+      "notes": "The perspective shifted to the earth beneath a forest, a scene made up of tiny dots which glowed and pulsed together. As the jam progressed, furniture and rooms began to appear in the forest, with the scene ultimately morphing into an image of the band."
+     }
+    ]
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-16/rift",
+    "d": 424,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The visuals culminated in a recreation of David Welker's cover art for the album."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-16/scents-and-subtle-sounds",
+    "d": 844,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Somewhere Over the Rainbow by Harold Arlen and E.Y. Harburg"
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-16/steam",
+    "d": 601
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-16/split-open-and-melt",
+    "d": 896,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Visuals began with giant, sneaker-clad legs running in different directions while stepping on piles of goo on the ground, sticking to their shoes. This became a world with both aquatic and surface aspects, with stars and fish, plant and animal life, some of whom developed goo bubbles and started to rise. The entire scene ultimately melted back into a puddle with a confused face."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-16/everythings-right",
+    "d": 1000
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-16/down-with-disease",
+    "d": 1091
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-04-16/twenty-years-later",
+    "d": 572
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-16/gotta-jibboo",
+    "d": 516
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-16/lifeboy",
+    "d": 447
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-16/you-enjoy-myself",
+    "d": 1048,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The licking dog (from April 19, 2024) returned during the vocal jam, followed by a jam against an ocean of dogs swimming in sudsy water with goggles on, and finally wiener dogs in hot dog costumes."
+     }
+    ]
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-04-16/also-sprach-zarathustra",
+    "d": 630,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The hot dog theme continued by flying through a warehouse floor full of hot dogs to a hot dog rocket ship, which blasted into an outerspace littered with donuts and other snack foods. The ship ultimately found a planet with a hot dog population worshiping a giant monolith-like hot dog with a volcano erupting in the distance."
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-16/space-oddity",
+    "d": 333,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Space Oddity in 168 shows"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-04-16/harry-hood",
+    "d": 875,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Culminated in a virtual fireworks display."
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you so much everybody, thank you for coming. We'll see you tomorrow night, be safe. Thank you."
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,303 @@
+{
+ "updated_at": "2026-07-27T07:58:54+00:00",
+ "showdate": "2026-04-30",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-30-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "The Wedge",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "NICU",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Halfway to the Moon",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Leaves",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "555",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Dirt",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Punch You in the Eye",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Golgi Apparatus",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "A Song I Heard the Ocean Sing",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "A Wave of Hope",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Lonely Trip",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Runaway Jim",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sneakin' Sally Thru the Alley",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Drift While You're Sleeping",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "The Sloth",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Lyrics changed to \"Make it a triple; Fee, Sloth and Punch; Won't get our nipple.\""
+    },
+    {
+     "title": "The Squirming Coil",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "the-wedge": 16,
+  "nicu": 8,
+  "halfway-to-the-moon": 43,
+  "leaves": 18,
+  "555": 18,
+  "dirt": 40,
+  "punch-you-in-the-eye": 13,
+  "golgi-apparatus": 14,
+  "a-song-i-heard-the-ocean-sing": 6,
+  "a-wave-of-hope": 8,
+  "prince-caspian": 8,
+  "lonely-trip": 8,
+  "runaway-jim": 20,
+  "sneakin-sally-thru-the-alley": 18,
+  "drift-while-you-re-sleeping": 6,
+  "the-sloth": 98,
+  "the-squirming-coil": 18
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-30",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-30/the-wedge",
+    "d": 470,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "As the show began, the view was from inside a cabin with windows on all four walls. The room began to spin, and accompanied by recorded sound effects, the visuals eventually blurred into multicolored streaks, finally resolving into a turntable. Once the needle dropped on the record, Trey began the song."
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-30/nicu",
+    "d": 343
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-30/halfway-to-the-moon",
+    "d": 495,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Among the visuals was the Colosseum, but built out of port-a-potties."
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-30/leaves",
+    "d": 920,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Shifts into minor at 6:30 and becomes darkly atmospheric with extensive Trey soloing as it builds dramatically to a final chorus of \"breathe\"."
+     }
+    ]
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-30/555",
+    "d": 438
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-30/dirt",
+    "d": 288
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-30/punch-you-in-the-eye",
+    "d": 862,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "2026 picks up where '25 left off in regards to the extended intro section of this classic rocker. The band remains committed to 'punching up' the play here with synth effects as well as some additional clean leads from Trey to guide the affair into the song proper. The \"Landlady\" section still sadly suffers from some minor pacing and performance issues."
+     }
+    ]
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-30/golgi-apparatus",
+    "d": 295,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, we'll be right back."
+     },
+     {
+      "name": "Lore",
+      "notes": "A cameraman came on stage for close-ups of each band member as they played, projecting the image as a kaleidoscope across the dome."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-30/a-song-i-heard-the-ocean-sing",
+    "d": 968,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Swampy murk-rock typical of \"ASIHTOS\" gives way to a patient, dreamy vibe at the 5:00 mark before quickly pivoting back towards psychedelic minor-key space rock. The band holds tight here as the music blooms inward, highlighting a loose but but directional vibe. The jam then threatens a full-on funk-off, but instead spaces out around Page's clavinet and Trey's alternating wah leads and clean comping. Play then finally fades out for a > \"A Wave of Hope\"."
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-30/a-wave-of-hope",
+    "d": 1426,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "A laid-back opening then turns briefly darker for a minute around 11:00, after which the intensity picks up and the jam crests with a powerfully sustained peak, and finally washes away in a disconcerting ambient deconstruction which eventually > \"Caspian\"."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-04-30/prince-caspian",
+    "d": 541
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-30/lonely-trip",
+    "d": 483
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-30/runaway-jim",
+    "d": 910,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The scene began by looking out at Las Vegas and the Sphere. Turning upside down and zooming in on a \"Phish Hotel,\" the view passed through the peephole of the front door and into a surreal museum and library filled with odd sculptures, flying bowling pins, and toilets. After passing through several rooms, the view reached a door which opened and closed to reveal a variety of scenes, until finally backing out of the museum and returning to the Las Vegas strip."
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "Standard \"Jim\" play begins to hint at something more as Trey briefly abstracts his tone\nwith effects towards the front of the jam. As the harmonic range opens up a bit, a \ndownshift just before the 9:00 mark takes the jam into a murky zone. Fishman's\nskittering rhythms underpin an almost futuristic vibe, with Page and Mike's synth-y \nslathers grounding Trey's echo-rock lead play. Patiently working back towards major\nkey, the jam then finds its way back to \"Jim's\" traditional ending."
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-30/sneakin-sally-thru-the-alley",
+    "d": 517
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-04-30/drift-while-youre-sleeping",
+    "d": 798,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-30/the-sloth",
+    "d": 431,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Contained alternate lyrics referencing the three songs (Fee, The Sloth, and Punch You In the Eye) which reference nipple slicing, all of which had been played during the Sphere run, and during none of which did Trey appear to have sung the traditional \"nipple\" lyrics."
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "39 years after its debut, \"The Sloth\" makes history with its first encore appearance and first version to feature a bonus segment of hard rock jamming tucked inside of the composition."
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-04-30/the-squirming-coil",
+    "d": 581,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "For the outro, the view was a drive-in theater with video of the band playing as the movie. When the song reached the final chorus, suddenly only four cars remained. As each band member stopped playing and walked off stage, a corresponding car drove away."
+     }
+    ]
+   }
+  }
+ }
+}

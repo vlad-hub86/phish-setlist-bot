@@ -1,0 +1,219 @@
+{
+ "updated_at": "2026-07-27T07:58:57+00:00",
+ "showdate": "2026-07-08",
+ "venue": "Kohl Center",
+ "city": "Madison",
+ "state": "WI",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-08-2026-kohl-center-madison-wi-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Sigma Oasis",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Moma Dance",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Runaway Jim",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Cities",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Leaves",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Julius",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Cavern",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Kill Devil Falls",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Twist",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "No Men In No Man's Land",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Possum",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Monsters",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Harry Hood",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Waste",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "First Tube",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "sigma-oasis": 7,
+  "the-moma-dance": 4,
+  "runaway-jim": 3,
+  "cities": 4,
+  "leaves": 3,
+  "julius": 1,
+  "cavern": 6,
+  "kill-devil-falls": 1,
+  "prince-caspian": 3,
+  "twist": 7,
+  "no-men-in-no-man-s-land": 8,
+  "possum": 6,
+  "monsters": 5,
+  "harry-hood": 9,
+  "waste": 7,
+  "first-tube": 4
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-08",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-08/sigma-oasis",
+    "d": 1159
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-08/the-moma-dance",
+    "d": 516
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-08/runaway-jim",
+    "d": 457
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-08/cities",
+    "d": 1153
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-08/leaves",
+    "d": 654
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-08/julius",
+    "d": 495
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-08/cavern",
+    "d": 311,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks, we'll be right back, thank you."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-08/kill-devil-falls",
+    "d": 882
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-08/prince-caspian",
+    "d": 595
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-08/twist",
+    "d": 615
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-08/no-men-in-no-mans-land",
+    "d": 560
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-08/possum",
+    "d": 607
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-08/monsters",
+    "d": 473
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-08/harry-hood",
+    "d": 846
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-08/waste",
+    "d": 343
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-08/first-tube",
+    "d": 463
+   }
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "updated_at": "2026-07-27T07:58:47+00:00",
+ "showdate": "2026-01-27",
+ "venue": "Moon Palace",
+ "city": "Cancun",
+ "state": "Quintana Roo",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-january-27-2026-moon-palace-cancun-quintana-roo-mexico.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Jam",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "My Soul",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Theme from the Bottom",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "jam": 429,
+  "my-soul": 8,
+  "theme-from-the-bottom": 3
+ }
+}

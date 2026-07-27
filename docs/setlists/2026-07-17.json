@@ -1,0 +1,229 @@
+{
+ "updated_at": "2026-07-27T07:59:01+00:00",
+ "showdate": "2026-07-17",
+ "venue": "Coastal Credit Union Music Park at Walnut Creek",
+ "city": "Raleigh",
+ "state": "NC",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-17-2026-coastal-credit-union-music-park-at-walnut-creek-raleigh-nc-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Buried Alive",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Llama",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mercury",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sample in a Jar",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Destiny Unbound",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Guyute",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Golgi Apparatus",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Harry Hood",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Lyrics changed to \"inside Oswego.\""
+    },
+    {
+     "title": "The Lizards",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "A Wave of Hope",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Fee",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey briefly on megaphone."
+    },
+    {
+     "title": "Meatstick",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Mango Song",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Izabella",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "buried-alive": 13,
+  "character-zero": 6,
+  "llama": 7,
+  "mercury": 10,
+  "sample-in-a-jar": 8,
+  "destiny-unbound": 43,
+  "guyute": 12,
+  "golgi-apparatus": 9,
+  "harry-hood": 5,
+  "fuego": 6,
+  "the-lizards": 11,
+  "a-wave-of-hope": 6,
+  "fee": 12,
+  "meatstick": 7,
+  "the-mango-song": 45,
+  "izabella": 25
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-17",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-17/buried-alive",
+    "d": 165
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-17/character-zero",
+    "d": 961
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-17/llama",
+    "d": 289
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-17/mercury",
+    "d": 612
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-17/sample-in-a-jar",
+    "d": 905
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-17/destiny-unbound",
+    "d": 458
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-17/guyute",
+    "d": 585
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-17/golgi-apparatus",
+    "d": 731
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-17/harry-hood",
+    "d": 1090
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-17/fuego",
+    "d": 1305,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Trey changed the lyrics to \"inside Oswego,\" referencing the 27th anniversary of the Phish festival Camp Oswego (July 17, 1999)."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-17/the-lizards",
+    "d": 1123,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-17/a-wave-of-hope",
+    "d": 629
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-17/fee",
+    "d": 332,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Trey attempted to sing some of the song on megaphone and quickly tossed it away when it stopped working, calling it \"that piece of shit.\""
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-17/meatstick",
+    "d": 304
+   },
+   "e:3": {
+    "u": "https://phish.in/2026-07-17/the-mango-song",
+    "d": 447
+   },
+   "e:4": {
+    "u": "https://phish.in/2026-07-17/izabella",
+    "d": 386
+   }
+  }
+ }
+}

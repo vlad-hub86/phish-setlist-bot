@@ -1,0 +1,274 @@
+{
+ "updated_at": "2026-07-27T07:58:56+00:00",
+ "showdate": "2026-07-07",
+ "venue": "Kohl Center",
+ "city": "Madison",
+ "state": "WI",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-07-2026-kohl-center-madison-wi-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Chalk Dust Torture",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Ghost",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Free",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mike's Song",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Man Who Stepped Into Yesterday",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Avenu Malkenu",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Weekapaug Groove",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "A Wave of Hope",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Run Like an Antelope",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Life Saving Gun",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Sand",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ruby Waves",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Suzy Greenberg",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Slave to the Traffic Light",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Say It To Me S.A.N.T.O.S.",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "chalk-dust-torture": 3,
+  "ghost": 3,
+  "free": 7,
+  "mike-s-song": 7,
+  "the-man-who-stepped-into-yesterday": 4,
+  "avenu-malkenu": 190,
+  "weekapaug-groove": 7,
+  "a-wave-of-hope": 2,
+  "run-like-an-antelope": 6,
+  "fuego": 5,
+  "life-saving-gun": 4,
+  "sand": 1,
+  "suzy-greenberg": 7,
+  "slave-to-the-traffic-light": 4,
+  "say-it-to-me-s-a-n-t-o-s": 4
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-07",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-07/chalk-dust-torture",
+    "d": 604,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-07/ghost",
+    "d": 833,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: It's good to be back here, thanks for having us. Been too long."
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-07/back-on-the-train",
+    "d": 480,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Long Tall Glasses by Leo Sayer"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-07/free",
+    "d": 504
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-07/mikes-song",
+    "d": 515
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-07/tmwsiy",
+    "d": 221
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-07/avenu-malkenu",
+    "d": 200,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Avenu Malkenu in 191 shows"
+     }
+    ]
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-07/weekapaug-groove",
+    "d": 447
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-07-07/a-wave-of-hope",
+    "d": 621
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-07-07/character-zero",
+    "d": 374,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, we'll be right back."
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-07/run-like-an-antelope",
+    "d": 624
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-07/fuego",
+    "d": 1525
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-07/life-saving-gun",
+    "d": 685,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-07/sand",
+    "d": 906
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-07/ruby-waves",
+    "d": 970
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-07/suzy-greenberg",
+    "d": 435
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-07/slave-to-the-traffic-light",
+    "d": 534
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-07/say-it-to-me-s-a-n-t-o-s",
+    "d": 347,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, we'll see you tomorrow night, thank you so much. Be safe, we love you, see you tomorrow."
+     }
+    ]
+   }
+  }
+ }
+}

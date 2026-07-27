@@ -1,0 +1,221 @@
+{
+ "updated_at": "2026-07-27T07:58:59+00:00",
+ "showdate": "2026-07-12",
+ "venue": "Ruoff Music Center",
+ "city": "Noblesville",
+ "state": "IN",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-12-2026-ruoff-music-center-noblesville-in-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "46 Days",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Evolve",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Rift",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bathtub Gin",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Maze",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mountains in the Mist",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Stash",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Simple",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Pillow Jets",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Light",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Cream",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Also Sprach Zarathustra",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "More",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Wilson",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fluffhead",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "46-days": 9,
+  "evolve": 12,
+  "rift": 12,
+  "bathtub-gin": 10,
+  "maze": 9,
+  "mountains-in-the-mist": 5,
+  "stash": 9,
+  "simple": 10,
+  "pillow-jets": 5,
+  "light": 11,
+  "cream": 17,
+  "also-sprach-zarathustra": 12,
+  "more": 9,
+  "wilson": 5,
+  "fluffhead": 4
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-12",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-12/46-days",
+    "d": 793
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-12/evolve",
+    "d": 646
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-12/rift",
+    "d": 398
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-12/bathtub-gin",
+    "d": 1249
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-12/maze",
+    "d": 577
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-12/mountains-in-the-mist",
+    "d": 403
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-12/stash",
+    "d": 727,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "The Secret of Life by Dead Milkmen"
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-12/simple",
+    "d": 2264
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-12/pillow-jets",
+    "d": 576
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-12/light",
+    "d": 770
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-12/cream",
+    "d": 374
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-12/also-sprach-zarathustra",
+    "d": 357
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-12/more",
+    "d": 303,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-12/wilson",
+    "d": 245
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-12/fluffhead",
+    "d": 1070,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you so much everybody, this was such a fun three days, be safe, we'll see you again soon, thank you."
+     }
+    ]
+   }
+  }
+ }
+}

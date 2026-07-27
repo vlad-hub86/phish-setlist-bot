@@ -1,0 +1,1201 @@
+{
+ "generated_at": "2026-07-27T08:01:06Z",
+ "songs": {
+  "46-days": {
+   "pi_slug": "46-days",
+   "original": true,
+   "plays_recorded": 160,
+   "debut": "2002-12-14"
+  },
+  "555": {
+   "pi_slug": "555",
+   "original": true,
+   "plays_recorded": 72,
+   "debut": "2013-10-31"
+  },
+  "a-life-beyond-the-dream": {
+   "pi_slug": "a-life-beyond-the-dream",
+   "original": true,
+   "plays_recorded": 44,
+   "debut": "2019-06-19"
+  },
+  "a-song-i-heard-the-ocean-sing": {
+   "pi_slug": "a-song-i-heard-the-ocean-sing",
+   "original": true,
+   "plays_recorded": 52,
+   "debut": "2004-06-17"
+  },
+  "a-wave-of-hope": {
+   "pi_slug": "a-wave-of-hope",
+   "original": true,
+   "plays_recorded": 42,
+   "debut": "2021-08-07"
+  },
+  "about-to-run": {
+   "pi_slug": "about-to-run",
+   "original": true,
+   "plays_recorded": 29,
+   "debut": "2019-06-12"
+  },
+  "ac-dc-bag": {
+   "pi_slug": "ac-dc-bag",
+   "original": true,
+   "plays_recorded": 343,
+   "debut": "1986-04-01"
+  },
+  "also-sprach-zarathustra": {
+   "pi_slug": "also-sprach-zarathustra",
+   "original": false,
+   "artist": "Eumir Deodato",
+   "plays_recorded": 281,
+   "debut": "1993-07-16"
+  },
+  "ass-handed": {
+   "pi_slug": "ass-handed",
+   "original": true,
+   "plays_recorded": 18,
+   "debut": "2016-07-15"
+  },
+  "avenu-malkenu": {
+   "pi_slug": "avenu-malkenu",
+   "original": false,
+   "artist": "Traditional",
+   "plays_recorded": 85,
+   "debut": "1987-05-11"
+  },
+  "axilla": {
+   "pi_slug": "axilla",
+   "original": true,
+   "plays_recorded": 114,
+   "debut": "1992-11-19"
+  },
+  "axilla-part-ii": {
+   "pi_slug": "axilla-part-ii",
+   "original": true,
+   "plays_recorded": 65,
+   "debut": "1994-04-16"
+  },
+  "back-in-the-u-s-s-r": {
+   "pi_slug": "back-in-the-u-s-s-r",
+   "original": false,
+   "artist": "The Beatles",
+   "plays_recorded": 4,
+   "debut": "1994-10-31"
+  },
+  "back-on-the-train": {
+   "pi_slug": "back-on-the-train",
+   "original": true,
+   "plays_recorded": 174,
+   "debut": "1999-06-30"
+  },
+  "backwards-down-the-number-line": {
+   "pi_slug": "backwards-down-the-number-line",
+   "original": true,
+   "plays_recorded": 150,
+   "debut": "2009-03-06"
+  },
+  "bathtub-gin": {
+   "pi_slug": "bathtub-gin",
+   "original": true,
+   "plays_recorded": 324,
+   "debut": "1989-05-26"
+  },
+  "beneath-a-sea-of-stars-part-1": {
+   "pi_slug": "beneath-a-sea-of-stars-part-1",
+   "original": true,
+   "plays_recorded": 25,
+   "debut": "2019-06-29"
+  },
+  "big-ball-jam": {
+   "pi_slug": "tube-big-ball-jam-tube"
+  },
+  "big-black-furry-creature-from-mars": {
+   "pi_slug": "bbfcfm"
+  },
+  "billy-breathes": {
+   "pi_slug": "billy-breathes",
+   "original": true,
+   "plays_recorded": 67,
+   "debut": "1995-09-27"
+  },
+  "birds-of-a-feather": {
+   "pi_slug": "birds-of-a-feather",
+   "original": true,
+   "plays_recorded": 144,
+   "debut": "1998-04-02"
+  },
+  "blaze-on": {
+   "pi_slug": "blaze-on",
+   "original": true,
+   "plays_recorded": 102,
+   "debut": "2015-07-21"
+  },
+  "boogie-on-reggae-woman": {
+   "pi_slug": "boogie-on-reggae-woman",
+   "original": false,
+   "artist": "Stevie Wonder",
+   "plays_recorded": 99,
+   "debut": "1987-02-21"
+  },
+  "bouncing-around-the-room": {
+   "pi_slug": "bouncing-around-the-room",
+   "original": true,
+   "plays_recorded": 499,
+   "debut": "1990-01-20"
+  },
+  "breath-and-burning": {
+   "pi_slug": "breath-and-burning",
+   "original": true,
+   "plays_recorded": 19,
+   "debut": "2016-06-26"
+  },
+  "brian-and-robert": {
+   "pi_slug": "brian-and-robert",
+   "original": true,
+   "plays_recorded": 56,
+   "debut": "1998-06-30"
+  },
+  "brief-time": {
+   "pi_slug": "brief-time",
+   "original": true,
+   "plays_recorded": 1,
+   "debut": "2026-04-17"
+  },
+  "bug": {
+   "pi_slug": "bug",
+   "original": true,
+   "plays_recorded": 102,
+   "debut": "1999-06-30"
+  },
+  "buried-alive": {
+   "pi_slug": "buried-alive",
+   "original": true,
+   "plays_recorded": 176,
+   "debut": "1990-09-13"
+  },
+  "carini": {
+   "pi_slug": "carini",
+   "original": true,
+   "plays_recorded": 162,
+   "debut": "1997-02-17"
+  },
+  "catapult": {
+   "pi_slug": "catapult",
+   "original": true,
+   "plays_recorded": 36,
+   "debut": "1992-04-17"
+  },
+  "cavern": {
+   "pi_slug": "cavern",
+   "original": true,
+   "plays_recorded": 487,
+   "debut": "1990-03-28"
+  },
+  "chalk-dust-torture": {
+   "pi_slug": "chalk-dust-torture",
+   "original": true,
+   "plays_recorded": 534,
+   "debut": "1991-02-01"
+  },
+  "character-zero": {
+   "pi_slug": "character-zero",
+   "original": true,
+   "plays_recorded": 266,
+   "debut": "1996-06-06"
+  },
+  "cities": {
+   "pi_slug": "cities",
+   "original": false,
+   "artist": "Talking Heads",
+   "plays_recorded": 115,
+   "debut": "1984-12-01"
+  },
+  "cold-as-ice": {
+   "pi_slug": "cold-as-ice",
+   "original": false,
+   "artist": "Foreigner",
+   "plays_recorded": 74,
+   "debut": "1992-01-14"
+  },
+  "colonel-forbin-s-ascent": {
+   "pi_slug": "colonel-forbins-ascent"
+  },
+  "contact": {
+   "pi_slug": "contact",
+   "original": true,
+   "plays_recorded": 175,
+   "debut": "1988-06-15"
+  },
+  "cream": {
+   "pi_slug": "cream",
+   "original": false,
+   "artist": "Prince and the New Power Generation",
+   "plays_recorded": 2,
+   "debut": "2025-12-31"
+  },
+  "crosseyed-and-painless": {
+   "pi_slug": "crosseyed-and-painless",
+   "original": false,
+   "artist": "Talking Heads",
+   "plays_recorded": 73,
+   "debut": "1996-10-31"
+  },
+  "dancing-in-midair": {
+   "pi_slug": "dancing-in-midair",
+   "original": true,
+   "plays_recorded": 1,
+   "debut": "2026-01-29"
+  },
+  "daniel-saw-the-stone": {
+   "pi_slug": "daniel-saw-the-stone",
+   "original": false,
+   "artist": "Traditional",
+   "plays_recorded": 25,
+   "debut": "1993-07-15"
+  },
+  "david-bowie": {
+   "pi_slug": "david-bowie-2"
+  },
+  "destiny-unbound": {
+   "pi_slug": "destiny-unbound",
+   "original": true,
+   "plays_recorded": 57,
+   "debut": "1990-09-14"
+  },
+  "dirt": {
+   "pi_slug": "dirt",
+   "original": true,
+   "plays_recorded": 81,
+   "debut": "1997-06-06"
+  },
+  "divided-sky": {
+   "pi_slug": "divided-sky",
+   "original": true,
+   "plays_recorded": 447,
+   "debut": "1987-05-11"
+  },
+  "dog-faced-boy": {
+   "pi_slug": "dog-faced-boy",
+   "original": true,
+   "plays_recorded": 56,
+   "debut": "1994-04-14"
+  },
+  "down-with-disease": {
+   "pi_slug": "down-with-disease-2"
+  },
+  "drift-while-you-re-sleeping": {
+   "pi_slug": "drift-while-youre-sleeping",
+   "original": true,
+   "plays_recorded": 35,
+   "debut": "2019-06-11"
+  },
+  "esther": {
+   "pi_slug": "esther",
+   "original": true,
+   "plays_recorded": 137,
+   "debut": "1988-09-12"
+  },
+  "ether-edge": {
+   "pi_slug": "ether-edge",
+   "original": true,
+   "plays_recorded": 15,
+   "debut": "2023-07-12"
+  },
+  "everything-s-right": {
+   "pi_slug": "everythings-right"
+  },
+  "evolve": {
+   "pi_slug": "evolve",
+   "original": true,
+   "plays_recorded": 31,
+   "debut": "2021-08-04"
+  },
+  "farmhouse": {
+   "pi_slug": "farmhouse",
+   "original": true,
+   "plays_recorded": 95,
+   "debut": "1997-11-07"
+  },
+  "fast-enough-for-you": {
+   "pi_slug": "fast-enough-for-you",
+   "original": true,
+   "plays_recorded": 80,
+   "debut": "1992-11-19"
+  },
+  "fee": {
+   "pi_slug": "fee",
+   "original": true,
+   "plays_recorded": 291,
+   "debut": "1987-08-09"
+  },
+  "first-tube": {
+   "pi_slug": "first-tube",
+   "original": true,
+   "plays_recorded": 149,
+   "debut": "1999-09-09"
+  },
+  "fling-your-head": {
+   "pi_slug": "fling-your-head",
+   "original": true,
+   "plays_recorded": 1,
+   "debut": "2026-01-28"
+  },
+  "fluffhead": {
+   "pi_slug": "fluffhead",
+   "original": true,
+   "plays_recorded": 295,
+   "debut": "1984-12-01"
+  },
+  "fly-famous-mockingbird": {
+   "pi_slug": "fly-famous-mockingbird",
+   "original": true,
+   "plays_recorded": 138,
+   "debut": "1988-02-07"
+  },
+  "foam": {
+   "pi_slug": "foam",
+   "original": true,
+   "plays_recorded": 360,
+   "debut": "1988-10-29"
+  },
+  "frankenstein": {
+   "pi_slug": "frankenstein",
+   "original": false,
+   "artist": "Mary Shelley",
+   "plays_recorded": 94,
+   "debut": "1989-11-11"
+  },
+  "frankie-says": {
+   "pi_slug": "frankie-says",
+   "original": true,
+   "plays_recorded": 33,
+   "debut": "1998-04-02"
+  },
+  "free": {
+   "pi_slug": "free",
+   "original": true,
+   "plays_recorded": 242,
+   "debut": "1995-05-16"
+  },
+  "fuego": {
+   "pi_slug": "fuego",
+   "original": true,
+   "plays_recorded": 103,
+   "debut": "2013-10-31"
+  },
+  "ghost": {
+   "pi_slug": "ghost",
+   "original": true,
+   "plays_recorded": 239,
+   "debut": "1997-06-06"
+  },
+  "glide": {
+   "pi_slug": "glide",
+   "original": true,
+   "plays_recorded": 118,
+   "debut": "1991-09-27"
+  },
+  "golden-age": {
+   "pi_slug": "golden-age",
+   "original": false,
+   "artist": "TV On The Radio",
+   "plays_recorded": 90,
+   "debut": "2009-11-27"
+  },
+  "golgi-apparatus": {
+   "pi_slug": "golgi-apparatus",
+   "original": true,
+   "plays_recorded": 486,
+   "debut": "1986-10-12"
+  },
+  "good-times-bad-times": {
+   "pi_slug": "good-times-bad-times",
+   "original": false,
+   "artist": "Led Zeppelin",
+   "plays_recorded": 232,
+   "debut": "1986-12-06"
+  },
+  "gotta-jibboo": {
+   "pi_slug": "gotta-jibboo",
+   "original": true,
+   "plays_recorded": 108,
+   "debut": "1999-09-10"
+  },
+  "guelah-papyrus": {
+   "pi_slug": "guelah-papyrus",
+   "original": true,
+   "plays_recorded": 212,
+   "debut": "1991-02-01"
+  },
+  "gumbo": {
+   "pi_slug": "gumbo",
+   "original": true,
+   "plays_recorded": 128,
+   "debut": "1990-09-28"
+  },
+  "guyute": {
+   "pi_slug": "guyute",
+   "original": true,
+   "plays_recorded": 138,
+   "debut": "1993-07-18"
+  },
+  "halfway-to-the-moon": {
+   "pi_slug": "halfway-to-the-moon",
+   "original": true,
+   "plays_recorded": 56,
+   "debut": "2010-06-19"
+  },
+  "halley-s-comet": {
+   "pi_slug": "halleys-comet"
+  },
+  "harry-hood": {
+   "pi_slug": "harry-hood",
+   "original": true,
+   "plays_recorded": 449,
+   "debut": "1985-10-30"
+  },
+  "have-mercy": {
+   "pi_slug": "have-mercy",
+   "original": false,
+   "artist": "Cordae",
+   "plays_recorded": 18,
+   "debut": "1986-04-01"
+  },
+  "heavy-things": {
+   "pi_slug": "heavy-things",
+   "original": true,
+   "plays_recorded": 103,
+   "debut": "1999-09-11"
+  },
+  "hey-stranger": {
+   "pi_slug": "hey-stranger",
+   "original": true,
+   "plays_recorded": 19,
+   "debut": "2022-12-29"
+  },
+  "highway-to-hell": {
+   "pi_slug": "highway-to-hell",
+   "original": false,
+   "artist": "AC/DC",
+   "plays_recorded": 78,
+   "debut": "1989-10-01"
+  },
+  "hold-your-head-up": {
+   "pi_slug": "hyhu"
+  },
+  "horn": {
+   "pi_slug": "horn",
+   "original": true,
+   "plays_recorded": 180,
+   "debut": "1990-05-24"
+  },
+  "i-am-hydrogen": {
+   "pi_slug": "i-am-hydrogen",
+   "original": true,
+   "plays_recorded": 356,
+   "debut": "1985-04-06"
+  },
+  "i-am-the-walrus": {
+   "pi_slug": "i-am-the-walrus",
+   "original": false,
+   "artist": "The Beatles",
+   "plays_recorded": 11,
+   "debut": "2010-06-29"
+  },
+  "i-didn-t-know": {
+   "pi_slug": "i-didnt-know"
+  },
+  "if-i-could": {
+   "pi_slug": "if-i-could",
+   "original": true,
+   "plays_recorded": 70,
+   "debut": "1994-04-04"
+  },
+  "it-s-ice": {
+   "pi_slug": "its-ice"
+  },
+  "izabella": {
+   "pi_slug": "izabella",
+   "original": false,
+   "artist": "Jimi Hendrix",
+   "plays_recorded": 23,
+   "debut": "1997-06-06"
+  },
+  "joy": {
+   "pi_slug": "joy",
+   "original": true,
+   "plays_recorded": 60,
+   "debut": "2009-06-07"
+  },
+  "julius": {
+   "pi_slug": "julius",
+   "original": true,
+   "plays_recorded": 244,
+   "debut": "1994-04-04"
+  },
+  "kill-devil-falls": {
+   "pi_slug": "kill-devil-falls",
+   "original": true,
+   "plays_recorded": 126,
+   "debut": "2009-06-02"
+  },
+  "kung": {
+   "pi_slug": "kung",
+   "original": true,
+   "plays_recorded": 39,
+   "debut": "1989-10-31"
+  },
+  "la-grange": {
+   "pi_slug": "la-grange",
+   "original": false,
+   "artist": "ZZ Top",
+   "plays_recorded": 85,
+   "debut": "1987-08-09"
+  },
+  "leaves": {
+   "pi_slug": "leaves",
+   "original": true,
+   "plays_recorded": 20,
+   "debut": "2017-07-14"
+  },
+  "lengthwise": {
+   "pi_slug": "lengthwise",
+   "original": true,
+   "plays_recorded": 32,
+   "debut": "1992-11-19"
+  },
+  "life-saving-gun": {
+   "pi_slug": "life-saving-gun",
+   "original": true,
+   "plays_recorded": 22,
+   "debut": "2023-07-30"
+  },
+  "lifeboy": {
+   "pi_slug": "lifeboy",
+   "original": true,
+   "plays_recorded": 66,
+   "debut": "1993-02-03"
+  },
+  "light": {
+   "pi_slug": "light",
+   "original": true,
+   "plays_recorded": 139,
+   "debut": "2009-05-31"
+  },
+  "limb-by-limb": {
+   "pi_slug": "limb-by-limb",
+   "original": true,
+   "plays_recorded": 164,
+   "debut": "1997-06-06"
+  },
+  "llama": {
+   "pi_slug": "llama",
+   "original": true,
+   "plays_recorded": 330,
+   "debut": "1990-10-27"
+  },
+  "lonely-trip": {
+   "pi_slug": "lonely-trip",
+   "original": true,
+   "plays_recorded": 27,
+   "debut": "2021-08-11"
+  },
+  "love-you": {
+   "pi_slug": "love-you",
+   "original": false,
+   "artist": "Justin Bieber",
+   "plays_recorded": 94,
+   "debut": "1987-10-31"
+  },
+  "loving-cup": {
+   "pi_slug": "loving-cup",
+   "original": false,
+   "artist": "The Rolling Stones",
+   "plays_recorded": 156,
+   "debut": "1993-02-03"
+  },
+  "makisupa-policeman": {
+   "pi_slug": "makisupa-policeman",
+   "original": true,
+   "plays_recorded": 115,
+   "debut": "1984-10-23"
+  },
+  "martian-monster": {
+   "pi_slug": "martian-monster",
+   "original": true,
+   "plays_recorded": 54,
+   "debut": "2014-10-31"
+  },
+  "maze": {
+   "pi_slug": "maze",
+   "original": true,
+   "plays_recorded": 353,
+   "debut": "1992-01-14"
+  },
+  "mcgrupp-and-the-watchful-hosemasters": {
+   "pi_slug": "mcgrupp-2"
+  },
+  "meatstick": {
+   "pi_slug": "meatstick",
+   "original": true,
+   "plays_recorded": 80,
+   "debut": "1997-06-25"
+  },
+  "mercury": {
+   "pi_slug": "mercury",
+   "original": true,
+   "plays_recorded": 49,
+   "debut": "2015-07-22"
+  },
+  "mike-s-song": {
+   "pi_slug": "mikes-song"
+  },
+  "monsters": {
+   "pi_slug": "monsters",
+   "original": true,
+   "plays_recorded": 16,
+   "debut": "2023-07-22"
+  },
+  "moonage-daydream": {
+   "pi_slug": "moonage-daydream",
+   "original": false,
+   "artist": "David Bowie",
+   "plays_recorded": 12,
+   "debut": "2016-10-31"
+  },
+  "more": {
+   "pi_slug": "more",
+   "original": true,
+   "plays_recorded": 56,
+   "debut": "2016-10-14"
+  },
+  "most-events-aren-t-planned": {
+   "pi_slug": "most-events-arent-planned"
+  },
+  "mound": {
+   "pi_slug": "mound",
+   "original": true,
+   "plays_recorded": 121,
+   "debut": "1992-01-14"
+  },
+  "mountains-in-the-mist": {
+   "pi_slug": "mountains-in-the-mist",
+   "original": true,
+   "plays_recorded": 50,
+   "debut": "1999-07-03"
+  },
+  "mull": {
+   "pi_slug": "mull",
+   "original": true,
+   "plays_recorded": 20,
+   "debut": "2021-08-03"
+  },
+  "my-friend-my-friend": {
+   "pi_slug": "my-friend-my-friend",
+   "original": true,
+   "plays_recorded": 189,
+   "debut": "1992-01-14"
+  },
+  "my-soul": {
+   "pi_slug": "my-soul",
+   "original": false,
+   "artist": "Clifton Chenier",
+   "plays_recorded": 109,
+   "debut": "1997-02-13"
+  },
+  "nicu": {
+   "pi_slug": "nicu",
+   "original": true,
+   "plays_recorded": 163,
+   "debut": "1992-01-14"
+  },
+  "no-men-in-no-man-s-land": {
+   "pi_slug": "no-men-in-no-mans-land",
+   "original": true,
+   "plays_recorded": 90,
+   "debut": "2015-07-21"
+  },
+  "no-quarter": {
+   "pi_slug": "no-quarter",
+   "original": false,
+   "artist": "Led Zeppelin",
+   "plays_recorded": 21,
+   "debut": "2011-06-01"
+  },
+  "oblivion": {
+   "pi_slug": "oblivion",
+   "original": true,
+   "plays_recorded": 28,
+   "debut": "2023-07-11"
+  },
+  "ocelot": {
+   "pi_slug": "ocelot",
+   "original": true,
+   "plays_recorded": 104,
+   "debut": "2009-05-31"
+  },
+  "pebbles-and-marbles": {
+   "pi_slug": "pebbles-and-marbles",
+   "original": true,
+   "plays_recorded": 34,
+   "debut": "2003-01-03"
+  },
+  "pillow-jets": {
+   "pi_slug": "pillow-jets",
+   "original": true,
+   "plays_recorded": 17,
+   "debut": "2023-07-21"
+  },
+  "piper": {
+   "pi_slug": "piper",
+   "original": true,
+   "plays_recorded": 211,
+   "debut": "1997-06-06"
+  },
+  "plasma": {
+   "pi_slug": "plasma",
+   "original": true,
+   "plays_recorded": 44,
+   "debut": "2014-10-17"
+  },
+  "possum": {
+   "pi_slug": "possum",
+   "original": true,
+   "plays_recorded": 583,
+   "debut": "1985-09-27"
+  },
+  "prince-caspian": {
+   "pi_slug": "prince-caspian",
+   "original": true,
+   "plays_recorded": 190,
+   "debut": "1995-06-08"
+  },
+  "punch-you-in-the-eye": {
+   "pi_slug": "punch-you-in-the-eye",
+   "original": true,
+   "plays_recorded": 174,
+   "debut": "1989-08-17"
+  },
+  "purple-rain": {
+   "pi_slug": "purple-rain",
+   "original": false,
+   "artist": "Prince and the Revolution",
+   "plays_recorded": 33,
+   "debut": "1993-07-16"
+  },
+  "reba": {
+   "pi_slug": "reba",
+   "original": true,
+   "plays_recorded": 422,
+   "debut": "1989-10-01"
+  },
+  "rift": {
+   "pi_slug": "rift",
+   "original": true,
+   "plays_recorded": 323,
+   "debut": "1990-02-25"
+  },
+  "rock-and-roll": {
+   "pi_slug": "rock-and-roll",
+   "original": false,
+   "artist": "The Velvet Underground",
+   "plays_recorded": 97,
+   "debut": "1998-10-31"
+  },
+  "rocky-top": {
+   "pi_slug": "rocky-top",
+   "original": false,
+   "artist": "The Osborne Brothers",
+   "plays_recorded": 208,
+   "debut": "1987-09-21"
+  },
+  "roggae": {
+   "pi_slug": "roggae",
+   "original": true,
+   "plays_recorded": 120,
+   "debut": "1998-06-30"
+  },
+  "ruby-waves": {
+   "pi_slug": "ruby-waves",
+   "original": true,
+   "plays_recorded": 48,
+   "debut": "2019-06-18"
+  },
+  "run-like-an-antelope": {
+   "pi_slug": "run-like-an-antelope",
+   "original": true,
+   "plays_recorded": 504,
+   "debut": "1985-04-06"
+  },
+  "runaway-jim": {
+   "pi_slug": "runaway-jim",
+   "original": true,
+   "plays_recorded": 415,
+   "debut": "1990-03-28"
+  },
+  "sample-in-a-jar": {
+   "pi_slug": "sample-in-a-jar",
+   "original": true,
+   "plays_recorded": 317,
+   "debut": "1993-02-04"
+  },
+  "sand": {
+   "pi_slug": "sand",
+   "original": true,
+   "plays_recorded": 166,
+   "debut": "1999-09-11"
+  },
+  "saw-it-again": {
+   "pi_slug": "saw-it-again",
+   "original": true,
+   "plays_recorded": 51,
+   "debut": "1997-06-06"
+  },
+  "say-it-to-me-s-a-n-t-o-s": {
+   "pi_slug": "say-it-to-me-s-a-n-t-o-s",
+   "original": true,
+   "plays_recorded": 57,
+   "debut": "2018-10-31"
+  },
+  "scents-and-subtle-sounds": {
+   "pi_slug": "scents-and-subtle-sounds",
+   "original": true,
+   "plays_recorded": 50,
+   "debut": "2003-07-07"
+  },
+  "set-your-soul-free": {
+   "pi_slug": "set-your-soul-free",
+   "original": false,
+   "artist": "Psycho Realm",
+   "plays_recorded": 48,
+   "debut": "2018-07-20"
+  },
+  "seven-below": {
+   "pi_slug": "seven-below",
+   "original": true,
+   "plays_recorded": 55,
+   "debut": "2002-12-31"
+  },
+  "shade": {
+   "pi_slug": "shade",
+   "original": true,
+   "plays_recorded": 34,
+   "debut": "2015-07-21"
+  },
+  "sigma-oasis": {
+   "pi_slug": "sigma-oasis",
+   "original": true,
+   "plays_recorded": 51,
+   "debut": "2019-12-08"
+  },
+  "silent-in-the-morning": {
+   "pi_slug": "silent-in-the-morning",
+   "original": true,
+   "plays_recorded": 190,
+   "debut": "1992-01-14"
+  },
+  "simeon": {
+   "pi_slug": "simeon",
+   "original": true,
+   "plays_recorded": 1,
+   "debut": "2026-01-30"
+  },
+  "simple": {
+   "pi_slug": "simple",
+   "original": true,
+   "plays_recorded": 219,
+   "debut": "1994-05-27"
+  },
+  "slave-to-the-traffic-light": {
+   "pi_slug": "slave-to-the-traffic-light",
+   "original": true,
+   "plays_recorded": 298,
+   "debut": "1984-12-01"
+  },
+  "sneakin-sally-thru-the-alley": {
+   "pi_slug": "sneakin-sally-thru-the-alley"
+  },
+  "space-oddity": {
+   "pi_slug": "space-oddity",
+   "original": false,
+   "artist": "David Bowie",
+   "plays_recorded": 8,
+   "debut": "2016-06-24"
+  },
+  "sparkle": {
+   "pi_slug": "sparkle",
+   "original": true,
+   "plays_recorded": 335,
+   "debut": "1991-09-25"
+  },
+  "sparks": {
+   "pi_slug": "sparks",
+   "original": false,
+   "artist": "The Who",
+   "plays_recorded": 15,
+   "debut": "1987-03-23"
+  },
+  "split-open-and-melt": {
+   "pi_slug": "split-open-and-melt",
+   "original": true,
+   "plays_recorded": 357,
+   "debut": "1989-02-17"
+  },
+  "stash": {
+   "pi_slug": "stash",
+   "original": true,
+   "plays_recorded": 467,
+   "debut": "1990-09-13"
+  },
+  "stealing-time-from-the-faulty-plan": {
+   "pi_slug": "stealing-time-from-the-faulty-plan",
+   "original": true,
+   "plays_recorded": 83,
+   "debut": "2009-06-02"
+  },
+  "steam": {
+   "pi_slug": "steam",
+   "original": true,
+   "plays_recorded": 70,
+   "debut": "2011-06-04"
+  },
+  "suzy-greenberg": {
+   "pi_slug": "suzy-greenberg",
+   "original": true,
+   "plays_recorded": 458,
+   "debut": "1987-02-13"
+  },
+  "sweet-adeline": {
+   "pi_slug": "sweet-adeline",
+   "original": false,
+   "artist": "Avriel & the Sequoias",
+   "plays_recorded": 178,
+   "debut": "1990-03-28"
+  },
+  "taste": {
+   "pi_slug": "taste",
+   "original": true,
+   "plays_recorded": 153,
+   "debut": "1995-06-07"
+  },
+  "tela": {
+   "pi_slug": "tela",
+   "original": true,
+   "plays_recorded": 94,
+   "debut": "1988-03-12"
+  },
+  "the-curtain-with": {
+   "pi_slug": "the-curtain-with",
+   "original": true,
+   "plays_recorded": 46,
+   "debut": "1987-08-09"
+  },
+  "the-dogs": {
+   "pi_slug": "the-dogs",
+   "original": true,
+   "plays_recorded": 19,
+   "debut": "2014-10-31"
+  },
+  "the-final-hurrah": {
+   "pi_slug": "the-final-hurrah",
+   "original": true,
+   "plays_recorded": 20,
+   "debut": "2018-10-31"
+  },
+  "the-horse": {
+   "pi_slug": "the-horse",
+   "original": true,
+   "plays_recorded": 175,
+   "debut": "1992-01-14"
+  },
+  "the-lizards": {
+   "pi_slug": "the-lizards",
+   "original": true,
+   "plays_recorded": 337,
+   "debut": "1988-01-27"
+  },
+  "the-man-who-stepped-into-yesterday": {
+   "pi_slug": "tmwsiy"
+  },
+  "the-mango-song": {
+   "pi_slug": "the-mango-song",
+   "original": true,
+   "plays_recorded": 110,
+   "debut": "1989-03-30"
+  },
+  "the-moma-dance": {
+   "pi_slug": "the-moma-dance",
+   "original": true,
+   "plays_recorded": 216,
+   "debut": "1998-06-30"
+  },
+  "the-sloth": {
+   "pi_slug": "the-sloth",
+   "original": true,
+   "plays_recorded": 176,
+   "debut": "1987-08-09"
+  },
+  "the-squirming-coil": {
+   "pi_slug": "the-squirming-coil",
+   "original": true,
+   "plays_recorded": 377,
+   "debut": "1990-01-20"
+  },
+  "the-vibration-of-life": {
+   "pi_slug": "the-vibration-of-life",
+   "original": true,
+   "plays_recorded": 21,
+   "debut": "1992-11-23"
+  },
+  "the-wedge": {
+   "pi_slug": "the-wedge",
+   "original": true,
+   "plays_recorded": 135,
+   "debut": "1993-02-03"
+  },
+  "the-well": {
+   "pi_slug": "the-well",
+   "original": true,
+   "plays_recorded": 11,
+   "debut": "2023-07-16"
+  },
+  "theme-from-the-bottom": {
+   "pi_slug": "theme-from-the-bottom",
+   "original": true,
+   "plays_recorded": 200,
+   "debut": "1995-05-16"
+  },
+  "timber-jerry-the-mule": {
+   "pi_slug": "timber-jerry-the-mule",
+   "original": false,
+   "artist": "Joshua White",
+   "plays_recorded": 110,
+   "debut": "1987-04-29"
+  },
+  "tube": {
+   "pi_slug": "tube-big-ball-jam-tube"
+  },
+  "turtle-in-the-clouds": {
+   "pi_slug": "turtle-in-the-clouds",
+   "original": true,
+   "plays_recorded": 20,
+   "debut": "2018-10-31"
+  },
+  "tweezer": {
+   "pi_slug": "tweezer-6"
+  },
+  "tweezer-reprise": {
+   "pi_slug": "tweezer-reprise",
+   "original": true,
+   "plays_recorded": 342,
+   "debut": "1991-02-01"
+  },
+  "twenty-years-later": {
+   "pi_slug": "twenty-years-later",
+   "original": true,
+   "plays_recorded": 49,
+   "debut": "2009-06-05"
+  },
+  "twist": {
+   "pi_slug": "twist",
+   "original": true,
+   "plays_recorded": 195,
+   "debut": "1997-06-06"
+  },
+  "undermind": {
+   "pi_slug": "undermind",
+   "original": true,
+   "plays_recorded": 65,
+   "debut": "2009-03-08"
+  },
+  "vultures": {
+   "pi_slug": "vultures",
+   "original": true,
+   "plays_recorded": 52,
+   "debut": "1997-06-06"
+  },
+  "wading-in-the-velvet-sea": {
+   "pi_slug": "wading-in-the-velvet-sea",
+   "original": true,
+   "plays_recorded": 111,
+   "debut": "1997-06-06"
+  },
+  "walk-away": {
+   "pi_slug": "walk-away",
+   "original": false,
+   "artist": "James Gang",
+   "plays_recorded": 93,
+   "debut": "1988-07-23"
+  },
+  "walls-of-the-cave": {
+   "pi_slug": "walls-of-the-cave",
+   "original": true,
+   "plays_recorded": 81,
+   "debut": "2002-12-31"
+  },
+  "waste": {
+   "pi_slug": "waste",
+   "original": true,
+   "plays_recorded": 111,
+   "debut": "1996-06-06"
+  },
+  "water-in-the-sky": {
+   "pi_slug": "water-in-the-sky",
+   "original": true,
+   "plays_recorded": 89,
+   "debut": "1997-06-06"
+  },
+  "waves": {
+   "pi_slug": "waves",
+   "original": true,
+   "plays_recorded": 58,
+   "debut": "2002-12-31"
+  },
+  "weekapaug-groove": {
+   "pi_slug": "weekapaug-groove",
+   "original": true,
+   "plays_recorded": 535,
+   "debut": "1988-07-23"
+  },
+  "weigh": {
+   "pi_slug": "weigh",
+   "original": true,
+   "plays_recorded": 48,
+   "debut": "1992-01-14"
+  },
+  "what-s-going-through-your-mind": {
+   "pi_slug": "whats-going-through-your-mind"
+  },
+  "what-s-the-use": {
+   "pi_slug": "whats-the-use"
+  },
+  "wilson": {
+   "pi_slug": "wilson",
+   "original": true,
+   "plays_recorded": 306,
+   "debut": "1986-10-12"
+  },
+  "wingsuit": {
+   "pi_slug": "wingsuit",
+   "original": true,
+   "plays_recorded": 43,
+   "debut": "2013-10-31"
+  },
+  "wolfman-s-brother": {
+   "pi_slug": "wolfmans-brother"
+  },
+  "ya-mar": {
+   "pi_slug": "ya-mar",
+   "original": false,
+   "artist": "Cyril Ferguson",
+   "plays_recorded": 238,
+   "debut": "1987-02-21"
+  },
+  "you-enjoy-myself": {
+   "pi_slug": "you-enjoy-myself",
+   "original": true,
+   "plays_recorded": 639,
+   "debut": "1986-02-03"
+  }
+ }
+}

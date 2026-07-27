@@ -1,0 +1,284 @@
+{
+ "updated_at": "2026-07-27T07:58:52+00:00",
+ "showdate": "2026-04-18",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-april-18-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Buried Alive",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "AC/DC Bag",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Reba",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Colonel Forbin's Ascent",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fly Famous Mockingbird",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sigma Oasis",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Walk Away",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bathtub Gin",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Oblivion",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Simple",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Waste",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Twist",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Run Like an Antelope",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "I Am the Walrus",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "buried-alive": 10,
+  "ac-dc-bag": 9,
+  "reba": 7,
+  "colonel-forbin-s-ascent": 95,
+  "fly-famous-mockingbird": 95,
+  "sigma-oasis": 6,
+  "walk-away": 29,
+  "bathtub-gin": 4,
+  "oblivion": 4,
+  "simple": 10,
+  "tweezer": 6,
+  "waste": 6,
+  "twist": 7,
+  "run-like-an-antelope": 5,
+  "i-am-the-walrus": 23,
+  "tweezer-reprise": 6
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-04-18",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-04-18/buried-alive",
+    "d": 210,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Streets of Cairo"
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-04-18/ac-dc-bag",
+    "d": 571
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-04-18/reba",
+    "d": 824
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-04-18/colonel-forbins-ascent",
+    "d": 349,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Elaborate Gamehendge-focused animation was displayed, including depictions of Icculus, the Lizards, Tela, and a multi-beast."
+     }
+    ]
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-04-18/fly-famous-mockingbird",
+    "d": 477,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Elaborate Gamehendge-focused animation was displayed, including depictions of Icculus, the Lizards, Tela, and a multi-beast."
+     },
+     {
+      "name": "Narration",
+      "transcript": "TREY: The Famous Mockingbird flew down."
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-04-18/sigma-oasis",
+    "d": 1115,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Animated perspective shifted to place the band in a nest, along with two baby birds, with a majestic mountain view behind them. After a short time, a parent arrived with a meal, with great approval from the babies. As the jam reached a peak, the view followed the young birds as they jumped from the nest and soared through the valley."
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "Here the jam almost stalls before it begins, but instead churns in a murky space, finding some direction behind Page's lovely Rhodes work which acts as prelude to both Mike and Trey asserting themselves. Fish's rhythmic diversity pushes the improv further and everyone contributes to an intensifying stew that spreads out as a broadening plateau before leading to the eventual return."
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-04-18/walk-away",
+    "d": 373
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-04-18/bathtub-gin",
+    "d": 945
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-04-18/oblivion",
+    "d": 934
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-04-18/simple",
+    "d": 1506,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey apologizes for starting Simple in the wrong key",
+      "transcript": "TREY: My bad, my bad."
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "Another latter-day jam that Stefon from SNL would be proud of, because, \"It has everything.\" From emotive play to funk. From upbeat Fish-led rock with ebullient play from Trey, that eventually gives way to an ambient, dream-like outro."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-04-18/tweezer",
+    "d": 1106,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Animated perspective began by following a car on an amusement park ride as it entered a giant mouth and was swallowed. Eventually the view reached the \"stomach\" where pipes and waterfalls emptied into a central pool containing several rubber ducks. Later in the jam, the scene reached a large room encircled with fans, and a breathing set of lungs suspended from the center. Ultimately the view returned to the mouth, lingering on the tongue which was set with furniture, before a wrecking ball outside shattered the teeth as the jam concluded."
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-04-18/waste",
+    "d": 351
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-04-18/twist",
+    "d": 704
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-04-18/run-like-an-antelope",
+    "d": 688,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Animated viewers were taken inside a honeycomb hanging on a tree, passing through corridors to a chamber with honey dripping from the ceiling into a honey lake below."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-04-18/i-am-the-walrus",
+    "d": 367,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Fish performed wearing a hot pink wig."
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-04-18/tweezer-reprise",
+    "d": 182,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you."
+     },
+     {
+      "name": "Lore",
+      "notes": "Fish performed wearing a hot pink wig."
+     }
+    ]
+   }
+  }
+ }
+}

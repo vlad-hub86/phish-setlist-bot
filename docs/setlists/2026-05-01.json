@@ -1,0 +1,333 @@
+{
+ "updated_at": "2026-07-27T07:58:55+00:00",
+ "showdate": "2026-05-01",
+ "venue": "Sphere",
+ "city": "Las Vegas",
+ "state": "NV",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-may-01-2026-sphere-las-vegas-nv-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Sample in a Jar",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Boogie On Reggae Woman",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Heavy Things",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bouncing Around the Room",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mound",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mountains in the Mist",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Stealing Time From the Faulty Plan",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tela",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "McGrupp and the Watchful Hosemasters",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wingsuit",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "David Bowie",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Wilson",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Seven Below",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Plasma",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Crosseyed and Painless",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Pillow Jets",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Shade",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sand",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "I Didn't Know",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Saw It Again",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Fish on vacuum and Trey on drums."
+    },
+    {
+     "title": "Rock and Roll",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "sample-in-a-jar": 21,
+  "boogie-on-reggae-woman": 10,
+  "heavy-things": 30,
+  "bouncing-around-the-room": 8,
+  "mound": 112,
+  "mountains-in-the-mist": 13,
+  "stealing-time-from-the-faulty-plan": 42,
+  "tela": 99,
+  "mcgrupp-and-the-watchful-hosemasters": 9,
+  "wingsuit": 78,
+  "david-bowie": 19,
+  "wilson": 18,
+  "seven-below": 29,
+  "plasma": 13,
+  "crosseyed-and-painless": 12,
+  "pillow-jets": 21,
+  "shade": 32,
+  "sand": 11,
+  "i-didn-t-know": 32,
+  "saw-it-again": 55,
+  "rock-and-roll": 17
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-05-01",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-05-01/sample-in-a-jar",
+    "d": 323,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "The visuals went inside a temple filled with stained glass windows, explored it, then exited before the song ended and the temple crumbled."
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-05-01/boogie-on-reggae-woman",
+    "d": 456
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-05-01/heavy-things",
+    "d": 399
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-05-01/bouncing-around-the-room",
+    "d": 229
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-05-01/mound",
+    "d": 377,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Mound in 113 shows"
+     }
+    ]
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-05-01/mountains-in-the-mist",
+    "d": 499
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-05-01/stealing-time-from-the-faulty-plan",
+    "d": 440
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-05-01/tela",
+    "d": 407
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-05-01/mcgrupp",
+    "d": 651
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-05-01/wingsuit",
+    "d": 640
+   },
+   "1:11": {
+    "u": "https://phish.in/2026-05-01/david-bowie",
+    "d": 887
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-05-01/wilson",
+    "d": 296
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-05-01/seven-below",
+    "d": 743,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Trey's relaxed comping immediately sets the tone of the jam from the onset,\nestablishing a hazy low-key vibe. Mike then introduces a tonal pivot towards minor key\nterritory which platforms a harmonically-rich and at times sci-fi textured atmosphere.\nAs Page moves to the piano, more organic/clean play takes shape, eventually \nmodulating towards uplifting major-key heroics. This then quickly winds down to a \nlow-boil and > \"Plasma\"."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-05-01/plasma",
+    "d": 941,
+    "tags": [
+     {
+      "name": "Unfinished"
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "> from a \"Seven Below\" you'll want to check out. Clearly comfortable in the venue on the penultimate night of their run, the band drops \"Plasma\" in the two-hole of a four song suite lasting around an hour. The band toys with effects as the jam flows along effortlessly before > into a massive \"C&P\"."
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-05-01/crosseyed-and-painless",
+    "d": 1148,
+    "tags": [
+     {
+      "name": "Jamcharts",
+      "notes": "Emerging from the song proper into a melodic take on the main Crosseyed riff thus setting the table with an emotional build. HEROIC riff from Trey around 840 channels Eno's St Elmo's Fire. We shift around 12:25 into an overdrive rock jam before fading back into an minimalistic groove. The return to the Crosseyed chorus is dominated by increasingly demented takes on the lyrics before sonar riffs from Trey over a driving beat queues up the Phish Krautrock segment of the Sphere residency. Fade out on a demented Crosseyed riff and on perhaps the most exciting jam of the final weekend."
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-05-01/pillow-jets",
+    "d": 790
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-05-01/shade",
+    "d": 290
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-05-01/sand",
+    "d": 839,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Seven Below"
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-05-01/i-didnt-know",
+    "d": 210,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey introduced Fish as \"the 500 Foot-Tall Man\" and \"the Thunder from Down Under,\" then as \"Moses Brown, Moses Heaps, and Moses DeWitt\" after the song."
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-05-01/saw-it-again",
+    "d": 344,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "After the song, Trey gave Fish the same introductions as I Didn't Know, and added that he was \"sucking for you! We saw him again!\""
+     },
+     {
+      "name": "Alt Rig",
+      "notes": "Fish on vacuum and Trey on drums."
+     },
+     {
+      "name": "Jamcharts",
+      "notes": "This version earns its \"noteworthy\" status by way of a comical instrument switch-up \nbetween Trey and Fishman, as Trey takes on the drum chair to allow Fish to blow sweet \nmusic on his vacuum. Trey then introduces Fishman by a few of his famous aliases\nbefore ending the tune."
+     }
+    ]
+   },
+   "e:3": {
+    "u": "https://phish.in/2026-05-01/rock-and-roll",
+    "d": 442,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you so much everybody. Be safe, we love you. Thank you for having us. We'll see you tomorrow night. Thank you so much."
+     }
+    ]
+   }
+  }
+ }
+}

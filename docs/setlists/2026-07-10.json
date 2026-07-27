@@ -1,0 +1,230 @@
+{
+ "updated_at": "2026-07-27T07:58:58+00:00",
+ "showdate": "2026-07-10",
+ "venue": "Ruoff Music Center",
+ "city": "Noblesville",
+ "state": "IN",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-july-10-2026-ruoff-music-center-noblesville-in-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Blaze On",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Plasma",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Blaze On",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Roggae",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tube",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Limb By Limb",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Hey Stranger",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bouncing Around the Room",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Oblivion",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "You Enjoy Myself",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Loving Cup",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "What's Going Through Your Mind",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Rocky Top",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "blaze-on": 5,
+  "plasma": 3,
+  "roggae": 6,
+  "tube": 7,
+  "wolfman-s-brother": 10,
+  "limb-by-limb": 9,
+  "hey-stranger": 9,
+  "bouncing-around-the-room": 3,
+  "oblivion": 8,
+  "down-with-disease": 10,
+  "you-enjoy-myself": 10,
+  "backwards-down-the-number-line": 7,
+  "loving-cup": 11,
+  "what-s-going-through-your-mind": 6,
+  "rocky-top": 30
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-10",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-10/blaze-on",
+    "d": 748
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-10/plasma",
+    "d": 462
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-10/blaze-on-2",
+    "d": 89
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-10/roggae",
+    "d": 532
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-10/tube",
+    "d": 534
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-10/wolfmans-brother",
+    "d": 769
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-10/limb-by-limb",
+    "d": 509
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-10/hey-stranger",
+    "d": 540
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-07-10/bouncing-around-the-room",
+    "d": 879
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-10/oblivion",
+    "d": 933
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-10/down-with-disease",
+    "d": 1148,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-10/you-enjoy-myself",
+    "d": 1542
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-10/backwards-down-the-number-line",
+    "d": 448
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-10/loving-cup",
+    "d": 417,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, we'll see you tomorrow night, thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-10/whats-going-through-your-mind",
+    "d": 761,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, be safe, we'll see you tomorrow night, thank you."
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-10/rocky-top",
+    "d": 169
+   }
+  }
+ }
+}
