@@ -16,29 +16,219 @@
    "label": "1",
    "display": "Set 1",
    "songs": [
-    {"title": "Turtle in the Clouds", "transition": ">", "length_secs": null, "footnote": null},
-    {"title": "Bug", "transition": "->", "length_secs": null, "footnote": null},
-    {"title": "Seven Below", "transition": ">", "length_secs": null, "footnote": null},
-    {"title": "Ocelot", "transition": ">", "length_secs": null, "footnote": null},
-    {"title": "Mull", "transition": ",", "length_secs": null, "footnote": null},
-    {"title": "Sigma Oasis", "transition": "->", "length_secs": null, "footnote": null},
-    {"title": "Ghost", "transition": ",", "length_secs": null, "footnote": null}
+    {
+     "title": "Turtle in the Clouds",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bug",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Seven Below",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ocelot",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mull",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sigma Oasis",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ghost",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    }
    ]
   },
   {
    "label": "2",
    "display": "Set 2",
    "songs": [
-    {"title": "Sand", "transition": ">", "length_secs": 1228, "footnote": "In the Summertime tease"},
-    {"title": "Everything's Right", "transition": ">", "length_secs": 577, "footnote": null},
-    {"title": "What's the Use?", "transition": ">", "length_secs": 550, "footnote": null},
-    {"title": "Light", "transition": ">", "length_secs": 982, "footnote": "A Love Supreme tease"},
-    {"title": "Also Sprach Zarathustra", "transition": ">", "length_secs": 234, "footnote": null},
-    {"title": "Blaze On", "transition": ">", "length_secs": 666, "footnote": null},
-    {"title": "Prince Caspian", "transition": ">", "length_secs": 224, "footnote": null},
-    {"title": "More", "transition": ">", "length_secs": 372, "footnote": null},
-    {"title": "Say It To Me S.A.N.T.O.S.", "transition": ",", "length_secs": null, "footnote": null}
+    {
+     "title": "Sand",
+     "transition": ">",
+     "length_secs": 1228,
+     "footnote": "In the Summertime tease"
+    },
+    {
+     "title": "Everything's Right",
+     "transition": ">",
+     "length_secs": 577,
+     "footnote": null
+    },
+    {
+     "title": "What's the Use?",
+     "transition": ">",
+     "length_secs": 550,
+     "footnote": null
+    },
+    {
+     "title": "Light",
+     "transition": ">",
+     "length_secs": 982,
+     "footnote": "A Love Supreme tease"
+    },
+    {
+     "title": "Also Sprach Zarathustra",
+     "transition": ">",
+     "length_secs": 234,
+     "footnote": null
+    },
+    {
+     "title": "Blaze On",
+     "transition": ">",
+     "length_secs": 666,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": ">",
+     "length_secs": 224,
+     "footnote": null
+    },
+    {
+     "title": "More",
+     "transition": ">",
+     "length_secs": 372,
+     "footnote": null
+    },
+    {
+     "title": "Say It To Me S.A.N.T.O.S.",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    }
    ]
+  }
+ ],
+ "phishin": {
+  "show": "https://phish.in/2026-07-21",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-21/turtle-in-the-clouds",
+    "d": 728,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-21/bug",
+    "d": 768
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-21/seven-below",
+    "d": 701
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-21/ocelot",
+    "d": 518
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-21/mull",
+    "d": 644
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-21/sigma-oasis",
+    "d": 831
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-21/ghost",
+    "d": 646
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-21/sand",
+    "d": 1113,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "In the Summertime by Mungo Jerry"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-21/everythings-right",
+    "d": 745
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-21/whats-the-use",
+    "d": 446
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-21/light",
+    "d": 904,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "A Love Supreme by John Coltrane"
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-21/also-sprach-zarathustra",
+    "d": 355
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-21/blaze-on",
+    "d": 654,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey announces early end to show due to weather",
+      "transcript": "TREY: Hey everybody, I'm gonna tell you something right while we're playing here. Very strange thing just happened in my ears, which I was told that we have to stop at a certain time - it's not yet - but it's earlier than we normally stop, so we're not gonna do an encore or anything, we're just gonna go right until they stop us, but uh, 'cuz of the weather, unfortunately, the storm is not passing through, so we're gonna play until they stop us, but trust me, it's not us stopping, it's them telling us we have to stop. Thanks for understanding."
+     }
+    ]
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-21/prince-caspian",
+    "d": 299
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-07-21/more",
+    "d": 223
+   },
+   "2:9": {
+    "u": "https://phish.in/2026-07-21/say-it-to-me-s-a-n-t-o-s",
+    "d": 334,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you so much, everybody, that was so fun. We have to go, they're telling us we gotta go, but we're gonna come back soon. Thank you so much. Jon Fishman, Syracuse resident! Syracuse native! Moses Brown, Moses Heaps, Moses DeWitt! Moses DeWitt!"
+     }
+    ]
+   }
+  }
+ },
+ "media": [
+  {
+   "type": "x",
+   "url": "https://x.com/phish/status/2079945312072786310"
+  },
+  {
+   "type": "x",
+   "url": "https://x.com/phish/status/2079644327421092215"
   }
  ]
 }
