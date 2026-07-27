@@ -220,6 +220,14 @@ class PhishPicksPublisher(Publisher):
             bits.append(f"replaced {body['replaced']!r}")
         if body.get("transitionWrittenTo") is not None:
             bits.append(f"transition->pos {body['transitionWrittenTo']}")
+        # "we didn't know where this goes, so we appended it" — the receiver
+        # only reports this when position was absent. The live poller always
+        # sends an integer position, so seeing this in a show-night log means
+        # something upstream dropped it and the row landed at a guessed spot.
+        if body.get("positionMissing"):
+            bits.append("POSITION MISSING")
+        if body.get("appendedAt") is not None:
+            bits.append(f"appended at pos {body['appendedAt']}")
         return (" [" + ", ".join(bits) + "]") if bits else ""
 
     @staticmethod
