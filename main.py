@@ -31,10 +31,6 @@ log = logging.getLogger("main")
 
 POLL_SECS = 75          # base poll interval during a show
 POLL_JITTER = 15        # +/- jitter so we're not metronomic
-# Tighter cadence once songs are actually on the feed: first_seen timestamps
-# are the wall-clock dataset (set lengths, setbreaks, pacing) and 75s
-# granularity blurs them. Env-tunable without a code change.
-POLL_SECS_LIVE = int(os.environ.get("POLL_SECS_LIVE", "30"))
 WINDOW_START = (18, 30) # 6:30pm venue-agnostic local time (bot host runs in ET for US tours)
 WINDOW_END = (1, 0)     # 1:00am
 
@@ -165,27 +161,13 @@ def cmd_show_window(args):
     site_dir = os.environ.get("SITE_DIR", "")
     site_push = os.environ.get("SITE_PUSH", "") in ("1", "true", "yes")
 
-    # Live-only signal capture (wall-clock timestamps, setlist edit diffs,
-    # r/phish counters, rating snapshots, weather). Fully fail-safe: if it
-    # cannot be built or a tick fails, coverage continues without it.
-    capture = None
-    if site_dir:
-        try:
-            from bot.capture import Capture
-            capture = Capture(showdate, site_dir, runner.state, runner.client)
-        except Exception:
-            log.exception("capture unavailable — continuing without it")
-
     deadline = time.time() + args.minutes * 60
     while time.time() < deadline:
         runner.tick(showdate)
-        if capture:
-            capture.tick(runner._entries)
         if site_dir:
             from bot.site import update_site
             update_site(runner._entries, runner.estimated_durations(showdate), site_dir, push=site_push)
-        base = POLL_SECS_LIVE if runner._entries else POLL_SECS
-        time.sleep(base + random.uniform(-base * 0.2, base * 0.2))
+        time.sleep(POLL_SECS + random.uniform(-POLL_JITTER, POLL_JITTER))
 
     log.info("window closed — posting show recap + lengths thread")
     runner.post_show_recap(showdate)
@@ -267,9 +249,35 @@ def cmd_test_post(args):
         remote_id = pub.post(args.text)
     elif args.platform == "phishpicks":
         # phishpicks ingests structured fields, not text: the positional arg is
-        # the SONG NAME and --set carries the set (default "1").
+        # the SONG NAME, --set carries the set, --position the global show order.
+        #
+        # --position is REQUIRED here, deliberately. The receiver treats a
+        # missing position as "don't know where this goes" and APPENDS the song
+        # to whatever show is currently open, reporting appendedAt. A blind
+        # credentials check would therefore inject a phantom song onto a live
+        # board. Forcing an explicit position makes that impossible to do by
+        # accident: a re-send at a position that already holds that song is an
+        # idempotent no-op on their side.
+        if args.position is None:
+            raise SystemExit(
+                "test-post --platform phishpicks requires --position (global show "
+                "order, 1-based).\nWithout it the receiver APPENDS the song to the "
+                "open show — that writes real data to a live board.\n"
+                "To re-send a song that already exists, pass its real position; "
+                "that is a safe no-op.\n"
+                "Example: main.py test-post \"Tweezer\" --platform phishpicks "
+                "--set 2 --position 12"
+            )
         pub = _phishpicks_from_env()
-        remote_id = pub.post(args.text, meta={"song": args.text, "set": args.set})
+        remote_id = pub.post(
+            args.text,
+            meta={
+                "song": args.text,
+                "set": args.set,
+                "position": args.position,
+                "showdate": args.showdate,
+            },
+        )
     else:
         pub = TruthPublisher(os.environ.get("TRUTH_BEARER_TOKEN", ""))
         remote_id = pub.post(args.text)
@@ -285,7 +293,7 @@ def main():
     sw = sub.add_parser("show-window"); sw.add_argument("--minutes", type=int, default=340); sw.add_argument("--dry-run", action="store_true"); sw.set_defaults(fn=cmd_show_window)
     o = sub.add_parser("once"); o.add_argument("--date", default=date.today().isoformat()); o.add_argument("--dry-run", action="store_true"); o.set_defaults(fn=cmd_once)
     rp = sub.add_parser("replay"); rp.add_argument("fixture"); rp.set_defaults(fn=cmd_replay)
-    tp = sub.add_parser("test-post"); tp.add_argument("text"); tp.add_argument("--platform", default="truthsocial", choices=["truthsocial", "x", "phishpicks"]); tp.add_argument("--set", default="1", help="set label for --platform phishpicks (the 'text' arg is the song name)"); tp.set_defaults(fn=cmd_test_post)
+    tp = sub.add_parser("test-post"); tp.add_argument("text"); tp.add_argument("--platform", default="truthsocial", choices=["truthsocial", "x", "phishpicks"]); tp.add_argument("--set", default="1", help="set label for --platform phishpicks (the 'text' arg is the song name)"); tp.add_argument("--position", type=int, default=None, help="REQUIRED for --platform phishpicks: global 1-based show order. Omitting it makes the receiver append to the open show (writes live data)."); tp.add_argument("--showdate", default=None, help="optional YYYY-MM-DD for --platform phishpicks; the receiver rejects a mismatch with 409 instead of misfiling"); tp.set_defaults(fn=cmd_test_post)
     vr = sub.add_parser("verified-recap"); vr.add_argument("--date", default=date.today().isoformat()); vr.add_argument("--dry-run", action="store_true"); vr.set_defaults(fn=cmd_verified_recap)
 
     args = p.parse_args()
