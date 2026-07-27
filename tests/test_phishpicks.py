@@ -206,6 +206,30 @@ def test_ack_flags_are_logged_not_fatal():
     assert "replaced 'Cavern'" in PhishPicksPublisher._describe(FakeResp(200, {"replaced": "Cavern"}))
 
 
+def test_position_missing_ack_is_surfaced_loudly():
+    """The receiver appends when position is absent. The live poller always
+    sends an integer, so this appearing in a show-night log is a real signal."""
+    d = PhishPicksPublisher._describe(
+        FakeResp(200, {"ok": True, "positionMissing": True, "appendedAt": 23})
+    )
+    assert "POSITION MISSING" in d
+    assert "appended at pos 23" in d
+
+
+def test_runner_always_sends_an_integer_position():
+    """Guards the invariant the receiver's append path depends on: the live
+    path never sends a null position, so it can never blind-append."""
+    rows = [_row(1, "1", "Free", transition=2, songid=200),
+            _row(2, "1", "Simple", transition=0, songid=540)]
+    runner, truth, pp, sess = _runner_with_phishpicks(rows, set_recaps=False)
+    runner.tick("2026-07-25")
+    assert len(sess.calls) == 2
+    for c in sess.calls:
+        assert isinstance(c["json"]["position"], int)
+        assert c["json"]["position"] is not None
+        assert c["json"]["showdate"] == "2026-07-25"
+
+
 def test_id_none_when_no_json():
     sess = FakeSession([FakeResp(202, body=None)])  # accepted, empty/non-json body
     pub = PhishPicksPublisher(token="t", session=sess)
