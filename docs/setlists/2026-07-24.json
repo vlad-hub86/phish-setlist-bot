@@ -8,7 +8,7 @@
  "note": "🕰️ The '93 night of the retrospective — Phish's 93rd MSG show, played like 1993 (Trey in the Marvin the Martian shirt).",
  "phishnet_url": "https://phish.net/setlists/phish-july-24-2026-madison-square-garden-new-york-ny-usa",
  "shownotes": [
-  "Big Ball Jam returned after 1,170 shows (last 12/9/94), beach balls in the crowd and a hoop onstage; La Grange after 531 shows — only its second appearance since 1999. Also back: Sparks (357 shows), Sweet Adeline (358), Kung (258 — played over the Makisupa groove), Makisupa itself (149) with an \"iced green matcha tea\" keyword winking at '93.",
+  "Bustout night: Big Ball Jam returned for the first time since 12/9/94 — beach balls in the crowd, a hoop onstage — and La Grange made only its second appearance since 1999. Also back from the vault: Sparks, Sweet Adeline, Kung over the Makisupa groove, and Makisupa itself with an \"iced green matcha tea\" keyword winking at '93.",
   "Community pulse — \"the electricity at set break could have powered Kuroda's rig.\""
  ],
  "sets": [
@@ -179,6 +179,199 @@
      "footnote": null
     }
    ]
+  }
+ ],
+ "phishin": {
+  "show": "https://phish.in/2026-07-24",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-24/llama",
+    "d": 258
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-24/bathtub-gin",
+    "d": 1078
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-24/lengthwise",
+    "d": 53
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-24/maze",
+    "d": 565
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-24/gumbo",
+    "d": 714
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-24/daniel-saw-the-stone",
+    "d": 188
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-24/weigh",
+    "d": 311,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Lyrics were changed to \"on a summer day.\""
+     }
+    ]
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-24/guelah-papyrus",
+    "d": 320
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-07-24/divided-sky",
+    "d": 732
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-07-24/tube-big-ball-jam-tube",
+    "d": 361,
+    "n": 3,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey quoted \"Big Balls\" in the Tube prior to Big Ball Jam."
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Big Ball Jam in 1,169 shows"
+     }
+    ]
+   },
+   "1:11": {
+    "u": "https://phish.in/2026-07-24/tube-big-ball-jam-tube",
+    "m": "1:10",
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey quoted \"Big Balls\" in the Tube prior to Big Ball Jam."
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Big Ball Jam in 1,169 shows"
+     }
+    ]
+   },
+   "1:12": {
+    "u": "https://phish.in/2026-07-24/tube-big-ball-jam-tube",
+    "m": "1:10",
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey quoted \"Big Balls\" in the Tube prior to Big Ball Jam."
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Big Ball Jam in 1,169 shows"
+     }
+    ]
+   },
+   "1:13": {
+    "u": "https://phish.in/2026-07-24/la-grange",
+    "d": 350,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of La Grange in 530 shows"
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-24/also-sprach-zarathustra",
+    "d": 695
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-24/chalk-dust-torture",
+    "d": 949
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-24/sparks",
+    "d": 188,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Sparks in 356 shows"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-24/slave-to-the-traffic-light",
+    "d": 567
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-24/the-wedge",
+    "d": 778
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-24/makisupa-policeman",
+    "d": 445,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Included the lyrics \"iced green matcha tea, policeman looking at me.\""
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Makisupa Policeman in 148 shows"
+     }
+    ]
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-24/kung",
+    "d": 165,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Kung in 257 shows"
+     }
+    ]
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-07-24/suzy-greenberg",
+    "d": 361
+   },
+   "2:9": {
+    "u": "https://phish.in/2026-07-24/golgi-apparatus",
+    "d": 376
+   },
+   "2:10": {
+    "u": "https://phish.in/2026-07-24/good-times-bad-times",
+    "d": 360
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-24/sweet-adeline",
+    "d": 148,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Sweet Adeline in 357 shows"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-24/fluffhead",
+    "d": 983,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you, we'll see you tomorrow night."
+     }
+    ]
+   }
+  }
+ },
+ "media": [
+  {
+   "type": "x",
+   "url": "https://x.com/phish/status/2081031721265598673"
+  },
+  {
+   "type": "x",
+   "url": "https://x.com/phish/status/2080679398047391834"
   }
  ]
 }
