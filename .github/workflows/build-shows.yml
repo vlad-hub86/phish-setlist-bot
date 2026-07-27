@@ -1,0 +1,66 @@
+name: Build show pages
+
+# Regenerates the Setlist Lizard ... With show pages + tour dashboard from the
+# phish-setlist-bot feed, then commits them. The commit lands on main, which
+# fires "Deploy to Porkbun" and pushes the result live.
+#
+# No API key needed: the bot has already done the Phish.net work and committed
+# the JSON. This job only reads its public raw output.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tools/build_setlistlizard.py"
+      - ".github/workflows/build-shows.yml"
+  schedule:
+    # 12:20 and 16:20 UTC — after the bot's overnight verified-recap run lands.
+    - cron: "20 12,16 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: build-shows
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  actions: write   # needed to kick the deploy workflow (see note below)
+
+jobs:
+  build:
+    # Never react to our own commit — avoids a build/commit loop.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate show pages and dashboard
+        run: python tools/build_setlistlizard.py --fetch --out .
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "setlist-lizard builder"
+          git config user.email "builder@mikeside.com"
+          git add projects/setlistlizard_with
+          if git diff --cached --quiet; then
+            echo "No changes — nothing to deploy."
+            exit 0
+          fi
+          git commit -m "build: regenerate Setlist Lizard show pages + tour stats"
+          git push
+          echo "changed=1" >> "$GITHUB_ENV"
+
+      # A push made with GITHUB_TOKEN does NOT trigger other workflows, so the
+      # commit above would sit in the repo and never reach Porkbun. Dispatching
+      # the deploy explicitly is the supported way around that.
+      - name: Kick the Porkbun deploy
+        if: env.changed == '1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run "Deploy to Porkbun" --ref main
