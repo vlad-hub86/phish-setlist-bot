@@ -23,9 +23,15 @@ Changeset format (one JSON file per push, named push-<anything>.json):
 }
 
 Safety rules enforced here:
-  - paths must be relative, inside the repo, no "..", no absolute paths
+  - paths must be relative, inside the repo, no \"..\", no absolute paths
   - paths may not touch .github/ (so a changeset can never alter workflows)
   - only files named push-*.json in the inbox are considered
+
+Job requests: if docs/job-request.json exists in the repo and names a job
+from ALLOWED_JOBS, that script is run here (the GitHub-hosted runner has
+the network access the sandboxed Claude sessions lack), its output under
+docs/ is committed, and the request file is removed so a bad request can
+never loop. Only the hard-coded ALLOWED_JOBS commands can run.
 """
 
 import base64
@@ -42,6 +48,11 @@ FOLDER_ID = os.environ.get("INBOX_FOLDER_ID", "1c_Kg5A_LMxVI55u6H2U1Z5mAg8NjwDaQ
 LOG_PATH = "docs/push-log.json"
 UA = "phish-setlist-bot-inbox/1.0"
 FORBIDDEN_PREFIXES = (".github/",)
+
+JOB_REQUEST = "docs/job-request.json"
+ALLOWED_JOBS = {
+    "backfill-2026": [sys.executable or "python3", "deploy/backfill_2026.py"],
+}
 
 
 def http_get(url, timeout=30):
@@ -163,8 +174,61 @@ def apply_changeset(name, raw):
     return True, message, None
 
 
+def run_job_if_requested():
+    """Run a whitelisted job named by docs/job-request.json. Returns True if
+    a commit was made. The request file is always consumed, success or not."""
+    if not os.path.exists(JOB_REQUEST):
+        return False
+    try:
+        with open(JOB_REQUEST, "r", encoding="utf-8") as fh:
+            req = json.load(fh)
+    except Exception:
+        req = {}
+    job = req.get("job") if isinstance(req, dict) else None
+    cmd = ALLOWED_JOBS.get(job)
+
+    ok, detail = False, None
+    if cmd is None:
+        detail = f"unknown job {job!r}"
+        print(f"job-request: {detail}")
+    else:
+        print(f"job-request: running {job}: {' '.join(cmd)}", flush=True)
+        try:
+            result = subprocess.run(cmd, timeout=480)
+            ok = result.returncode == 0
+            if not ok:
+                detail = f"exit code {result.returncode}"
+        except subprocess.TimeoutExpired:
+            detail = "timed out after 480s"
+        print(f"job-request: {job} {'succeeded' if ok else 'FAILED: ' + str(detail)}")
+
+    log = load_log()
+    log.setdefault("jobs", []).append({
+        "job": job,
+        "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "ok": ok,
+        **({"error": detail} if detail else {}),
+    })
+    save_log(log)
+
+    # Consume the request, stage everything the job produced under docs/,
+    # and commit — even a failure commits the log so it can't rerun forever.
+    run("git", "rm", "-q", "--ignore-unmatch", "--", JOB_REQUEST)
+    run("git", "add", "-A", "--", "docs")
+    diff = subprocess.run(["git", "diff", "--cached", "--quiet"])
+    if diff.returncode == 0:
+        return False
+    status = "ok" if ok else f"failed ({detail})"
+    run("git", "commit", "-q", "-m", f"[job] {job}: {status}")
+    return True
+
+
 def main():
-    inbox = list_inbox()
+    inbox = []
+    try:
+        inbox = list_inbox()
+    except Exception as exc:
+        print(f"inbox listing failed (continuing to job check): {exc}")
     print(f"inbox listing: {len(inbox)} file(s)")
     log = load_log()
     seen = {e["file_id"] for e in log["applied"]}
@@ -174,9 +238,6 @@ def main():
         for fid, name in inbox
         if fid not in seen and (name == "" or re.fullmatch(r"push-.*\.json", name))
     ]
-    if not pending:
-        print("nothing to apply")
-        return 0
 
     made_commits = False
     for fid, name in sorted(pending, key=lambda t: t[1]):
@@ -214,6 +275,9 @@ def main():
         run("git", "commit", "-q", "-m", f"[inbox] {message}")
         made_commits = True
         print(f"  committed: {message}")
+
+    if run_job_if_requested():
+        made_commits = True
 
     if not made_commits:
         print("no commits made")
