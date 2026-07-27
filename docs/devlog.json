@@ -1,0 +1,41 @@
+{
+  "schema": "mikeside-devlog/1",
+  "project": "setlist-bot",
+  "entries": [
+    {
+      "date": "2026-07-27",
+      "project": "setlist-bot",
+      "type": "content",
+      "title": "Feeds backfilled with phish.in track maps + official photos",
+      "notes": "7/21 through 7/25 get audio links, real recorded durations and bustout tags — the Tweezerfest's six Tweezers each map to their own track."
+    },
+    {
+      "date": "2026-07-26",
+      "project": "setlist-bot",
+      "type": "feature",
+      "title": "Live-only signal capture",
+      "notes": "Per-song first-seen clock times, setlist edit diffs, rating snapshots and venue weather — recorded during the show, because they're unrecoverable after. Poll cadence tightens to 30s once the show is live."
+    },
+    {
+      "date": "2026-07-26",
+      "project": "setlist-bot",
+      "type": "feature",
+      "title": "Phishpicks v2 payloads + 46 tests",
+      "notes": "Positions, incoming segue marks and receiver-aware retries; blind appends made impossible."
+    },
+    {
+      "date": "2026-07-22",
+      "project": "setlist-bot",
+      "type": "feature",
+      "title": "Every show auto-archives",
+      "notes": "Each night lands in docs/setlists/ with curated notes preserved across rewrites."
+    },
+    {
+      "date": "2026-07-21",
+      "project": "setlist-bot",
+      "type": "release",
+      "title": "Bot goes live",
+      "notes": "Polls Phish.net during shows, posts to Truth Social, publishes the site's live feed."
+    }
+  ]
+}
