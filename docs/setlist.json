@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T00:29:37+00:00",
+ "updated_at": "2026-07-28T00:34:28+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -30,6 +30,12 @@
     },
     {
      "title": "Scent of a Mule",
+     "transition": ",",
+     "length_secs": 293,
+     "footnote": null
+    },
+    {
+     "title": "Theme from the Bottom",
      "transition": ",",
      "length_secs": null,
      "footnote": null
