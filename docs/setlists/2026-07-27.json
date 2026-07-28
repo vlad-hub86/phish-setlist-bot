@@ -5,6 +5,14 @@
  "city": "New York",
  "state": "NY",
  "complete": true,
+ "note": "🎸 The '95 night — and the one that finally played the song this site is named after: The Curtain ... With opened Set 2. Trey spent half the night behind a mini drum kit, and Johnny B. Goode came back after 927 shows.",
+ "phishnet_url": "https://phish.net/setlists/phish-july-27-2026-madison-square-garden-new-york-ny-usa.html",
+ "shownotes": [
+  "Phish's 95th performance at Madison Square Garden, and the fourth night of the five-night '92–'96 retrospective. The whole show ran on 1995 references: a setlist drawn from that year's rotation, Trey in a Jah Volunteer shirt, a chess board on stage, and the mini drum kit.",
+  "Three bustouts: Ha Ha Ha (231 shows), Drowned (113), and Johnny B. Goode, last played August 8, 1998 — 927 shows ago.",
+  "Wilson was preceded by Page's chess move for the band. The P.A. announced checkmate, but Page moved the band's rook to C4 rather than A4, threatening the audience's queen rather than its king.",
+  "Teases through the night: Rainy Day Women #12 & 35 in Timber, San-Ho-Zay in Halley's Comet, Tequila and Cissy Strut in Drowned (the whole band), and Johnny B. Goode in Loving Cup."
+ ],
  "sets": [
   {
    "label": "1",
@@ -20,7 +28,7 @@
      "title": "Timber (Jerry the Mule)",
      "transition": ",",
      "length_secs": 909,
-     "footnote": "Trey on mini drum kit."
+     "footnote": "Trey on mini drum kit. Rainy Day Women #12 & 35 tease."
     },
     {
      "title": "Ha Ha Ha",
@@ -44,7 +52,7 @@
      "title": "Halley's Comet",
      "transition": "->",
      "length_secs": 1224,
-     "footnote": "Trey on mini drum kit."
+     "footnote": "Trey on mini drum kit. San-Ho-Zay tease."
     },
     {
      "title": "The Man Who Stepped Into Yesterday",
@@ -98,7 +106,7 @@
      "title": "Drowned",
      "transition": ">",
      "length_secs": 1757,
-     "footnote": "Trey on mini drum kit."
+     "footnote": "Trey on mini drum kit. Tequila and Cissy Strut teases from the whole band."
     },
     {
      "title": "Billy Breathes",
@@ -140,9 +148,31 @@
      "title": "Loving Cup",
      "transition": "",
      "length_secs": null,
-     "footnote": null
+     "footnote": "Johnny B. Goode tease."
     }
    ]
   }
- ]
+ ],
+ "gaps": {
+  "wilson": 9,
+  "timber-jerry-the-mule": 10,
+  "ha-ha-ha": 231,
+  "scent-of-a-mule": 96,
+  "theme-from-the-bottom": 10,
+  "halley-s-comet": 7,
+  "the-man-who-stepped-into-yesterday": 13,
+  "avenu-malkenu": 13,
+  "nicu": 4,
+  "funky-bitch": 32,
+  "taste": 7,
+  "the-curtain-with": 8,
+  "prince-caspian": 3,
+  "drowned": 119,
+  "billy-breathes": 18,
+  "it-s-ice": 8,
+  "johnny-b-goode": 927,
+  "free": 5,
+  "strange-design": 61,
+  "loving-cup": 11
+ }
 }
