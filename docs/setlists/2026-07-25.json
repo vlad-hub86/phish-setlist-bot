@@ -1,1 +1,343 @@
-{"updated_at":"2026-07-26T04:46:52+00:00","showdate":"2026-07-25","venue":"Madison Square Garden","city":"New York","state":"NY","complete":true,"note":"🕰️ The '94 night — a Madison Square Garden Tweezerfest nodding to 5/7/94 at the Bomb Factory: Tweezer surfacing six times before the Reprise encore.","phishnet_url":"https://phish.net/setlists/phish-july-25-2026-madison-square-garden-new-york-ny-usa","shownotes":["Set 2 wove Tweezer in and out of Down with Disease, Sample in a Jar, Catapult and Cavern, Bomb Factory-style; the Purple Rain encore completed the '94 homage. Wolfman's Brother ended mid-song in Set 1 after a front-of-house power outage.","Part of the five-night '92–'96 retrospective: one night per year, played in period."],"sets":[{"label":"1","display":"Set 1","songs":[{"title":"Back in the U.S.S.R.","transition":",","length_secs":296,"footnote":null},{"title":"Simple","transition":",","length_secs":1232,"footnote":null},{"title":"Rift","transition":",","length_secs":621,"footnote":null},{"title":"Punch You in the Eye","transition":">","length_secs":588,"footnote":null},{"title":"Wolfman's Brother","transition":"","length_secs":null,"footnote":"Ended mid-song due to FOH outage."}]},{"label":"2","display":"Set 2","songs":[{"title":"Highway to Hell","transition":",","length_secs":null,"footnote":null},{"title":"Down with Disease","transition":"->","length_secs":899,"footnote":null},{"title":"Tweezer","transition":"->","length_secs":1198,"footnote":null},{"title":"Down with Disease","transition":">","length_secs":null,"footnote":null},{"title":"Tweezer","transition":">","length_secs":311,"footnote":null},{"title":"Sample in a Jar","transition":"->","length_secs":300,"footnote":null},{"title":"Tweezer","transition":">","length_secs":null,"footnote":null},{"title":"Lifeboy","transition":",","length_secs":581,"footnote":null},{"title":"Julius","transition":">","length_secs":324,"footnote":null},{"title":"Tweezer","transition":"->","length_secs":318,"footnote":null},{"title":"Catapult","transition":"->","length_secs":null,"footnote":null},{"title":"Tweezer","transition":">","length_secs":314,"footnote":null},{"title":"Cavern","transition":"->","length_secs":613,"footnote":null},{"title":"Tweezer","transition":">","length_secs":546,"footnote":null},{"title":"The Squirming Coil","transition":"","length_secs":null,"footnote":null}]},{"label":"e","display":"Encore","songs":[{"title":"Purple Rain","transition":",","length_secs":615,"footnote":null},{"title":"Tweezer Reprise","transition":"","length_secs":null,"footnote":null}]}],"media":[{"type":"x","url":"https://x.com/phish/status/2081395617121865943"},{"type":"x","url":"https://x.com/phish/status/2081049335421165663"}],"phishin":{"show":"https://phish.in/2026-07-25","tracks":{"1:1":{"u":"https://phish.in/2026-07-25/back-in-the-u-s-s-r","d":310,"tags":[{"name":"Bustout","notes":"First performance of Back in the U.S.S.R. in 484 shows"}]},"1:2":{"u":"https://phish.in/2026-07-25/simple","d":1204,"tags":[{"name":"Tease","notes":"Dave's Energy Guide"}]},"1:3":{"u":"https://phish.in/2026-07-25/rift","d":361},"1:4":{"u":"https://phish.in/2026-07-25/punch-you-in-the-eye","d":695},"1:5":{"u":"https://phish.in/2026-07-25/wolfmans-brother","d":405},"2:1":{"u":"https://phish.in/2026-07-25/highway-to-hell","d":210,"tags":[{"name":"Bustout","notes":"First performance of Highway to Hell in 658 shows"}]},"2:2":{"u":"https://phish.in/2026-07-25/down-with-disease","d":807},"2:3":{"u":"https://phish.in/2026-07-25/tweezer","d":1071},"2:4":{"u":"https://phish.in/2026-07-25/down-with-disease-2","d":86},"2:5":{"u":"https://phish.in/2026-07-25/tweezer-2","d":236,"tags":[{"name":"Tease","notes":"Mind Left Body by Jefferson Airplane"}]},"2:6":{"u":"https://phish.in/2026-07-25/sample-in-a-jar","d":217},"2:7":{"u":"https://phish.in/2026-07-25/tweezer-3","d":255},"2:8":{"u":"https://phish.in/2026-07-25/lifeboy","d":378},"2:9":{"u":"https://phish.in/2026-07-25/julius","d":475},"2:10":{"u":"https://phish.in/2026-07-25/tweezer-4","d":147},"2:11":{"u":"https://phish.in/2026-07-25/catapult","d":84,"tags":[{"name":"Bustout","notes":"First performance of Catapult in 222 shows"}]},"2:12":{"u":"https://phish.in/2026-07-25/tweezer-5","d":385},"2:13":{"u":"https://phish.in/2026-07-25/cavern","d":573},"2:14":{"u":"https://phish.in/2026-07-25/tweezer-6","d":681},"2:15":{"u":"https://phish.in/2026-07-25/the-squirming-coil","d":520,"tags":[{"name":"Banter","notes":"Page thanks the crowd"}]},"e:1":{"u":"https://phish.in/2026-07-25/purple-rain","d":554,"tags":[{"name":"Alt Rig","notes":"Trey played both drums and guitar."},{"name":"Bustout","notes":"First performance of Purple Rain in 534 shows"}]},"e:2":{"u":"https://phish.in/2026-07-25/tweezer-reprise","d":201,"tags":[{"name":"Alt Lyric","notes":"Included Purple Rain vocals from Fish."},{"name":"Banter","notes":"Trey thanks the crowd"}]}}}}
+{
+ "updated_at": "2026-07-26T04:46:52+00:00",
+ "showdate": "2026-07-25",
+ "venue": "Madison Square Garden",
+ "city": "New York",
+ "state": "NY",
+ "complete": true,
+ "note": "🕰️ The '94 night — a Madison Square Garden Tweezerfest nodding to 5/7/94 at the Bomb Factory: Tweezer surfacing six times before the Reprise encore.",
+ "phishnet_url": "https://phish.net/setlists/phish-july-25-2026-madison-square-garden-new-york-ny-usa",
+ "shownotes": [
+  "Set 2 wove Tweezer in and out of Down with Disease, Sample in a Jar, Catapult and Cavern, Bomb Factory-style; the Purple Rain encore completed the '94 homage. Wolfman's Brother ended mid-song in Set 1 after a front-of-house power outage.",
+  "Part of the five-night '92–'96 retrospective: one night per year, played in period."
+ ],
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Back in the U.S.S.R.",
+     "transition": ",",
+     "length_secs": 296,
+     "footnote": null
+    },
+    {
+     "title": "Simple",
+     "transition": ",",
+     "length_secs": 1232,
+     "footnote": null
+    },
+    {
+     "title": "Rift",
+     "transition": ",",
+     "length_secs": 621,
+     "footnote": null
+    },
+    {
+     "title": "Punch You in the Eye",
+     "transition": ">",
+     "length_secs": 588,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": "",
+     "length_secs": null,
+     "footnote": "Ended mid-song due to FOH outage."
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Highway to Hell",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": "->",
+     "length_secs": 899,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": "->",
+     "length_secs": 1198,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": 311,
+     "footnote": null
+    },
+    {
+     "title": "Sample in a Jar",
+     "transition": "->",
+     "length_secs": 300,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Lifeboy",
+     "transition": ",",
+     "length_secs": 581,
+     "footnote": null
+    },
+    {
+     "title": "Julius",
+     "transition": ">",
+     "length_secs": 324,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": "->",
+     "length_secs": 318,
+     "footnote": null
+    },
+    {
+     "title": "Catapult",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": 314,
+     "footnote": null
+    },
+    {
+     "title": "Cavern",
+     "transition": "->",
+     "length_secs": 613,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": 546,
+     "footnote": null
+    },
+    {
+     "title": "The Squirming Coil",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Purple Rain",
+     "transition": ",",
+     "length_secs": 615,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "media": [
+  {
+   "type": "x",
+   "url": "https://x.com/phish/status/2081395617121865943"
+  },
+  {
+   "type": "x",
+   "url": "https://x.com/phish/status/2081049335421165663"
+  }
+ ],
+ "phishin": {
+  "show": "https://phish.in/2026-07-25",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-25/back-in-the-u-s-s-r",
+    "d": 310,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Back in the U.S.S.R. in 484 shows"
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-25/simple",
+    "d": 1204,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Dave's Energy Guide"
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-25/rift",
+    "d": 361
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-25/punch-you-in-the-eye",
+    "d": 695
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-25/wolfmans-brother",
+    "d": 405
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-25/highway-to-hell",
+    "d": 210,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Highway to Hell in 658 shows"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-25/down-with-disease",
+    "d": 807
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-25/tweezer",
+    "d": 1071
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-25/down-with-disease-2",
+    "d": 86
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-25/tweezer-2",
+    "d": 236,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Mind Left Body by Jefferson Airplane"
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-25/sample-in-a-jar",
+    "d": 217
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-25/tweezer-3",
+    "d": 255
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-07-25/lifeboy",
+    "d": 378
+   },
+   "2:9": {
+    "u": "https://phish.in/2026-07-25/julius",
+    "d": 475
+   },
+   "2:10": {
+    "u": "https://phish.in/2026-07-25/tweezer-4",
+    "d": 147
+   },
+   "2:11": {
+    "u": "https://phish.in/2026-07-25/catapult",
+    "d": 84,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Catapult in 222 shows"
+     }
+    ]
+   },
+   "2:12": {
+    "u": "https://phish.in/2026-07-25/tweezer-5",
+    "d": 385
+   },
+   "2:13": {
+    "u": "https://phish.in/2026-07-25/cavern",
+    "d": 573
+   },
+   "2:14": {
+    "u": "https://phish.in/2026-07-25/tweezer-6",
+    "d": 681
+   },
+   "2:15": {
+    "u": "https://phish.in/2026-07-25/the-squirming-coil",
+    "d": 520,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Page thanks the crowd"
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-25/purple-rain",
+    "d": 554,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey played both drums and guitar."
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Purple Rain in 534 shows"
+     }
+    ]
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-25/tweezer-reprise",
+    "d": 201,
+    "tags": [
+     {
+      "name": "Alt Lyric",
+      "notes": "Included Purple Rain vocals from Fish."
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd"
+     }
+    ]
+   }
+  }
+ },
+ "gaps": {
+  "back-in-the-u-s-s-r": 485,
+  "simple": 8,
+  "rift": 8,
+  "punch-you-in-the-eye": 9,
+  "wolfman-s-brother": 10,
+  "highway-to-hell": 659,
+  "down-with-disease": 10,
+  "tweezer": 9,
+  "sample-in-a-jar": 5,
+  "lifeboy": 4,
+  "julius": 11,
+  "catapult": 223,
+  "cavern": 11,
+  "the-squirming-coil": 7,
+  "purple-rain": 535,
+  "tweezer-reprise": 9
+ }
+}

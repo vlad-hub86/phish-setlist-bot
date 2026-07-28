@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-27T08:01:06Z",
+ "generated_at": "2026-07-28T17:00:59Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1196,6 +1196,45 @@
    "original": true,
    "plays_recorded": 639,
    "debut": "1986-02-03"
+  },
+  "drowned": {
+   "pi_slug": "drowned",
+   "original": false,
+   "artist": "Madonna",
+   "plays_recorded": 49,
+   "debut": "1995-10-31"
+  },
+  "funky-bitch": {
+   "pi_slug": "funky-bitch",
+   "original": false,
+   "artist": "Meredith Brooks",
+   "plays_recorded": 247,
+   "debut": "1986-12-06"
+  },
+  "ha-ha-ha": {
+   "pi_slug": "ha-ha-ha",
+   "original": true,
+   "plays_recorded": 35,
+   "debut": "1995-05-16"
+  },
+  "johnny-b-goode": {
+   "pi_slug": "johnny-b-goode",
+   "original": false,
+   "artist": "Chuck Berry",
+   "plays_recorded": 24,
+   "debut": "1995-06-17"
+  },
+  "scent-of-a-mule": {
+   "pi_slug": "scent-of-a-mule",
+   "original": true,
+   "plays_recorded": 147,
+   "debut": "1994-04-04"
+  },
+  "strange-design": {
+   "pi_slug": "strange-design",
+   "original": true,
+   "plays_recorded": 70,
+   "debut": "1995-05-16"
   }
  }
 }

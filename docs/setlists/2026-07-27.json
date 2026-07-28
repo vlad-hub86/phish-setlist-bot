@@ -174,5 +174,142 @@
   "free": 5,
   "strange-design": 61,
   "loving-cup": 11
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-27",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-27/wilson",
+    "d": 308,
+    "tags": [
+     {
+      "name": "Lore",
+      "notes": "Preceded by Page's chess move for the band (the P.A. announced a checkmate, but Page moved the band's rook to C4 rather than A4, threatening the audience's queen rather than king)."
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-27/timber-jerry-the-mule",
+    "d": 923,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on a mini drum kit."
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-27/ha-ha-ha",
+    "d": 103,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Ha Ha Ha in 230 shows"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-27/scent-of-a-mule",
+    "d": 436
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-27/theme-from-the-bottom",
+    "d": 649
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-27/halleys-comet",
+    "d": 931,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on a mini drum kit."
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-27/tmwsiy",
+    "d": 249
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-27/avenu-malkenu",
+    "d": 193
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-07-27/nicu",
+    "d": 301
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-07-27/funky-bitch",
+    "d": 378
+   },
+   "1:11": {
+    "u": "https://phish.in/2026-07-27/taste",
+    "d": 627
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-27/the-curtain-with",
+    "d": 761
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-27/prince-caspian",
+    "d": 958,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on a mini drum kit."
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-27/drowned",
+    "d": 1737,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on a mini drum kit."
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Drowned in 118 shows"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-27/billy-breathes",
+    "d": 304
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-27/its-ice",
+    "d": 909,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on a mini drum kit."
+     }
+    ]
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-27/johnny-b-goode",
+    "d": 271,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Johnny B. Goode in 926 shows"
+     }
+    ]
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-27/free",
+    "d": 615
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-27/strange-design",
+    "d": 176
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-27/loving-cup",
+    "d": 445
+   }
+  }
  }
 }

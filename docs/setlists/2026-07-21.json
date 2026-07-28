@@ -230,5 +230,23 @@
    "type": "x",
    "url": "https://x.com/phish/status/2079644327421092215"
   }
- ]
+ ],
+ "gaps": {
+  "turtle-in-the-clouds": 45,
+  "bug": 13,
+  "seven-below": 11,
+  "ocelot": 10,
+  "mull": 17,
+  "sigma-oasis": 8,
+  "ghost": 3,
+  "sand": 4,
+  "everything-s-right": 6,
+  "what-s-the-use": 14,
+  "light": 5,
+  "also-sprach-zarathustra": 5,
+  "blaze-on": 7,
+  "prince-caspian": 8,
+  "more": 5,
+  "say-it-to-me-s-a-n-t-o-s": 9
+ }
 }
