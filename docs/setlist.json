@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T02:20:30+00:00",
+ "updated_at": "2026-07-28T02:25:41+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -90,9 +90,15 @@
     },
     {
      "title": "Prince Caspian",
+     "transition": ">",
+     "length_secs": 911,
+     "footnote": "Trey on mini drum kit"
+    },
+    {
+     "title": "Drowned",
      "transition": ",",
      "length_secs": null,
-     "footnote": "Trey on mini drum kit"
+     "footnote": null
     }
    ]
   }
