@@ -23,7 +23,7 @@ Changeset format (one JSON file per push, named push-<anything>.json):
 }
 
 Safety rules enforced here:
-  - paths must be relative, inside the repo, no \"..\", no absolute paths
+  - paths must be relative, inside the repo, no "..", no absolute paths
   - paths may not touch .github/ (so a changeset can never alter workflows)
   - only files named push-*.json in the inbox are considered
 
@@ -35,6 +35,7 @@ never loop. Only the hard-coded ALLOWED_JOBS commands can run.
 """
 
 import base64
+import calendar
 import json
 import os
 import re
@@ -53,6 +54,15 @@ JOB_REQUEST = "docs/job-request.json"
 ALLOWED_JOBS = {
     "backfill-2026": [sys.executable or "python3", "deploy/backfill_2026.py"],
 }
+
+# The backfill also runs on a cadence, not only when something asks for it.
+# Reason: phish.in posts a show's recording a day or two AFTER the night, so a
+# show captured live by show-night has no audio until a later pass picks it up.
+# A one-shot request fired the morning after would run too early and be spent.
+# The workflow file is the only real clock here and it can't be edited by the
+# tooling that maintains this repo, so the cadence is tracked in the push log.
+BACKFILL_JOB = "backfill-2026"
+BACKFILL_EVERY_HOURS = 6
 
 
 def http_get(url, timeout=30):
@@ -174,6 +184,53 @@ def apply_changeset(name, raw):
     return True, message, None
 
 
+def run_job(job, trigger):
+    """Run one whitelisted job and commit whatever it wrote under docs/.
+
+    Returns True if a commit was made. Shared by the on-request path and the
+    scheduled cadence so both log and commit identically.
+    """
+    cmd = ALLOWED_JOBS.get(job)
+    ok, detail = False, None
+    if cmd is None:
+        detail = f"unknown job {job!r}"
+        print(f"job ({trigger}): {detail}")
+    else:
+        print(f"job ({trigger}): running {job}: {' '.join(cmd)}", flush=True)
+        try:
+            result = subprocess.run(cmd, timeout=480)
+            ok = result.returncode == 0
+            if not ok:
+                detail = f"exit code {result.returncode}"
+        except subprocess.TimeoutExpired:
+            detail = "timed out after 480s"
+        print(f"job ({trigger}): {job} {'succeeded' if ok else 'FAILED: ' + str(detail)}")
+
+    stamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    log = load_log()
+    log.setdefault("jobs", []).append({
+        "job": job,
+        "trigger": trigger,
+        "time": stamp,
+        "ok": ok,
+        **({"error": detail} if detail else {}),
+    })
+    # Stamp the attempt, not just the success: a job that keeps failing must
+    # not re-run every five minutes forever.
+    if job == BACKFILL_JOB:
+        log["backfill_last"] = stamp
+    log["jobs"] = log["jobs"][-50:]
+    save_log(log)
+
+    run("git", "add", "-A", "--", "docs")
+    diff = subprocess.run(["git", "diff", "--cached", "--quiet"])
+    if diff.returncode == 0:
+        return False
+    status = "ok" if ok else f"failed ({detail})"
+    run("git", "commit", "-q", "-m", f"[job] {job} ({trigger}): {status}")
+    return True
+
+
 def run_job_if_requested():
     """Run a whitelisted job named by docs/job-request.json. Returns True if
     a commit was made. The request file is always consumed, success or not."""
@@ -185,42 +242,29 @@ def run_job_if_requested():
     except Exception:
         req = {}
     job = req.get("job") if isinstance(req, dict) else None
-    cmd = ALLOWED_JOBS.get(job)
-
-    ok, detail = False, None
-    if cmd is None:
-        detail = f"unknown job {job!r}"
-        print(f"job-request: {detail}")
-    else:
-        print(f"job-request: running {job}: {' '.join(cmd)}", flush=True)
-        try:
-            result = subprocess.run(cmd, timeout=480)
-            ok = result.returncode == 0
-            if not ok:
-                detail = f"exit code {result.returncode}"
-        except subprocess.TimeoutExpired:
-            detail = "timed out after 480s"
-        print(f"job-request: {job} {'succeeded' if ok else 'FAILED: ' + str(detail)}")
-
-    log = load_log()
-    log.setdefault("jobs", []).append({
-        "job": job,
-        "time": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-        "ok": ok,
-        **({"error": detail} if detail else {}),
-    })
-    save_log(log)
-
-    # Consume the request, stage everything the job produced under docs/,
-    # and commit — even a failure commits the log so it can't rerun forever.
+    # Consume the request first so a job that crashes can never loop on it.
     run("git", "rm", "-q", "--ignore-unmatch", "--", JOB_REQUEST)
-    run("git", "add", "-A", "--", "docs")
-    diff = subprocess.run(["git", "diff", "--cached", "--quiet"])
-    if diff.returncode == 0:
-        return False
-    status = "ok" if ok else f"failed ({detail})"
-    run("git", "commit", "-q", "-m", f"[job] {job}: {status}")
-    return True
+    return run_job(job, "requested")
+
+
+def run_backfill_on_cadence():
+    """Re-run the backfill every few hours so late-arriving data lands.
+
+    The backfill is incremental and idempotent: it skips shows that are
+    already complete, and only tops up the ones still missing audio or gaps.
+    A quiet run costs a couple of API calls and commits nothing.
+    """
+    log = load_log()
+    last = log.get("backfill_last")
+    if last:
+        try:
+            age = time.time() - calendar.timegm(time.strptime(last, "%Y-%m-%dT%H:%M:%SZ"))
+        except ValueError:
+            age = None
+        if age is not None and age < BACKFILL_EVERY_HOURS * 3600:
+            print(f"backfill: last run {int(age / 60)} min ago - not due")
+            return False
+    return run_job(BACKFILL_JOB, "cadence")
 
 
 def main():
@@ -277,6 +321,8 @@ def main():
         print(f"  committed: {message}")
 
     if run_job_if_requested():
+        made_commits = True
+    elif run_backfill_on_cadence():
         made_commits = True
 
     if not made_commits:
