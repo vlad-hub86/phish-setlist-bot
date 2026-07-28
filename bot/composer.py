@@ -79,11 +79,17 @@ def show_start_post(entry: SetlistEntry, started_at: Optional[float] = None) -> 
     🦎 Lights down at Madison Square Garden.
     Phish, New York, NY — 8:07 PM ET.
     Your trip is short 🚀
+    #Phish
 
     The timestamp is when the OPENER reached the feed, not when the band
     physically walked on — phish.net editors enter songs by hand and we poll
     every ~75s, so the true walk-on is somewhat earlier. The copy deliberately
     states a time without claiming it is the walk-on.
+
+    The hashtag is the one post per show that carries one — X search leans
+    semantic now, so this is a marginal discovery aid, not a lever. Truth
+    Social receives it too (harmless; hashtags are first-class there), and
+    phishpicks never sees this kind (kinds={"song"}).
     """
     venue = (entry.venue or "").strip()
     loc = ", ".join(x for x in (entry.city, entry.state) if x)
@@ -96,6 +102,7 @@ def show_start_post(entry: SetlistEntry, started_at: Optional[float] = None) -> 
     elif when:
         lines.append(f"Phish — {when}.")
     lines.append("Your trip is short \U0001f680")
+    lines.append("#Phish")
     return _clamp("\n".join(lines))
 
 
