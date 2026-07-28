@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T03:35:55+00:00",
+ "updated_at": "2026-07-28T03:46:03+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -138,7 +138,7 @@
     },
     {
      "title": "Loving Cup",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
