@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T02:54:58+00:00",
+ "updated_at": "2026-07-28T02:59:59+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -102,6 +102,12 @@
     },
     {
      "title": "Billy Breathes",
+     "transition": ">",
+     "length_secs": 301,
+     "footnote": null
+    },
+    {
+     "title": "It's Ice",
      "transition": ",",
      "length_secs": null,
      "footnote": null
