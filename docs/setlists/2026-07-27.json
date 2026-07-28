@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T00:19:43+00:00",
+ "updated_at": "2026-07-28T00:29:37+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -19,8 +19,20 @@
     {
      "title": "Timber (Jerry the Mule)",
      "transition": ",",
-     "length_secs": null,
+     "length_secs": 909,
      "footnote": "Trey on mini drum kit"
+    },
+    {
+     "title": "Ha Ha Ha",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Scent of a Mule",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
