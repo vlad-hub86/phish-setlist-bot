@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T01:20:02+00:00",
+ "updated_at": "2026-07-28T01:30:18+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -72,7 +72,7 @@
     },
     {
      "title": "Taste",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
