@@ -150,59 +150,128 @@ def build_feed(date: str, rows: list[dict]) -> dict | None:
         "gaps": gaps,
     }
 
-    # --- phish.in alignment: listen links, durations, tags
+    tmap = phishin_map(date, sets)
+    if tmap:
+        payload["phishin"] = {"show": f"https://phish.in/{date}", "tracks": tmap}
+    return payload
+
+
+def phishin_map(date: str, sets: list[dict]) -> dict:
+    """Align phish.in's tracks to our set/position keys.
+
+    Same one map both paths use: a fresh backfill and the enrichment pass over
+    a show the live pipeline captured. Returns {} when the recording hasn't
+    posted yet, which is the normal state for a day or two after the show.
+    """
     show = pi(f"shows/{date}.json")
     tracks = (show or {}).get("tracks") or []
-    if tracks:
-        by_set: dict[str, list[dict]] = {}
-        for t in tracks:
-            lab = PI_SET_LABEL.get(t.get("set_name") or "", None)
-            if lab is None:
-                lab = "e" if "encore" in (t.get("set_name") or "").lower() else "1"
-            by_set.setdefault(lab, []).append(t)
+    if not tracks:
+        return {}
 
-        tmap: dict[str, dict] = {}
-        for s in sets:
-            lab = s["label"]
-            plist = by_set.get(lab, [])
-            n_eq = len(plist) == len(s["songs"])
-            used: set[int] = set()
-            for i, song in enumerate(s["songs"]):
-                t = None
-                if n_eq:
-                    t = plist[i]
-                else:  # fall back to title matching within the set
-                    want = norm_title(song["title"])
-                    for j, cand in enumerate(plist):
-                        if j not in used and norm_title(cand.get("title")) == want:
-                            t, _ = cand, used.add(j)
-                            break
-                if not t or not t.get("slug"):
+    by_set: dict[str, list[dict]] = {}
+    for t in tracks:
+        lab = PI_SET_LABEL.get(t.get("set_name") or "", None)
+        if lab is None:
+            lab = "e" if "encore" in (t.get("set_name") or "").lower() else "1"
+        by_set.setdefault(lab, []).append(t)
+
+    tmap: dict[str, dict] = {}
+    for s in sets:
+        lab = str(s.get("label", "1"))
+        songs = s.get("songs") or []
+        plist = by_set.get(lab, [])
+        n_eq = len(plist) == len(songs)
+        used: set[int] = set()
+        for i, song in enumerate(songs):
+            t = None
+            if n_eq:
+                t = plist[i]
+            else:  # fall back to title matching within the set
+                want = norm_title(song.get("title"))
+                for j, cand in enumerate(plist):
+                    if j not in used and norm_title(cand.get("title")) == want:
+                        t, _ = cand, used.add(j)
+                        break
+            if not t or not t.get("slug"):
+                continue
+            entry: dict = {"u": f"https://phish.in/{date}/{t['slug']}"}
+            if t.get("duration"):
+                entry["d"] = int(round(t["duration"] / 1000))
+            tags = []
+            for tg in t.get("tags") or []:
+                name = tg.get("name")
+                if not name:
                     continue
-                entry: dict = {"u": f"https://phish.in/{date}/{t['slug']}"}
-                if t.get("duration"):
-                    entry["d"] = int(round(t["duration"] / 1000))
-                tags = []
-                for tg in t.get("tags") or []:
-                    name = tg.get("name")
-                    if not name:
-                        continue
-                    tag: dict = {"name": name}
-                    if tg.get("notes"):
-                        tag["notes"] = tg["notes"]
-                    tr = (tg.get("transcript") or "").strip()
-                    if tr:  # excerpt only — the full transcript stays phish.in's
-                        clip = " ".join(tr.split())[:EXCERPT].rstrip()
-                        if len(tr) > EXCERPT:
-                            clip = clip.rsplit(" ", 1)[0] + " …"
-                        tag["transcript"] = clip
-                    tags.append(tag)
-                if tags:
-                    entry["tags"] = tags
-                tmap[f"{lab}:{i + 1}"] = entry
+                tag: dict = {"name": name}
+                if tg.get("notes"):
+                    tag["notes"] = tg["notes"]
+                tr = (tg.get("transcript") or "").strip()
+                if tr:  # excerpt only — the full transcript stays phish.in's
+                    clip = " ".join(tr.split())[:EXCERPT].rstrip()
+                    if len(tr) > EXCERPT:
+                        clip = clip.rsplit(" ", 1)[0] + " …"
+                    tag["transcript"] = clip
+                tags.append(tag)
+            if tags:
+                entry["tags"] = tags
+            tmap[f"{lab}:{i + 1}"] = entry
+    return tmap
+
+
+def gap_map(date: str) -> tuple[dict, str | None]:
+    """Per-song gaps + the show's Phish.net permalink."""
+    rows = pn(f"setlists/showdate/{date}")
+    gaps: dict[str, int] = {}
+    permalink = None
+    for r in rows:
+        if (r.get("artist_name") or "Phish") != "Phish":
+            continue
+        permalink = permalink or r.get("permalink")
+        title = (r.get("song") or "").strip()
+        try:
+            g = int(r.get("gap") or 0)
+        except (TypeError, ValueError):
+            g = 0
+        if title and g > 0:
+            gaps.setdefault(slugify(title), g)
+    return gaps, permalink
+
+
+def enrich_existing(path: Path, date: str) -> bool:
+    """Fill in what a live-captured show file is still missing.
+
+    The show-night pipeline writes the setlist as it happens, so its file has
+    no phish.in track map (the recording posts a day or two later) and no gap
+    map. This adds both WITHOUT touching anything already present — curated
+    notes, footnotes, media and hand-built track maps all survive untouched.
+    Returns True if the file changed.
+    """
+    try:
+        show = json.loads(path.read_text())
+    except (json.JSONDecodeError, OSError):
+        return False
+
+    changed = []
+    if not ((show.get("phishin") or {}).get("tracks")):
+        tmap = phishin_map(date, show.get("sets") or [])
         if tmap:
-            payload["phishin"] = {"show": f"https://phish.in/{date}", "tracks": tmap}
-    return payload
+            show["phishin"] = {"show": f"https://phish.in/{date}", "tracks": tmap}
+            changed.append(f"{len(tmap)} listen links")
+
+    if not show.get("gaps") or not show.get("phishnet_url"):
+        gaps, permalink = gap_map(date)
+        if gaps and not show.get("gaps"):
+            show["gaps"] = gaps
+            changed.append(f"{len(gaps)} gaps")
+        if permalink and not show.get("phishnet_url"):
+            show["phishnet_url"] = permalink
+            changed.append("phish.net link")
+
+    if not changed:
+        return False
+    path.write_text(json.dumps(show, indent=1, ensure_ascii=False) + "\n")
+    print(f"  {date}: enriched — {', '.join(changed)}")
+    return True
 
 
 def upsert_index(payload: dict) -> None:
@@ -310,13 +379,19 @@ def main() -> int:
          "shows": upcoming}, indent=1, ensure_ascii=False) + "\n")
     print(f"upcoming.json: {len(upcoming)} announced shows from {today} on")
 
-    done = skipped = 0
+    done = skipped = enriched = 0
     for s in shows:
         d = s["showdate"]
         if d >= today:            # tonight belongs to the live pipeline
             continue
-        if (SETLISTS / f"{d}.json").exists():
-            skipped += 1
+        path = SETLISTS / f"{d}.json"
+        if path.exists():
+            # A show the live pipeline captured still needs its audio map and
+            # gaps once phish.in posts the recording — top it up in place.
+            if enrich_existing(path, d):
+                enriched += 1
+            else:
+                skipped += 1
             continue
         rows = pn(f"setlists/showdate/{d}")
         payload = build_feed(d, rows)
@@ -333,7 +408,8 @@ def main() -> int:
         done += 1
 
     refresh_song_meta_auto()
-    print(f"backfill complete: {done} new shows, {skipped} already tracked")
+    print(f"backfill complete: {done} new shows, {enriched} enriched, "
+          f"{skipped} already complete")
     return 0
 
 
