@@ -1,10 +1,10 @@
 {
- "updated_at": "2026-07-28T05:00:50+00:00",
+ "updated_at": "2026-07-28T05:15:34+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
  "state": "NY",
- "complete": false,
+ "complete": true,
  "sets": [
   {
    "label": "1",
