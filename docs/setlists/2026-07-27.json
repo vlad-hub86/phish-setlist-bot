@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T00:04:02+00:00",
+ "updated_at": "2026-07-28T00:14:28+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -12,6 +12,12 @@
    "songs": [
     {
      "title": "Wilson",
+     "transition": ">",
+     "length_secs": 624,
+     "footnote": null
+    },
+    {
+     "title": "Timber (Jerry the Mule)",
      "transition": ",",
      "length_secs": null,
      "footnote": null
