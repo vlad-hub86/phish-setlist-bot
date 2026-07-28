@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T03:11:10+00:00",
+ "updated_at": "2026-07-28T03:16:19+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -109,8 +109,14 @@
     {
      "title": "It's Ice",
      "transition": ",",
-     "length_secs": null,
+     "length_secs": 980,
      "footnote": "Trey on mini drum kit"
+    },
+    {
+     "title": "Johnny B. Goode",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
