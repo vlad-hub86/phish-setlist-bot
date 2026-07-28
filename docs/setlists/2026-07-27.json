@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T02:40:04+00:00",
+ "updated_at": "2026-07-28T02:54:58+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -96,9 +96,15 @@
     },
     {
      "title": "Drowned",
+     "transition": ">",
+     "length_secs": 1757,
+     "footnote": "Trey on mini drum kit"
+    },
+    {
+     "title": "Billy Breathes",
      "transition": ",",
      "length_secs": null,
-     "footnote": "Trey on mini drum kit"
+     "footnote": null
     }
    ]
   }
