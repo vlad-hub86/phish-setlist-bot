@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T02:05:11+00:00",
+ "updated_at": "2026-07-28T02:10:30+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -85,6 +85,12 @@
     {
      "title": "The Curtain With",
      "transition": ">",
+     "length_secs": 618,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": ",",
      "length_secs": null,
      "footnote": null
     }
