@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T00:34:28+00:00",
+ "updated_at": "2026-07-28T00:45:15+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -36,6 +36,12 @@
     },
     {
      "title": "Theme from the Bottom",
+     "transition": ",",
+     "length_secs": 646,
+     "footnote": null
+    },
+    {
+     "title": "Halley's Comet",
      "transition": ",",
      "length_secs": null,
      "footnote": null
