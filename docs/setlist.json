@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-28T01:14:23+00:00",
+ "updated_at": "2026-07-28T01:20:02+00:00",
  "showdate": "2026-07-27",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -66,6 +66,12 @@
     },
     {
      "title": "Funky Bitch",
+     "transition": ",",
+     "length_secs": 340,
+     "footnote": null
+    },
+    {
+     "title": "Taste",
      "transition": ",",
      "length_secs": null,
      "footnote": null
