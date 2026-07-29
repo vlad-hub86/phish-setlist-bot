@@ -1,6 +1,13 @@
 {
  "shows": [
   {
+   "showdate": "2026-07-29",
+   "venue": "Madison Square Garden",
+   "city": "New York",
+   "state": "NY",
+   "complete": false
+  },
+  {
    "showdate": "2026-07-27",
    "venue": "Madison Square Garden",
    "city": "New York",
