@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T02:49:55+00:00",
+ "updated_at": "2026-07-30T03:01:03+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -98,13 +98,13 @@
      "title": "I Didn't Know",
      "transition": ">",
      "length_secs": 309,
-     "footnote": "Fish on vacuum."
+     "footnote": null
     },
     {
      "title": "Suspicious Minds",
      "transition": ">",
      "length_secs": 277,
-     "footnote": "Fish in a cape."
+     "footnote": null
     },
     {
      "title": "Hold Your Head Up",
