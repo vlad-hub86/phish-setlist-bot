@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T01:04:42+00:00",
+ "updated_at": "2026-07-30T01:10:02+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -60,6 +60,12 @@
     },
     {
      "title": "Colonel Forbin's Ascent",
+     "transition": ">",
+     "length_secs": 320,
+     "footnote": null
+    },
+    {
+     "title": "Fly Famous Mockingbird",
      "transition": ",",
      "length_secs": null,
      "footnote": null
