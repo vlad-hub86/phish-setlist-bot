@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T00:19:31+00:00",
+ "updated_at": "2026-07-30T00:29:03+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -24,9 +24,15 @@
     },
     {
      "title": "Axilla (Part II)",
+     "transition": ">",
+     "length_secs": 572,
+     "footnote": "Lyrics restarted"
+    },
+    {
+     "title": "Esther",
      "transition": ",",
      "length_secs": null,
-     "footnote": "Lyrics restarted"
+     "footnote": null
     }
    ]
   }
