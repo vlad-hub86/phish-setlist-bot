@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T03:30:15+00:00",
+ "updated_at": "2026-07-30T03:36:08+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -132,6 +132,12 @@
    "songs": [
     {
      "title": "A Day in the Life",
+     "transition": ",",
+     "length_secs": 352,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
      "transition": ",",
      "length_secs": null,
      "footnote": null
