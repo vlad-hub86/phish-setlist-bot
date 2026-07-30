@@ -1,10 +1,15 @@
 name: show-night
-# Starts every evening at 6:30pm ET; exits immediately on non-show days.
+# Starts every evening at 5:45pm ET; exits immediately on non-show days.
 # On show nights, polls Phish.net every ~75s and posts songs/recaps live,
 # then posts the show recap + lengths thread when the window closes.
 # Runs on the self-hosted WINDOWS runner (always-on PC) — steps are PowerShell.
-# NOTE: cron is UTC. 22:30 UTC = 6:30pm EDT. During EST (winter tours,
-# e.g. NYE run) change to '30 23 * * *'. West-coast tour legs: see README.
+# NOTE: cron is UTC. 21:45 UTC = 5:45pm EDT. During EST (winter tours,
+# e.g. NYE run) change to '45 22 * * *'. West-coast tour legs: see README.
+#
+# 7/30 change (Fenway leg): cron moved 22:30 -> 21:45 UTC. Fenway set time
+# is 6:30pm ET (doors 5:00) vs ~7:35pm at MSG, so the old cron fired at the
+# downbeat with no margin for the guard job + venv install. The watchdog
+# windows and grace gate in push-inbox.yml were moved to match.
 #
 # 7/23 changes (after the 1am repost incident on MSG N1):
 # - guard job: a late-delivered duplicate cron event (GitHub delivered the
@@ -19,7 +24,7 @@ name: show-night
 
 on:
   schedule:
-    - cron: '30 22 * * *'
+    - cron: '45 21 * * *'
   workflow_dispatch:
     inputs:
       minutes:
