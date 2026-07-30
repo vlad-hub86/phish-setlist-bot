@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T02:45:18+00:00",
+ "updated_at": "2026-07-30T02:49:55+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -102,9 +102,21 @@
     },
     {
      "title": "Suspicious Minds",
+     "transition": ">",
+     "length_secs": 277,
+     "footnote": "Fish in a cape."
+    },
+    {
+     "title": "Hold Your Head Up",
      "transition": ",",
      "length_secs": null,
-     "footnote": "Fish in a cape."
+     "footnote": null
+    },
+    {
+     "title": "Crosseyed and Painless",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
