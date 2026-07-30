@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T00:54:27+00:00",
+ "updated_at": "2026-07-30T01:00:27+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -49,8 +49,14 @@
     {
      "title": "If I Could",
      "transition": ",",
-     "length_secs": null,
+     "length_secs": 360,
      "footnote": "Trey on acoustic."
+    },
+    {
+     "title": "Bold As Love",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
