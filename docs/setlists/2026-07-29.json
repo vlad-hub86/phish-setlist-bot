@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T03:41:08+00:00",
+ "updated_at": "2026-07-30T04:15:17+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -74,7 +74,7 @@
      "title": "Harpua",
      "transition": "",
      "length_secs": null,
-     "footnote": "\"Free jimmy\" tone."
+     "footnote": null
     }
    ]
   },
