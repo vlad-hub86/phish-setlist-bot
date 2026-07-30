@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T00:50:24+00:00",
+ "updated_at": "2026-07-30T00:54:27+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -26,7 +26,7 @@
      "title": "Axilla (Part II)",
      "transition": ">",
      "length_secs": 572,
-     "footnote": "Lyrics restarted"
+     "footnote": "Lyrics restarted."
     },
     {
      "title": "Esther",
@@ -43,8 +43,14 @@
     {
      "title": "Talk",
      "transition": ",",
+     "length_secs": 243,
+     "footnote": "Trey on acoustic."
+    },
+    {
+     "title": "If I Could",
+     "transition": ",",
      "length_secs": null,
-     "footnote": null
+     "footnote": "Trey on acoustic."
     }
    ]
   }
