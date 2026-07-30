@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-29T23:36:10+00:00",
+ "updated_at": "2026-07-30T00:04:28+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -11,10 +11,10 @@
    "display": "Set 1",
    "songs": [
     {
-     "title": "CK5 Knicks Tribute",
+     "title": "The Star-Spangled Banner",
      "transition": ",",
      "length_secs": null,
-     "footnote": "CK5 Knicks Tribute"
+     "footnote": "A Capella"
     }
    ]
   }
