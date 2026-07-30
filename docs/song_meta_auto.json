@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-30T10:39:47Z",
+ "generated_at": "2026-07-30T17:43:55Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1235,6 +1235,46 @@
    "original": true,
    "plays_recorded": 70,
    "debut": "1995-05-16"
+  },
+  "a-day-in-the-life": {
+   "pi_slug": "a-day-in-the-life",
+   "original": false,
+   "artist": "The Beatles",
+   "plays_recorded": 76,
+   "debut": "1995-06-10"
+  },
+  "bold-as-love": {
+   "pi_slug": "bold-as-love",
+   "original": false,
+   "artist": "The Jimi Hendrix Experience",
+   "plays_recorded": 86,
+   "debut": "1988-07-07"
+  },
+  "harpua": {
+   "pi_slug": "harpua",
+   "original": true,
+   "plays_recorded": 80,
+   "debut": "1987-05-11"
+  },
+  "suspicious-minds": {
+   "pi_slug": "suspicious-minds",
+   "original": false,
+   "artist": "Elvis Presley",
+   "plays_recorded": 14,
+   "debut": "1995-09-30"
+  },
+  "talk": {
+   "pi_slug": "talk",
+   "original": true,
+   "plays_recorded": 18,
+   "debut": "1996-08-05"
+  },
+  "the-star-spangled-banner": {
+   "pi_slug": "the-star-spangled-banner",
+   "original": false,
+   "artist": "Francis Scott Key",
+   "plays_recorded": 23,
+   "debut": "1996-10-17"
   }
  }
 }

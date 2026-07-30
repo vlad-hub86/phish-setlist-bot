@@ -167,5 +167,177 @@
   "a-day-in-the-life": 39,
   "backwards-down-the-number-line": 5
  },
- "phishnet_url": "https://phish.net/setlists/phish-july-29-2026-madison-square-garden-new-york-ny-usa.html"
+ "phishnet_url": "https://phish.net/setlists/phish-july-29-2026-madison-square-garden-new-york-ny-usa.html",
+ "phishin": {
+  "show": "https://phish.in/2026-07-29",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-29/the-star-spangled-banner",
+    "d": 106,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of The Star-Spangled Banner in 187 shows"
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-29/mcgrupp",
+    "d": 530
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-29/axilla-part-ii",
+    "d": 691,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey began the lyrics to part I, said \"wait, we did that one already,\" and then sang part II"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-29/esther",
+    "d": 554
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-29/guyute",
+    "d": 623
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-29/talk",
+    "d": 239,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on acoustic guitar"
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Talk in 121 shows"
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-29/if-i-could",
+    "d": 357,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on acoustic guitar"
+     }
+    ]
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-29/bold-as-love",
+    "d": 388
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-07-29/colonel-forbins-ascent",
+    "d": 339
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-07-29/fly-famous-mockingbird",
+    "d": 440,
+    "tags": [
+     {
+      "name": "Narration",
+      "notes": "Brief Mockingbird intro",
+      "transcript": "TREY: The Famous Mockingbird comes down"
+     }
+    ]
+   },
+   "1:11": {
+    "u": "https://phish.in/2026-07-29/harpua",
+    "d": 858,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Harpua in 115 shows"
+     },
+     {
+      "name": "Narration",
+      "notes": "The story of Jimmy being stuck above Plattsburgh at the Clifford Ball",
+      "transcript": "TREY: Welcome everybody, welcome. So you all know the beginning to this story. We've done a couple of those tunes from the Gamehendge land during this set. And this story concerns a couple of people. The first one being this old man who lived on the outskirts of Gamehendge. And …"
+     }
+    ]
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-29/you-enjoy-myself",
+    "d": 2186,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-29/waste",
+    "d": 435
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-29/i-didnt-know",
+    "d": 128,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey introduced Fish as Elvis Presley"
+     },
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-29/suspicious-minds",
+    "d": 244,
+    "tags": [
+     {
+      "name": "Bustout",
+      "notes": "First performance of Suspicious Minds in 1,020 shows"
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-29/hyhu",
+    "d": 55
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-29/crosseyed-and-painless",
+    "d": 1896,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Buffalo Bill"
+     },
+     {
+      "name": "Tease",
+      "notes": "Suspicious Minds by Elvis Presley"
+     },
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-07-29/character-zero",
+    "d": 386,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd"
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-29/a-day-in-the-life",
+    "d": 301
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-29/backwards-down-the-number-line",
+    "d": 406
+   }
+  }
+ }
 }
