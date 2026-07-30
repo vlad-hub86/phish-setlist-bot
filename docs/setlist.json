@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T01:00:27+00:00",
+ "updated_at": "2026-07-30T01:04:42+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -54,6 +54,12 @@
     },
     {
      "title": "Bold As Love",
+     "transition": ",",
+     "length_secs": 255,
+     "footnote": null
+    },
+    {
+     "title": "Colonel Forbin's Ascent",
      "transition": ",",
      "length_secs": null,
      "footnote": null
