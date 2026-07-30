@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T01:10:02+00:00",
+ "updated_at": "2026-07-30T01:20:34+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -66,6 +66,12 @@
     },
     {
      "title": "Fly Famous Mockingbird",
+     "transition": ",",
+     "length_secs": 631,
+     "footnote": null
+    },
+    {
+     "title": "Harpua",
      "transition": ",",
      "length_secs": null,
      "footnote": null
