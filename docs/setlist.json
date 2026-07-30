@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T03:36:08+00:00",
+ "updated_at": "2026-07-30T03:41:08+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -138,7 +138,7 @@
     },
     {
      "title": "Backwards Down the Number Line",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
