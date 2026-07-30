@@ -63,7 +63,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           # MSG summer 2026 run. Dates are EASTERN show dates.
-          SHOW_DATES: "2026-07-22 2026-07-24 2026-07-25 2026-07-27 2026-07-29"
+          SHOW_DATES: "2026-07-22 2026-07-24 2026-07-25 2026-07-27 2026-07-29 2026-07-31 2026-08-01"
         run: |
           set -euo pipefail
           today=$(TZ=America/New_York date +%F)
