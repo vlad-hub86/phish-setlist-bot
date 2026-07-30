@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-30T03:21:04+00:00",
+ "updated_at": "2026-07-30T03:25:02+00:00",
  "showdate": "2026-07-29",
  "venue": "Madison Square Garden",
  "city": "New York",
@@ -120,7 +120,7 @@
     },
     {
      "title": "Character Zero",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
