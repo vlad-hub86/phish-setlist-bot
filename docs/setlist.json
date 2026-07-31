@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-31T23:41:03+00:00",
+ "updated_at": "2026-07-31T23:45:55+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -24,6 +24,12 @@
     },
     {
      "title": "Back on the Train",
+     "transition": ",",
+     "length_secs": 292,
+     "footnote": null
+    },
+    {
+     "title": "Free",
      "transition": ",",
      "length_secs": null,
      "footnote": null
