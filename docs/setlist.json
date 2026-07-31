@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-31T23:45:55+00:00",
+ "updated_at": "2026-07-31T23:56:23+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -30,6 +30,12 @@
     },
     {
      "title": "Free",
+     "transition": ",",
+     "length_secs": 627,
+     "footnote": null
+    },
+    {
+     "title": "Kill Devil Falls",
      "transition": ",",
      "length_secs": null,
      "footnote": null
