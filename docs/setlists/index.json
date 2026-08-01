@@ -1,6 +1,13 @@
 {
  "shows": [
   {
+   "showdate": "2026-08-01",
+   "venue": "Fenway Park",
+   "city": "Boston",
+   "state": "MA",
+   "complete": false
+  },
+  {
    "showdate": "2026-07-31",
    "venue": "Fenway Park",
    "city": "Boston",
