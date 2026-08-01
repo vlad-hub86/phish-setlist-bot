@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T02:27:00+00:00",
+ "updated_at": "2026-08-01T02:31:45+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -102,7 +102,7 @@
     },
     {
      "title": "Say It To Me S.A.N.T.O.S.",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
