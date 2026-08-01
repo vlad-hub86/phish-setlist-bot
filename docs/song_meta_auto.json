@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-01T17:12:42Z",
+ "generated_at": "2026-08-01T23:28:14Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1275,6 +1275,13 @@
    "artist": "Francis Scott Key",
    "plays_recorded": 23,
    "debut": "1996-10-17"
+  },
+  "melt-the-guns": {
+   "pi_slug": "melt-the-guns",
+   "original": false,
+   "artist": "XTC",
+   "plays_recorded": 5,
+   "debut": "1985-09-27"
   }
  }
 }

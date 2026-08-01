@@ -125,5 +125,106 @@
   "a-life-beyond-the-dream": 12,
   "say-it-to-me-s-a-n-t-o-s": 5
  },
- "phishnet_url": "https://phish.net/setlists/phish-july-31-2026-fenway-park-boston-ma-usa.html"
+ "phishnet_url": "https://phish.net/setlists/phish-july-31-2026-fenway-park-boston-ma-usa.html",
+ "phishin": {
+  "show": "https://phish.in/2026-07-31",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-31/carini",
+    "d": 1075
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-31/everythings-right",
+    "d": 800,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-31/back-on-the-train",
+    "d": 419
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-31/free",
+    "d": 506,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Martian Monster"
+     }
+    ]
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-31/kill-devil-falls",
+    "d": 793
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-31/harry-hood",
+    "d": 818
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-31/whats-going-through-your-mind",
+    "d": 1180,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-31/fuego",
+    "d": 940
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-31/melt-the-guns",
+    "d": 957,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     },
+     {
+      "name": "Bustout",
+      "notes": "First performance of Melt the Guns in 2,049 shows"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-31/a-wave-of-hope",
+    "d": 796,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-31/golden-age",
+    "d": 403
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-31/run-like-an-antelope",
+    "d": 734,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-31/a-life-beyond-the-dream",
+    "d": 505
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-07-31/say-it-to-me-s-a-n-t-o-s",
+    "d": 381
+   }
+  }
+ }
 }
