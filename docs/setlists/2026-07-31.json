@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T01:11:23+00:00",
+ "updated_at": "2026-08-01T01:26:16+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -60,6 +60,12 @@
     },
     {
      "title": "Fuego",
+     "transition": ">",
+     "length_secs": 892,
+     "footnote": null
+    },
+    {
+     "title": "Melt the Guns",
      "transition": ",",
      "length_secs": null,
      "footnote": null
