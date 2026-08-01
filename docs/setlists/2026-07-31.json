@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T01:36:14+00:00",
+ "updated_at": "2026-08-01T01:41:18+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -67,8 +67,14 @@
     {
      "title": "Melt the Guns",
      "transition": ",",
-     "length_secs": null,
+     "length_secs": 903,
      "footnote": "Trey on mini-drum kit."
+    },
+    {
+     "title": "A Wave of Hope",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
     }
    ]
   }
