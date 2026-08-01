@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T02:17:25+00:00",
+ "updated_at": "2026-08-01T02:27:00+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -96,6 +96,12 @@
    "songs": [
     {
      "title": "A Life Beyond The Dream",
+     "transition": ",",
+     "length_secs": 575,
+     "footnote": null
+    },
+    {
+     "title": "Say It To Me S.A.N.T.O.S.",
      "transition": ",",
      "length_secs": null,
      "footnote": null
