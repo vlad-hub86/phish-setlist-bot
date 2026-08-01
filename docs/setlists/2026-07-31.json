@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T01:01:52+00:00",
+ "updated_at": "2026-08-01T01:11:23+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -54,9 +54,15 @@
    "songs": [
     {
      "title": "What's Going Through Your Mind",
+     "transition": ">",
+     "length_secs": 1174,
+     "footnote": "Trey on mini-drum kit."
+    },
+    {
+     "title": "Fuego",
      "transition": ",",
      "length_secs": null,
-     "footnote": "Trey on mini-drum kit."
+     "footnote": null
     }
    ]
   }
