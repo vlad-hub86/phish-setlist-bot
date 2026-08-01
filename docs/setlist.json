@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T00:20:48+00:00",
+ "updated_at": "2026-08-01T00:51:49+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -43,6 +43,18 @@
     {
      "title": "Harry Hood",
      "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "What's Going Through Your Mind",
+     "transition": ",",
      "length_secs": null,
      "footnote": null
     }
