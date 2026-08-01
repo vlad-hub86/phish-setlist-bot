@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T02:01:26+00:00",
+ "updated_at": "2026-08-01T02:17:25+00:00",
  "showdate": "2026-07-31",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -84,6 +84,18 @@
     },
     {
      "title": "Run Like an Antelope",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "A Life Beyond The Dream",
      "transition": ",",
      "length_secs": null,
      "footnote": null
