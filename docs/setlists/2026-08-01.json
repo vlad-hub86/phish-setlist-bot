@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T23:06:02+00:00",
+ "updated_at": "2026-08-01T23:15:40+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -12,6 +12,12 @@
    "songs": [
     {
      "title": "My Friend, My Friend",
+     "transition": "->",
+     "length_secs": 578,
+     "footnote": "No \"Myfe\" ending."
+    },
+    {
+     "title": "Tweezer",
      "transition": ",",
      "length_secs": null,
      "footnote": null
