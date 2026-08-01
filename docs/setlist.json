@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T23:15:40+00:00",
+ "updated_at": "2026-08-01T23:26:34+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -18,6 +18,12 @@
     },
     {
      "title": "Tweezer",
+     "transition": "->",
+     "length_secs": 654,
+     "footnote": null
+    },
+    {
+     "title": "Sigma Oasis",
      "transition": ",",
      "length_secs": null,
      "footnote": null
