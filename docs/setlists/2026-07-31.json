@@ -108,5 +108,22 @@
     }
    ]
   }
- ]
+ ],
+ "gaps": {
+  "carini": 6,
+  "everything-s-right": 5,
+  "back-on-the-train": 6,
+  "free": 1,
+  "kill-devil-falls": 14,
+  "harry-hood": 4,
+  "what-s-going-through-your-mind": 7,
+  "fuego": 8,
+  "melt-the-guns": 2051,
+  "a-wave-of-hope": 8,
+  "golden-age": 12,
+  "run-like-an-antelope": 4,
+  "a-life-beyond-the-dream": 12,
+  "say-it-to-me-s-a-n-t-o-s": 5
+ },
+ "phishnet_url": "https://phish.net/setlists/phish-july-31-2026-fenway-park-boston-ma-usa.html"
 }
