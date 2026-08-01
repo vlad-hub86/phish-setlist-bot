@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T23:26:34+00:00",
+ "updated_at": "2026-08-01T23:41:37+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -24,6 +24,12 @@
     },
     {
      "title": "Sigma Oasis",
+     "transition": ">",
+     "length_secs": 904,
+     "footnote": "Trey on mini-drum kit."
+    },
+    {
+     "title": "Tweezer",
      "transition": ",",
      "length_secs": null,
      "footnote": null
