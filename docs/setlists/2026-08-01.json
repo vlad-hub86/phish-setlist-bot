@@ -132,5 +132,24 @@
     }
    ]
   }
- ]
+ ],
+ "gaps": {
+  "my-friend-my-friend": 5,
+  "tweezer": 3,
+  "sigma-oasis": 6,
+  "chalk-dust-torture": 4,
+  "stash": 5,
+  "sand": 6,
+  "mike-s-song": 5,
+  "ruby-waves": 7,
+  "no-men-in-no-man-s-land": 7,
+  "light": 6,
+  "weekapaug-groove": 5,
+  "ghost": 6,
+  "possum": 5,
+  "wading-in-the-velvet-sea": 17,
+  "character-zero": 1,
+  "tweezer-reprise": 3
+ },
+ "phishnet_url": "https://phish.net/setlists/phish-august-01-2026-fenway-park-boston-ma-usa.html"
 }
