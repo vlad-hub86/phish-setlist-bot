@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-02T00:51:31+00:00",
+ "updated_at": "2026-08-02T00:57:10+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -66,9 +66,15 @@
    "songs": [
     {
      "title": "Mike's Song",
+     "transition": ">",
+     "length_secs": 626,
+     "footnote": "Trey and Mike on trampoline."
+    },
+    {
+     "title": "Ruby Waves",
      "transition": ",",
      "length_secs": null,
-     "footnote": "Trey and Mike on trampoline."
+     "footnote": null
     }
    ]
   }
