@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-02T00:16:22+00:00",
+ "updated_at": "2026-08-02T00:46:44+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -55,6 +55,18 @@
     {
      "title": "Sand",
      "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Mike's Song",
+     "transition": ",",
      "length_secs": null,
      "footnote": null
     }
