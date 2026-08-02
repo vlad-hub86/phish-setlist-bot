@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-02T00:06:46+00:00",
+ "updated_at": "2026-08-02T00:16:22+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -54,7 +54,7 @@
     },
     {
      "title": "Sand",
-     "transition": ",",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
