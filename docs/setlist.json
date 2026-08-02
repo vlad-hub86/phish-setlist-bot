@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-01T23:56:45+00:00",
+ "updated_at": "2026-08-02T00:06:46+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -42,6 +42,18 @@
     },
     {
      "title": "Stash",
+     "transition": "->",
+     "length_secs": 600,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sand",
      "transition": ",",
      "length_secs": null,
      "footnote": null
