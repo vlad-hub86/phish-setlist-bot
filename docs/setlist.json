@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-02T02:21:50+00:00",
+ "updated_at": "2026-08-02T02:26:41+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -120,7 +120,13 @@
     },
     {
      "title": "Character Zero",
-     "transition": ",",
+     "transition": ">",
+     "length_secs": 292,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
