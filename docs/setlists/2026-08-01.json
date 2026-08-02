@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-02T01:21:52+00:00",
+ "updated_at": "2026-08-02T01:26:50+00:00",
  "showdate": "2026-08-01",
  "venue": "Fenway Park",
  "city": "Boston",
@@ -78,6 +78,12 @@
     },
     {
      "title": "No Men In No Man's Land",
+     "transition": ">",
+     "length_secs": 604,
+     "footnote": "Trey on mini-drum kit."
+    },
+    {
+     "title": "Light",
      "transition": ",",
      "length_secs": null,
      "footnote": null
