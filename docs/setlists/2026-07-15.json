@@ -132,5 +132,91 @@
   "scents-and-subtle-sounds": 14,
   "ghost": 5,
   "rock-and-roll": 7
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-07-15",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-07-15/dinner-and-a-movie",
+    "d": 246
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-07-15/vultures",
+    "d": 782
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-07-15/taste",
+    "d": 496
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-07-15/the-wedge",
+    "d": 1747,
+    "tags": [
+     {
+      "name": "Unfinished"
+     },
+     {
+      "name": "Tease",
+      "notes": "Destiny Unbound"
+     }
+    ]
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-07-15/pebbles-and-marbles",
+    "d": 500
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-07-15/divided-sky",
+    "d": 770
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-07-15/halleys-comet",
+    "d": 511
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-07-15/drift-while-youre-sleeping",
+    "d": 700
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-07-15/sightless-escape",
+    "d": 1299
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-07-15/a-song-i-heard-the-ocean-sing",
+    "d": 989,
+    "tags": [
+     {
+      "name": "Unfinished"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-07-15/crosseyed-and-painless",
+    "d": 954
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-07-15/farmhouse",
+    "d": 345
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-07-15/scents-and-subtle-sounds",
+    "d": 981
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-07-15/ghost",
+    "d": 677
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-07-15/rock-and-roll",
+    "d": 481,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks so much everybody, thank you for having us. Be safe, we love you, thanks for an incredible two days."
+     }
+    ]
+   }
+  }
  }
 }

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-08T03:49:25Z",
+ "generated_at": "2026-08-08T10:14:47Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1282,6 +1282,32 @@
    "artist": "XTC",
    "plays_recorded": 5,
    "debut": "1985-09-27"
+  },
+  "dinner-and-a-movie": {
+   "pi_slug": "dinner-and-a-movie",
+   "original": true,
+   "plays_recorded": 151,
+   "debut": "1987-11-19"
+  },
+  "fire": {
+   "pi_slug": "fire",
+   "original": false,
+   "artist": "Jimi Hendrix",
+   "plays_recorded": 139,
+   "debut": "1984-12-01"
+  },
+  "sightless-escape": {
+   "pi_slug": "sightless-escape",
+   "original": true,
+   "plays_recorded": 5,
+   "debut": "2019-09-01"
+  },
+  "the-old-home-place": {
+   "pi_slug": "the-old-home-place",
+   "original": false,
+   "artist": "Vassar Clements",
+   "plays_recorded": 52,
+   "debut": "1994-06-26"
   }
  }
 }
