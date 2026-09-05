@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-08-02T03:51:13+00:00",
- "showdate": "2026-08-01",
- "venue": "Fenway Park",
- "city": "Boston",
- "state": "MA",
+ "updated_at": "2026-09-05T05:35:53+00:00",
+ "showdate": "2026-09-04",
+ "venue": "Dick's Sporting Goods Park",
+ "city": "Commerce City",
+ "state": "CO",
  "complete": true,
  "sets": [
   {
@@ -11,50 +11,44 @@
    "display": "Set 1",
    "songs": [
     {
-     "title": "My Friend, My Friend",
-     "transition": "->",
-     "length_secs": 578,
-     "footnote": "No \"Myfe\" ending."
-    },
-    {
-     "title": "Tweezer",
-     "transition": "->",
-     "length_secs": 654,
-     "footnote": null
-    },
-    {
-     "title": "Sigma Oasis",
-     "transition": ">",
-     "length_secs": 904,
-     "footnote": "Trey on mini-drum kit."
-    },
-    {
-     "title": "Tweezer",
-     "transition": ">",
-     "length_secs": 296,
-     "footnote": null
-    },
-    {
-     "title": "Chalk Dust Torture",
-     "transition": "->",
-     "length_secs": 611,
-     "footnote": "Unfinished."
-    },
-    {
-     "title": "Stash",
-     "transition": "->",
-     "length_secs": 600,
-     "footnote": "Unfinished."
-    },
-    {
-     "title": "Tweezer",
-     "transition": ">",
+     "title": "No Men In No Man's Land",
+     "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Sand",
-     "transition": "",
+     "title": "Oblivion",
+     "transition": null,
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Plasma",
+     "transition": null,
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tube",
+     "transition": null,
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ya Mar",
+     "transition": null,
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": null,
      "length_secs": null,
      "footnote": null
     }
@@ -65,44 +59,38 @@
    "display": "Set 2",
    "songs": [
     {
-     "title": "Mike's Song",
+     "title": "46 Days",
      "transition": ">",
-     "length_secs": 626,
-     "footnote": "Trey and Mike on trampoline."
-    },
-    {
-     "title": "Ruby Waves",
-     "transition": ">",
-     "length_secs": 1175,
-     "footnote": "Unfinished."
-    },
-    {
-     "title": "No Men In No Man's Land",
-     "transition": ">",
-     "length_secs": 604,
-     "footnote": "Trey on mini-drum kit."
-    },
-    {
-     "title": "Light",
-     "transition": ">",
-     "length_secs": 1190,
+     "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Weekapaug Groove",
-     "transition": ",",
-     "length_secs": 303,
-     "footnote": "Unfinished."
-    },
-    {
-     "title": "Ghost",
+     "title": "Down with Disease",
      "transition": ">",
-     "length_secs": 902,
+     "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Possum",
-     "transition": "",
+     "title": "Life Saving Gun",
+     "transition": null,
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Lonely Trip",
+     "transition": null,
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Run Like an Antelope",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": null,
      "length_secs": null,
      "footnote": null
     }
@@ -114,19 +102,13 @@
    "songs": [
     {
      "title": "Wading in the Velvet Sea",
-     "transition": ",",
-     "length_secs": 314,
+     "transition": null,
+     "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Character Zero",
-     "transition": ">",
-     "length_secs": 292,
-     "footnote": null
-    },
-    {
-     "title": "Tweezer Reprise",
-     "transition": "",
+     "title": "Harry Hood",
+     "transition": null,
      "length_secs": null,
      "footnote": null
     }
