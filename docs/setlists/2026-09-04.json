@@ -1,0 +1,133 @@
+{
+ "updated_at": "2026-09-05T05:17:16+00:00",
+ "showdate": "2026-09-04",
+ "venue": "Dick's Sporting Goods Park",
+ "city": "Commerce City",
+ "state": "CO",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-september-04-2026-dicks-sporting-goods-park-commerce-city-co-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "No Men In No Man's Land",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Oblivion",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Plasma",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tube",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ya Mar",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "46 Days",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Life Saving Gun",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Lonely Trip",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Run Like an Antelope",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Wading in the Velvet Sea",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Harry Hood",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "oblivion": 8,
+  "prince-caspian": 3,
+  "plasma": 15,
+  "tube": 5,
+  "ya-mar": 22,
+  "wolfman-s-brother": 4,
+  "46-days": 13,
+  "down-with-disease": 4,
+  "life-saving-gun": 9,
+  "lonely-trip": 20,
+  "run-like-an-antelope": 1,
+  "harry-hood": 1
+ }
+}
