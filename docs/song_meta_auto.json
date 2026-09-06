@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-06T15:34:03Z",
+ "generated_at": "2026-09-06T23:02:53Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1308,6 +1308,13 @@
    "artist": "Vassar Clements",
    "plays_recorded": 52,
    "debut": "1994-06-26"
+  },
+  "when-the-circus-comes": {
+   "pi_slug": "when-the-circus-comes",
+   "original": false,
+   "artist": "Bert Jansch",
+   "plays_recorded": 77,
+   "debut": "1997-02-13"
   }
  }
 }

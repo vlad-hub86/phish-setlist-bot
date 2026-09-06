@@ -118,5 +118,74 @@
   "chalk-dust-torture": 1,
   "when-the-circus-comes": 56,
   "carini": 2
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-09-05",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-09-05/possum",
+    "d": 502
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-09-05/sand",
+    "d": 1056
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-09-05/sigma-oasis",
+    "d": 1190,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-09-05/the-moma-dance",
+    "d": 560
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-09-05/back-on-the-train",
+    "d": 554
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-09-05/free",
+    "d": 721
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-09-05/most-events-arent-planned",
+    "d": 586
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-09-05/whats-going-through-your-mind",
+    "d": 1451
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-09-05/a-wave-of-hope",
+    "d": 1064,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-09-05/tweezer",
+    "d": 1428
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-09-05/chalk-dust-torture",
+    "d": 575
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-09-05/when-the-circus-comes",
+    "d": 311
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-09-05/carini",
+    "d": 672
+   }
+  }
  }
 }
