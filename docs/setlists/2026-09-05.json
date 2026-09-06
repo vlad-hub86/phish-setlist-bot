@@ -1,0 +1,122 @@
+{
+ "updated_at": "2026-09-06T08:53:36+00:00",
+ "showdate": "2026-09-05",
+ "venue": "Dick's Sporting Goods Park",
+ "city": "Commerce City",
+ "state": "CO",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-september-05-2026-dicks-sporting-goods-park-commerce-city-co-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Possum",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sand",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sigma Oasis",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "The Moma Dance",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Free",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Most Events Aren't Planned",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "What's Going Through Your Mind",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "A Wave of Hope",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Chalk Dust Torture",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "When the Circus Comes",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Carini",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "possum": 1,
+  "sand": 1,
+  "sigma-oasis": 1,
+  "the-moma-dance": 9,
+  "back-on-the-train": 2,
+  "free": 2,
+  "most-events-aren-t-planned": 15,
+  "what-s-going-through-your-mind": 2,
+  "a-wave-of-hope": 2,
+  "tweezer": 1,
+  "chalk-dust-torture": 1,
+  "when-the-circus-comes": 56,
+  "carini": 2
+ }
+}
