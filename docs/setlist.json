@@ -1,6 +1,6 @@
 {
- "updated_at": "2026-09-05T05:35:53+00:00",
- "showdate": "2026-09-04",
+ "updated_at": "2026-09-06T18:53:02+00:00",
+ "showdate": "2026-09-05",
  "venue": "Dick's Sporting Goods Park",
  "city": "Commerce City",
  "state": "CO",
@@ -11,43 +11,43 @@
    "display": "Set 1",
    "songs": [
     {
-     "title": "No Men In No Man's Land",
+     "title": "Possum",
      "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Oblivion",
+     "title": "Sand",
      "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Prince Caspian",
-     "transition": "->",
-     "length_secs": null,
-     "footnote": null
-    },
-    {
-     "title": "Plasma",
+     "title": "Sigma Oasis",
      "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Tube",
+     "title": "The Moma Dance",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
      "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Ya Mar",
+     "title": "Free",
      "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Wolfman's Brother",
+     "title": "Most Events Aren't Planned",
      "transition": null,
      "length_secs": null,
      "footnote": null
@@ -59,37 +59,25 @@
    "display": "Set 2",
    "songs": [
     {
-     "title": "46 Days",
+     "title": "What's Going Through Your Mind",
      "transition": ">",
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Down with Disease",
+     "title": "A Wave of Hope",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
      "transition": ">",
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Life Saving Gun",
-     "transition": null,
-     "length_secs": null,
-     "footnote": null
-    },
-    {
-     "title": "Lonely Trip",
-     "transition": null,
-     "length_secs": null,
-     "footnote": null
-    },
-    {
-     "title": "Run Like an Antelope",
-     "transition": ">",
-     "length_secs": null,
-     "footnote": null
-    },
-    {
-     "title": "Character Zero",
+     "title": "Chalk Dust Torture",
      "transition": null,
      "length_secs": null,
      "footnote": null
@@ -101,13 +89,13 @@
    "display": "Encore",
    "songs": [
     {
-     "title": "Wading in the Velvet Sea",
+     "title": "When the Circus Comes",
      "transition": null,
      "length_secs": null,
      "footnote": null
     },
     {
-     "title": "Harry Hood",
+     "title": "Carini",
      "transition": null,
      "length_secs": null,
      "footnote": null
