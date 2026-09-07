@@ -1,6 +1,13 @@
 {
  "shows": [
   {
+   "showdate": "2026-09-06",
+   "venue": "Dick's Sporting Goods Park",
+   "city": "Commerce City",
+   "state": "CO",
+   "complete": true
+  },
+  {
    "showdate": "2026-09-05",
    "venue": "Dick's Sporting Goods Park",
    "city": "Commerce City",

@@ -1,0 +1,116 @@
+{
+ "updated_at": "2026-09-07T05:16:40+00:00",
+ "showdate": "2026-09-06",
+ "venue": "Dick's Sporting Goods Park",
+ "city": "Commerce City",
+ "state": "CO",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-september-06-2026-dicks-sporting-goods-park-commerce-city-co-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Ghost",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Kill Devil Falls",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Roggae",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Blaze On",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Axilla (Part II)",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Taste",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Split Open and Melt",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "My Friend, My Friend",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Melt the Guns",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Light",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Everything's Right",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "ghost": 2,
+  "kill-devil-falls": 3,
+  "roggae": 17,
+  "blaze-on": 9,
+  "backwards-down-the-number-line": 4,
+  "axilla-part-ii": 4,
+  "taste": 5,
+  "split-open-and-melt": 8,
+  "my-friend-my-friend": 2,
+  "fuego": 3,
+  "melt-the-guns": 3,
+  "light": 2,
+  "everything-s-right": 3
+ }
+}
