@@ -112,5 +112,74 @@
   "melt-the-guns": 3,
   "light": 2,
   "everything-s-right": 3
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-09-06",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-09-06/ghost",
+    "d": 1039
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-09-06/kill-devil-falls",
+    "d": 984
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-09-06/roggae",
+    "d": 727
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-09-06/blaze-on",
+    "d": 1025
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-09-06/backwards-down-the-number-line",
+    "d": 434
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-09-06/axilla-part-ii",
+    "d": 300
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-09-06/taste",
+    "d": 432
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-09-06/split-open-and-melt",
+    "d": 747
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-09-06/my-friend-my-friend",
+    "d": 721,
+    "tags": [
+     {
+      "name": "Unfinished",
+      "notes": "Did not include the \"Myfe\" ending"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-09-06/fuego",
+    "d": 1235,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-09-06/melt-the-guns",
+    "d": 517
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-09-06/light",
+    "d": 962
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-09-06/everythings-right",
+    "d": 786
+   }
+  }
  }
 }
