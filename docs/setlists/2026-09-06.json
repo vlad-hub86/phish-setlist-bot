@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-09-07T05:16:40+00:00",
+ "updated_at": "2026-09-12T01:52:07+00:00",
  "showdate": "2026-09-06",
  "venue": "Dick's Sporting Goods Park",
  "city": "Commerce City",
@@ -69,7 +69,7 @@
      "title": "My Friend, My Friend",
      "transition": ">",
      "length_secs": null,
-     "footnote": null
+     "footnote": "No \"Myfe\" ending."
     },
     {
      "title": "Fuego",
@@ -79,7 +79,7 @@
     },
     {
      "title": "Melt the Guns",
-     "transition": ",",
+     "transition": ">",
      "length_secs": null,
      "footnote": null
     },
@@ -91,7 +91,31 @@
     },
     {
      "title": "Everything's Right",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Waste",
      "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "First Tube",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
      "length_secs": null,
      "footnote": null
     }
@@ -99,19 +123,22 @@
   }
  ],
  "gaps": {
-  "ghost": 2,
-  "kill-devil-falls": 3,
-  "roggae": 17,
-  "blaze-on": 9,
-  "backwards-down-the-number-line": 4,
-  "axilla-part-ii": 4,
-  "taste": 5,
-  "split-open-and-melt": 8,
-  "my-friend-my-friend": 2,
-  "fuego": 3,
-  "melt-the-guns": 3,
-  "light": 2,
-  "everything-s-right": 3
+  "ghost": 3,
+  "kill-devil-falls": 4,
+  "roggae": 18,
+  "blaze-on": 10,
+  "backwards-down-the-number-line": 5,
+  "axilla-part-ii": 5,
+  "taste": 6,
+  "split-open-and-melt": 9,
+  "my-friend-my-friend": 3,
+  "fuego": 4,
+  "melt-the-guns": 4,
+  "light": 3,
+  "everything-s-right": 4,
+  "waste": 5,
+  "first-tube": 11,
+  "tweezer-reprise": 3
  },
  "phishin": {
   "show": "https://phish.in/2026-09-06",
@@ -179,6 +206,18 @@
    "2:5": {
     "u": "https://phish.in/2026-09-06/everythings-right",
     "d": 786
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-09-06/waste",
+    "d": 335
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-09-06/first-tube",
+    "d": 393
+   },
+   "e:3": {
+    "u": "https://phish.in/2026-09-06/tweezer-reprise",
+    "d": 168
    }
   }
  }
