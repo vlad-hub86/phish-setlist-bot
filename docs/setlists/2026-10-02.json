@@ -1,0 +1,126 @@
+{
+ "updated_at": "2026-10-03T05:41:54+00:00",
+ "showdate": "2026-10-02",
+ "venue": "Jim Whelan Boardwalk Hall",
+ "city": "Atlantic City",
+ "state": "NJ",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-02-2026-jim-whelan-boardwalk-hall-atlantic-city-nj-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Fuego",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "A Wave of Hope",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Slave to the Traffic Light",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Pillow Jets",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "It's Ice",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ghost",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Oblivion",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Down with Disease",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished. Trey on mini drum kit."
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Mercury",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Death Don't Hurt Very Long",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fluffhead",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Alumni Blues",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Letter to Jimmy Page",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Alumni Blues",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Say It To Me S.A.N.T.O.S.",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {}
+}
