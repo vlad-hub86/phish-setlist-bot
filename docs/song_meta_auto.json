@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T14:50:44Z",
+ "generated_at": "2026-10-03T21:24:39Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1315,6 +1315,9 @@
    "artist": "Bert Jansch",
    "plays_recorded": 77,
    "debut": "1997-02-13"
+  },
+  "death-don-t-hurt-very-long": {
+   "pi_slug": "death-dont-hurt-very-long"
   }
  }
 }
