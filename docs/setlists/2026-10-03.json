@@ -1,0 +1,150 @@
+{
+ "updated_at": "2026-10-04T09:29:45+00:00",
+ "showdate": "2026-10-03",
+ "venue": "Jim Whelan Boardwalk Hall",
+ "city": "Atlantic City",
+ "state": "NJ",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-03-2026-jim-whelan-boardwalk-hall-atlantic-city-nj-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Sand",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Everything's Right",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Back on the Train",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Stash",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "555",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Mountains in the Mist",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Bathtub Gin",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Chalk Dust Torture",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "What's Going Through Your Mind",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Mike's Song",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Waste",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Weekapaug Groove",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Monsters",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Harry Hood",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Character Zero",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sleeping Monkey",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "sand": 3,
+  "everything-s-right": 2,
+  "back-on-the-train": 3,
+  "stash": 5,
+  "555": 19,
+  "mountains-in-the-mist": 18,
+  "bathtub-gin": 10,
+  "chalk-dust-torture": 3,
+  "what-s-going-through-your-mind": 3,
+  "mike-s-song": 5,
+  "waste": 2,
+  "weekapaug-groove": 5,
+  "monsters": 14,
+  "harry-hood": 4,
+  "character-zero": 4,
+  "sleeping-monkey": 77,
+  "tweezer-reprise": 2
+ }
+}

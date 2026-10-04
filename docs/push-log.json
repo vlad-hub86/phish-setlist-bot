@@ -75,12 +75,6 @@
     {
       "job": "backfill-2026",
       "trigger": "cadence",
-      "time": "2026-09-17T05:13:14Z",
-      "ok": true
-    },
-    {
-      "job": "backfill-2026",
-      "trigger": "cadence",
       "time": "2026-09-17T14:37:03Z",
       "ok": true
     },
@@ -371,7 +365,13 @@
       "trigger": "cadence",
       "time": "2026-10-03T21:24:39Z",
       "ok": true
+    },
+    {
+      "job": "backfill-2026",
+      "trigger": "cadence",
+      "time": "2026-10-04T09:29:45Z",
+      "ok": true
     }
   ],
-  "backfill_last": "2026-10-03T21:24:39Z"
+  "backfill_last": "2026-10-04T09:29:45Z"
 }
