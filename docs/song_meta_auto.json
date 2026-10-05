@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04T18:25:35Z",
+ "generated_at": "2026-10-05T00:53:06Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1318,6 +1318,12 @@
   },
   "death-don-t-hurt-very-long": {
    "pi_slug": "death-dont-hurt-very-long"
+  },
+  "sleeping-monkey": {
+   "pi_slug": "sleeping-monkey",
+   "original": true,
+   "plays_recorded": 98,
+   "debut": "1992-01-14"
   }
  }
 }

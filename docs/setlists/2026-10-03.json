@@ -146,5 +146,96 @@
   "character-zero": 4,
   "sleeping-monkey": 77,
   "tweezer-reprise": 2
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-10-03",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-10-03/sand",
+    "d": 735
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-10-03/everythings-right",
+    "d": 894
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-10-03/back-on-the-train",
+    "d": 367
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-10-03/stash",
+    "d": 697
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-10-03/555",
+    "d": 552
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-10-03/mountains-in-the-mist",
+    "d": 434
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-10-03/bathtub-gin",
+    "d": 750
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-10-03/chalk-dust-torture",
+    "d": 1200,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "Oye Como Va by Tito Puente"
+     }
+    ]
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-10-03/whats-going-through-your-mind",
+    "d": 1531,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Featured Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-10-03/mikes-song",
+    "d": 590,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "What's Going Through Your Mind by Trey Anastasio"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-10-03/waste",
+    "d": 335
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-10-03/weekapaug-groove",
+    "d": 492
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-10-03/monsters",
+    "d": 484
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-10-03/harry-hood",
+    "d": 952
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-10-03/character-zero",
+    "d": 318
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-10-03/sleeping-monkey",
+    "d": 276
+   },
+   "e:3": {
+    "u": "https://phish.in/2026-10-03/tweezer-reprise",
+    "d": 273
+   }
+  }
  }
 }
