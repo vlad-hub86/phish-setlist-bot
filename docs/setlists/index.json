@@ -1,6 +1,13 @@
 {
  "shows": [
   {
+   "showdate": "2026-10-04",
+   "venue": "Jim Whelan Boardwalk Hall",
+   "city": "Atlantic City",
+   "state": "NJ",
+   "complete": true
+  },
+  {
    "showdate": "2026-10-03",
    "venue": "Jim Whelan Boardwalk Hall",
    "city": "Atlantic City",
