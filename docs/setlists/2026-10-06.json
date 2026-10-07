@@ -1,0 +1,143 @@
+{
+ "updated_at": "2026-10-07T08:51:08+00:00",
+ "showdate": "2026-10-06",
+ "venue": "Allianz Amphitheater at Riverfront",
+ "city": "Richmond",
+ "state": "VA",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-06-2026-allianz-amphitheater-at-riverfront-richmond-va-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Buried Alive",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Free",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Run Like an Antelope",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Steam",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Axilla (Part II)",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Divided Sky",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "46 Days",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Life Saving Gun",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Light",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Possum",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Also Sprach Zarathustra",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Suzy Greenberg",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "More",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Joy",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "First Tube",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "buried-alive": 17,
+  "free": 5,
+  "run-like-an-antelope": 6,
+  "wolfman-s-brother": 6,
+  "steam": 19,
+  "axilla-part-ii": 4,
+  "divided-sky": 12,
+  "46-days": 6,
+  "life-saving-gun": 6,
+  "light": 4,
+  "possum": 5,
+  "also-sprach-zarathustra": 12,
+  "suzy-greenberg": 12,
+  "more": 14,
+  "joy": 32,
+  "first-tube": 4
+ }
+}
