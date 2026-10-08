@@ -1,6 +1,13 @@
 {
  "shows": [
   {
+   "showdate": "2026-10-07",
+   "venue": "Allianz Amphitheater at Riverfront",
+   "city": "Richmond",
+   "state": "VA",
+   "complete": true
+  },
+  {
    "showdate": "2026-10-06",
    "venue": "Allianz Amphitheater at Riverfront",
    "city": "Richmond",

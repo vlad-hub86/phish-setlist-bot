@@ -1,0 +1,143 @@
+{
+ "updated_at": "2026-10-08T13:42:47+00:00",
+ "showdate": "2026-10-07",
+ "venue": "Allianz Amphitheater at Riverfront",
+ "city": "Richmond",
+ "state": "VA",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-07-2026-allianz-amphitheater-at-riverfront-richmond-va-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Gumbo",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Curtain With",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Hey Stranger",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Llama",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Roggae",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tube",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Timber (Jerry the Mule)",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Most Events Aren't Planned",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Kill Devil Falls",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ruby Waves",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Golden Age",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Meatstick",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Loving Cup",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "The Lizards",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Julius",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "gumbo": 13,
+  "the-curtain-with": 11,
+  "hey-stranger": 23,
+  "llama": 13,
+  "roggae": 5,
+  "tube": 7,
+  "timber-jerry-the-mule": 11,
+  "most-events-aren-t-planned": 6,
+  "kill-devil-falls": 5,
+  "ruby-waves": 8,
+  "golden-age": 9,
+  "meatstick": 18,
+  "backwards-down-the-number-line": 5,
+  "loving-cup": 11,
+  "the-lizards": 14,
+  "julius": 12
+ }
+}
