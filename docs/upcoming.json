@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07T15:48:18Z",
+ "generated_at": "2026-10-08T00:25:55Z",
  "shows": [
   {
    "showdate": "2026-10-07",
@@ -24,6 +24,18 @@
    "venue": "Orion Amphitheater",
    "city": "Huntsville",
    "state": "AL"
+  },
+  {
+   "showdate": "2026-12-30",
+   "venue": "Madison Square Garden",
+   "city": "New York",
+   "state": "NY"
+  },
+  {
+   "showdate": "2026-12-31",
+   "venue": "Madison Square Garden",
+   "city": "New York",
+   "state": "NY"
   }
  ]
 }
