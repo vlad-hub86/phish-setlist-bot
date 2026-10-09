@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T23:48:43Z",
+ "generated_at": "2026-10-09T10:24:19Z",
  "shows": [
   {
    "showdate": "2026-10-09",
@@ -15,6 +15,12 @@
   },
   {
    "showdate": "2026-10-11",
+   "venue": "Orion Amphitheater",
+   "city": "Huntsville",
+   "state": "AL"
+  },
+  {
+   "showdate": "2026-10-12",
    "venue": "Orion Amphitheater",
    "city": "Huntsville",
    "state": "AL"
