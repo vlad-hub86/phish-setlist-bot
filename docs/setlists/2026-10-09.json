@@ -1,0 +1,180 @@
+{
+ "updated_at": "2026-10-10T13:19:36+00:00",
+ "showdate": "2026-10-09",
+ "venue": "VyStar Veterans Memorial Arena",
+ "city": "Jacksonville",
+ "state": "FL",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-09-2026-vystar-veterans-memorial-arena-jacksonville-fl-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Runaway Jim",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Reba",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "No whistling."
+    },
+    {
+     "title": "Tweezer",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Plasma",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Plasma",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Pebbles and Marbles",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Dirt",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Chalk Dust Torture",
+     "transition": "",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Punch You in the Eye",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Crosseyed and Painless",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Your Pet Cat",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Crosseyed and Painless",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Twist",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Waves",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Harry Hood",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Carini",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Sleeping Monkey",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ghost",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Tweezer Reprise",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "tweezer": 5,
+  "runaway-jim": 15,
+  "reba": 15,
+  "plasma": 8,
+  "pebbles-and-marbles": 20,
+  "dirt": 23,
+  "chalk-dust-torture": 4,
+  "punch-you-in-the-eye": 13,
+  "crosseyed-and-painless": 11,
+  "your-pet-cat": 100,
+  "twist": 25,
+  "waves": 30,
+  "harry-hood": 4,
+  "carini": 3,
+  "sleeping-monkey": 4,
+  "ghost": 5,
+  "tweezer-reprise": 4
+ }
+}
