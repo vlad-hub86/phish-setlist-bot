@@ -139,5 +139,129 @@
   "loving-cup": 11,
   "the-lizards": 14,
   "julius": 12
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-10-07",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-10-07/gumbo",
+    "d": 945,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "The end featured Trey on mini drum kit"
+     }
+    ]
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-10-07/the-curtain-with",
+    "d": 808
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-10-07/hey-stranger",
+    "d": 492
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-10-07/llama",
+    "d": 301
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-10-07/roggae",
+    "d": 620
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-10-07/tube",
+    "d": 522,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "The end featured Trey on mini drum kit"
+     }
+    ]
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-10-07/timber-jerry-the-mule",
+    "d": 539
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-10-07/most-events-arent-planned",
+    "d": 578
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-10-07/kill-devil-falls",
+    "d": 933
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-10-07/ruby-waves",
+    "d": 1410,
+    "tags": [
+     {
+      "name": "Unfinished",
+      "notes": "Unfinished"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-10-07/golden-age",
+    "d": 1561,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "The end featured Trey on mini drum kit"
+     },
+     {
+      "name": "Tease",
+      "notes": "No Quarter by Led Zeppelin"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-10-07/meatstick",
+    "d": 371,
+    "tags": [
+     {
+      "name": "Tease",
+      "notes": "No Quarter by Led Zeppelin"
+     },
+     {
+      "name": "Tease",
+      "notes": "Dixie by Daniel Decatur Emmett"
+     }
+    ]
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-10-07/backwards-down-the-number-line",
+    "d": 401
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-10-07/loving-cup",
+    "d": 421,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd and hopes to come back soon",
+      "transcript": "TREY: Thanks so much, everybody, I hope we can come back soon. Thank you so much for being so kind to us, we had the best time. Thank you. Thanks everybody, thank you."
+     }
+    ]
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-10-07/the-lizards",
+    "d": 581
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-10-07/julius",
+    "d": 465,
+    "tags": [
+     {
+      "name": "CUT"
+     },
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thanks everybody, thank you. Be safe. We hope we see you really soon, thank you."
+     }
+    ]
+   }
+  }
  }
 }
