@@ -1,6 +1,13 @@
 {
  "shows": [
   {
+   "showdate": "2026-10-11",
+   "venue": "Orion Amphitheater",
+   "city": "Huntsville",
+   "state": "AL",
+   "complete": true
+  },
+  {
    "showdate": "2026-10-09",
    "venue": "VyStar Veterans Memorial Arena",
    "city": "Jacksonville",

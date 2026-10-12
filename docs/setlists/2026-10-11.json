@@ -1,0 +1,150 @@
+{
+ "updated_at": "2026-10-12T09:13:10+00:00",
+ "showdate": "2026-10-11",
+ "venue": "Orion Amphitheater",
+ "city": "Huntsville",
+ "state": "AL",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-11-2026-orion-amphitheater-huntsville-al-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Rift",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Free",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Maze",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Theme from the Bottom",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Sand",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Ether Edge",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Drift While You're Sleeping",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "Everything's Right",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Fuego",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Twenty Years Later",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Possum",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "What's the Use?",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Piper",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "A Life Beyond The Dream",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Rock and Roll",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "About to Run",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Slave to the Traffic Light",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "rift": 14,
+  "free": 3,
+  "maze": 15,
+  "theme-from-the-bottom": 13,
+  "sand": 5,
+  "ether-edge": 19,
+  "drift-while-you-re-sleeping": 21,
+  "everything-s-right": 5,
+  "fuego": 6,
+  "twenty-years-later": 36,
+  "possum": 3,
+  "what-s-the-use": 17,
+  "piper": 22,
+  "a-life-beyond-the-dream": 11,
+  "rock-and-roll": 21,
+  "about-to-run": 22,
+  "slave-to-the-traffic-light": 6
+ }
+}
