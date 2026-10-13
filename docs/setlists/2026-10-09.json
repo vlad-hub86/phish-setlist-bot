@@ -176,5 +176,67 @@
   "sleeping-monkey": 4,
   "ghost": 5,
   "tweezer-reprise": 4
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-10-09",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-10-09/tweezer"
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-10-09/runaway-jim"
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-10-09/reba"
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-10-09/tweezer-2"
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-10-09/plasma"
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-10-09/tweezer-3"
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-10-09/plasma-2"
+   },
+   "1:8": {
+    "u": "https://phish.in/2026-10-09/pebbles-and-marbles"
+   },
+   "1:9": {
+    "u": "https://phish.in/2026-10-09/dirt"
+   },
+   "1:10": {
+    "u": "https://phish.in/2026-10-09/chalk-dust-torture"
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-10-09/punch-you-in-the-eye"
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-10-09/crosseyed-and-painless"
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-10-09/your-pet-cat"
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-10-09/crosseyed-and-painless-2"
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-10-09/twist"
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-10-09/waves"
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-10-09/tweezer-4"
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-10-09/harry-hood"
+   },
+   "2:9": {
+    "u": "https://phish.in/2026-10-09/carini"
+   }
+  }
  }
 }

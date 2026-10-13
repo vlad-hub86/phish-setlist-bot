@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T15:15:05Z",
+ "generated_at": "2026-10-13T23:51:27Z",
  "songs": {
   "46-days": {
    "pi_slug": "46-days",
@@ -1324,6 +1324,12 @@
    "original": true,
    "plays_recorded": 98,
    "debut": "1992-01-14"
+  },
+  "your-pet-cat": {
+   "pi_slug": "your-pet-cat",
+   "original": true,
+   "plays_recorded": 22,
+   "debut": "2014-10-31"
   }
  }
 }
