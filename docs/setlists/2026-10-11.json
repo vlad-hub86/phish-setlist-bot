@@ -146,5 +146,103 @@
   "rock-and-roll": 21,
   "about-to-run": 22,
   "slave-to-the-traffic-light": 6
+ },
+ "phishin": {
+  "show": "https://phish.in/2026-10-11",
+  "tracks": {
+   "1:1": {
+    "u": "https://phish.in/2026-10-11/rift",
+    "d": 372
+   },
+   "1:2": {
+    "u": "https://phish.in/2026-10-11/free",
+    "d": 1244,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Featured Trey on mini drum kit"
+     }
+    ]
+   },
+   "1:3": {
+    "u": "https://phish.in/2026-10-11/maze",
+    "d": 549
+   },
+   "1:4": {
+    "u": "https://phish.in/2026-10-11/theme-from-the-bottom",
+    "d": 831
+   },
+   "1:5": {
+    "u": "https://phish.in/2026-10-11/sand",
+    "d": 777
+   },
+   "1:6": {
+    "u": "https://phish.in/2026-10-11/ether-edge",
+    "d": 994
+   },
+   "1:7": {
+    "u": "https://phish.in/2026-10-11/drift-while-youre-sleeping",
+    "d": 754
+   },
+   "2:1": {
+    "u": "https://phish.in/2026-10-11/everythings-right",
+    "d": 1020
+   },
+   "2:2": {
+    "u": "https://phish.in/2026-10-11/fuego",
+    "d": 1653,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Featured Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:3": {
+    "u": "https://phish.in/2026-10-11/twenty-years-later",
+    "d": 870,
+    "tags": [
+     {
+      "name": "Alt Rig",
+      "notes": "Featured Trey on mini drum kit"
+     }
+    ]
+   },
+   "2:4": {
+    "u": "https://phish.in/2026-10-11/possum",
+    "d": 566
+   },
+   "2:5": {
+    "u": "https://phish.in/2026-10-11/whats-the-use",
+    "d": 447
+   },
+   "2:6": {
+    "u": "https://phish.in/2026-10-11/piper",
+    "d": 949
+   },
+   "2:7": {
+    "u": "https://phish.in/2026-10-11/a-life-beyond-the-dream",
+    "d": 499
+   },
+   "2:8": {
+    "u": "https://phish.in/2026-10-11/rock-and-roll",
+    "d": 401
+   },
+   "e:1": {
+    "u": "https://phish.in/2026-10-11/about-to-run",
+    "d": 512
+   },
+   "e:2": {
+    "u": "https://phish.in/2026-10-11/slave-to-the-traffic-light",
+    "d": 581,
+    "tags": [
+     {
+      "name": "Banter",
+      "notes": "Trey thanks the crowd",
+      "transcript": "TREY: Thank you all so much. We had a great time tonight. Be safe and we will see you tomorrow night. Thanks for waiting out the hurricane, it was worth it. Thanks for having us."
+     }
+    ]
+   }
+  }
  }
 }
