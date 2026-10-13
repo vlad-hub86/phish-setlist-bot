@@ -1,0 +1,171 @@
+{
+ "updated_at": "2026-10-13T07:39:22+00:00",
+ "showdate": "2026-10-12",
+ "venue": "Orion Amphitheater",
+ "city": "Huntsville",
+ "state": "AL",
+ "complete": true,
+ "phishnet_url": "https://phish.net/setlists/phish-october-12-2026-orion-amphitheater-huntsville-al-usa.html",
+ "sets": [
+  {
+   "label": "1",
+   "display": "Set 1",
+   "songs": [
+    {
+     "title": "Mike's Song",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Shade",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Weekapaug Groove",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "AC/DC Bag",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Wolfman's Brother",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Birds of a Feather",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "My Friend, My Friend",
+     "transition": "",
+     "length_secs": null,
+     "footnote": "No \"Myfe\" ending."
+    }
+   ]
+  },
+  {
+   "label": "2",
+   "display": "Set 2",
+   "songs": [
+    {
+     "title": "No Men In No Man's Land",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Prince Caspian",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Blaze On",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": "Trey on mini drum kit."
+    },
+    {
+     "title": "Down with Disease",
+     "transition": "->",
+     "length_secs": null,
+     "footnote": "Unfinished."
+    },
+    {
+     "title": "Big Black Furry Creature from Mars",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Scents and Subtle Sounds",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Good Times Bad Times",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Taste",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "The Wedge",
+     "transition": ",",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Character Zero",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  },
+  {
+   "label": "e",
+   "display": "Encore",
+   "songs": [
+    {
+     "title": "Wading in the Velvet Sea",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Backwards Down the Number Line",
+     "transition": ">",
+     "length_secs": null,
+     "footnote": null
+    },
+    {
+     "title": "Run Like an Antelope",
+     "transition": "",
+     "length_secs": null,
+     "footnote": null
+    }
+   ]
+  }
+ ],
+ "gaps": {
+  "mike-s-song": 6,
+  "shade": 20,
+  "weekapaug-groove": 6,
+  "ac-dc-bag": 17,
+  "wolfman-s-brother": 4,
+  "birds-of-a-feather": 23,
+  "my-friend-my-friend": 8,
+  "no-men-in-no-man-s-land": 5,
+  "prince-caspian": 10,
+  "blaze-on": 5,
+  "down-with-disease": 7,
+  "big-black-furry-creature-from-mars": 17,
+  "scents-and-subtle-sounds": 22,
+  "good-times-bad-times": 16,
+  "taste": 8,
+  "the-wedge": 16,
+  "character-zero": 6,
+  "wading-in-the-velvet-sea": 10,
+  "backwards-down-the-number-line": 3,
+  "run-like-an-antelope": 4
+ }
+}
